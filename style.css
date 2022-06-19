@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(206, 212, 218);
+}
+
+.hamburger {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    margin: 5%;
+}
+
+.hamburger i {
+    font-size: 3rem;
+}
