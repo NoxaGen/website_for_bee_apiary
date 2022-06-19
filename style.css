@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100vh;
+
     background-color: rgba(165, 237, 237, 0.865);
 }
 
@@ -25,10 +25,11 @@ body {
 .logo {
     width: 90vw;
     height: 90vw;
-    position: absolute;
-    top: 5%;
+    position: relative;
+
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 5%;
 
 
     background-image: url(./images/pasieka_pod_brzozami_fixed.png);
@@ -36,4 +37,47 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 120%;
+}
+
+.info {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-top: 3%;
+    height: 100vh;
+
+
+}
+
+.info h1 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(107, 0, 0);
+    text-align: center;
+
+
+}
+
+.info p {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(107, 0, 0);
+    text-align: left;
+    font-weight: 550;
+}
+
+.info p i {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: rgb(255, 194, 0);
+}
+
+.main {
+    position: relative;
+    background-color: blueviolet;
+    margin-top: 100vh;
+    width: 100%;
+
 }
