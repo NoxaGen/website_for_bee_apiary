@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: rgb(206, 212, 218);
+    background-color: rgba(165, 237, 237, 0.865);
 }
 
 .hamburger {
@@ -15,8 +15,25 @@ body {
     top: 0%;
     right: 0%;
     margin: 5%;
+    z-index: 1;
 }
 
 .hamburger i {
     font-size: 3rem;
+}
+
+.logo {
+    width: 90vw;
+    height: 90vw;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    background-image: url(./images/pasieka_pod_brzozami_fixed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 120%;
 }
