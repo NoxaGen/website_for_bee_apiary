@@ -191,6 +191,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
 }
 
 .products .honey .jar1,
@@ -252,6 +253,10 @@ header {
     background-size: 10px;
 
 } */
+
+p {
+    letter-spacing: 1px;
+}
 
 @keyframes arrow_moving_down {
     0% {
