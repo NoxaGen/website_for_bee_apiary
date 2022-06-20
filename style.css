@@ -6,20 +6,19 @@
 }
 
 html {
-    height: 100%;
+    height: -webkit-fill-available;
 }
 
 body {
     height: 100vh;
-
+    height: -webkit-fill-available;
     /* background: linear-gradient(to bottom, #9be2fe 0%, #67d1fb 100%); */
 
 
 }
 
-.wrapper {
-    /* margin-top: 10vh; */
-}
+
+
 
 .hamburger {
     position: fixed;
@@ -196,7 +195,13 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 3%;
+    /* opacity: 0.8; */
+    border: solid 1px black;
 }
+
+/* .products .honey .jar:hover {
+    opacity: 1;
+} */
 
 .products .honey p {
     font-size: 1.7rem;
