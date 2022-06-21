@@ -45,6 +45,7 @@ header {
     display: flex;
     background-color: rgb(101, 180, 249);
     z-index: 1;
+    flex-direction: column;
 
 }
 
@@ -59,6 +60,13 @@ main {
     top: 0%;
     background-color: red;
     flex-grow: 1;
+
+}
+
+.separator {
+    height: 3vh;
+    width: 100%;
+    background-color: rgba(29, 27, 27, 0.587);
 
 }
 
