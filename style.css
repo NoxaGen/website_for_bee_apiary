@@ -5,10 +5,12 @@
     font-size: 10px;
 }
 
-/* html {
+html {
     height: 100%;
     height: -webkit-fill-available;
-} */
+    scroll-behavior: smooth;
+
+}
 
 body {
     height: 100vh;
@@ -52,9 +54,10 @@ body {
     background-image: url(./images/pasieka_pod_brzozami_fixed.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     background-size: 120%;
-    max-width: 350px;
+    min-width: 300px;
+    min-height: 300px;
 
 }
 
