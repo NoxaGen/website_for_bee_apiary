@@ -263,6 +263,7 @@ header {
     color: rgb(107, 0, 0);
     text-align: center;
     margin-bottom: 3%;
+
 }
 
 .products .honey .price {
@@ -292,7 +293,8 @@ p {
 }
 
 .products-with-benefits .introduction,
-.products-with-benefits .promotion {
+.products-with-benefits .promotion,
+.products-with-benefits .quality {
 
     width: 100%;
     height: 100vh;
@@ -359,6 +361,70 @@ p {
     background-position: center;
 }
 
+.products-with-benefits .quality {
+    background-image: url(./new_look/3.jpg);
+
+    position: relative;
+
+
+
+}
+
+.products-with-benefits .quality .icons-container {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(13, 13, 13, 0.54);
+    width: 80%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+.products-with-benefits .quality .icons-container div {
+    background-position: center;
+    background-size: cover;
+    width: 20vh;
+    height: 20vh;
+    position: relative;
+
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(1) {
+    background-image: url(./icons_quality_section/1.png);
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(2) {
+    background-image: url(./icons_quality_section/2.png);
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(3) {
+    background-image: url(./icons_quality_section/3.png);
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(4) {
+    background-image: url(./icons_quality_section/4.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.products-with-benefits .quality .icons-container div p {
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-weight: 700;
+}
 
 
 .separator {
