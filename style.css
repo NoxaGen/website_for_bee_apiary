@@ -374,7 +374,7 @@ p {
 
     display: flex;
     flex-wrap: wrap;
-
+    padding: 5%;
     justify-content: space-around;
     position: absolute;
     top: 5%;
@@ -388,9 +388,10 @@ p {
 
 .products-with-benefits .quality .icons-container div {
     background-position: center;
-    background-size: cover;
-    width: 20vh;
-    height: 20vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 35%;
     position: relative;
 
 }
@@ -409,14 +410,14 @@ p {
 
 .products-with-benefits .quality .icons-container div:nth-child(4) {
     background-image: url(./icons_quality_section/4.png);
-    background-size: 90%;
+    background-size: 95%;
     background-repeat: no-repeat;
 }
 
 .products-with-benefits .quality .icons-container div p {
     position: absolute;
     left: 50%;
-    bottom: -15%;
+    bottom: -28%;
     transform: translateX(-50%);
     width: 100%;
     font-family: 'Montserrat', sans-serif;
