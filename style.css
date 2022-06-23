@@ -398,7 +398,47 @@ p {
     font-size: 1.8rem;
 }
 
-.products-with-benefits .honeys .multiflorous-spring-banner .text h2 {}
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 65vh;
+    background-color: rgba(13, 13, 13, 0.54);
+    border-radius: 10%;
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 35%;
+    position: relative;
+}
+
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(1) {
+    background-image: url();
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(2) {}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(3) {}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(4) {}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(5) {}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(6) {}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(7) {}
+
+
 
 @keyframes arrow_moving_down {
     0% {
