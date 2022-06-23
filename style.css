@@ -341,6 +341,7 @@ p {
     border: solid 3px rgb(248, 242, 242);
     /* box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.579); */
     background-color: rgba(0, 0, 0, 0.515);
+    padding: 10px 0px;
 }
 
 .products-with-benefits .introduction h2>.arrow-hint {
