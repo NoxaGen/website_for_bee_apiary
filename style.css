@@ -410,8 +410,8 @@ p {
 
 .products-with-benefits .quality .icons-container div:nth-child(4) {
     background-image: url(./icons_quality_section/4.png);
-    background-size: 95%;
-    background-repeat: no-repeat;
+    /* background-size: 95%;
+    background-repeat: no-repeat; */
 }
 
 .products-with-benefits .quality .icons-container div p {
