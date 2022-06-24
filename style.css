@@ -377,7 +377,12 @@ p {
     background-image: url(./new_look/4.jpg);
 }
 
-.products-with-benefits .honeys .multiflorous-spring-banner .text {
+.products-with-benefits .honeys .multiflorous-summer-banner {
+    background-image: url(./new_look/5.jpg);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .text,
+.products-with-benefits .honeys .multiflorous-summer-banner .text {
     position: relative;
     top: 5%;
     left: 50%;
@@ -393,12 +398,14 @@ p {
     border: solid 3px rgb(248, 242, 242);
 }
 
-.products-with-benefits .honeys .multiflorous-spring-banner .text h2 {
+.products-with-benefits .honeys .multiflorous-spring-banner .text h2,
+.products-with-benefits .honeys .multiflorous-summer-banner .text h2 {
     padding-bottom: 3%;
     font-size: 1.8rem;
 }
 
-.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container {
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container,
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -414,7 +421,8 @@ p {
     align-items: center;
 }
 
-.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div {
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div,
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -423,7 +431,8 @@ p {
     position: relative;
 }
 
-.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container p {
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container p,
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container p {
     position: absolute;
     left: 50%;
     bottom: -10%;
