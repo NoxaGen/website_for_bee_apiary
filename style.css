@@ -62,7 +62,8 @@ body {
 }
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0%;
     min-height: 100vh;
     height: 100vh;
     display: flex;
@@ -75,7 +76,9 @@ header {
 
 
 
+
     z-index: 1;
+    ;
 
 }
 
@@ -220,6 +223,7 @@ p {
     position: relative;
     top: 0%;
     z-index: 4;
+    margin-top: 100vh;
 }
 
 .products-with-benefits .introduction,
