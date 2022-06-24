@@ -443,7 +443,7 @@ p {
     text-align: center;
 }
 
-
+/* SPRING ICONS */
 
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(1) {
     background-image: url(./multiflorous_spring_icons/blood_sad.png);
@@ -473,6 +473,31 @@ p {
     background-image: url(./multiflorous_spring_icons/muscle.png);
 }
 
+/* SUMMER ICONS */
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(1) {
+    background-image: url(./multi_summer_icons/batery.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(2) {
+    background-image: url(./multi_summer_icons/brain.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(3) {
+    background-image: url(./multi_summer_icons/heart.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(4) {
+    background-image: url(./multi_summer_icons/infection.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(5) {
+    background-image: url(./multi_summer_icons/sick_nose.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(6) {
+    background-image: url(./multi_summer_icons/tired_hard.png);
+}
 
 
 @keyframes arrow_moving_down {
