@@ -517,6 +517,37 @@ p {
     background-image: url(./multi_summer_icons/tired_hard.png);
 }
 
+/* ACACIA ICONS */
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(1) {
+    background-image: url(./);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(2) {
+    background-image: url(./);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(3) {
+    background-image: url(./);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(4) {
+    background-image: url(./);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(5) {
+    background-image: url(./);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(6) {
+    background-image: url(./);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(7) {
+    background-image: url(./);
+}
+
+
 
 @keyframes arrow_moving_down {
     0% {
