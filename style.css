@@ -330,7 +330,7 @@ p {
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(13, 13, 13, 0.54);
+    background-color: rgba(13, 13, 13, 0.8);
     width: 80%;
     height: 50%;
     border-radius: 10%;
@@ -399,7 +399,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    background-color: rgba(2, 2, 2, 0.63);
+    background-color: rgba(2, 2, 2, 0.8);
     width: 80%;
     padding: 5%;
     letter-spacing: 1.5px;
@@ -433,10 +433,15 @@ p {
     transform: translateX(-50%);
     width: 120%;
     height: 65vh;
-    background-color: rgba(13, 13, 13, 0.54);
+    background-color: rgba(13, 13, 13, 0.8);
     border-radius: 10%;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 3%;
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container {
+    margin-top: 3%;
 }
 
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div,
@@ -451,7 +456,8 @@ p {
 }
 
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container p,
-.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container p {
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container p,
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container p {
     position: absolute;
     left: 50%;
     bottom: -15%;
@@ -469,6 +475,11 @@ p {
 
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(2) {
     background-image: url(./multiflorous_spring_icons/bones_shield.png);
+    filter: drop-shadow(2px 2px 3px #ffffff);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(2) {
+    filter: drop-shadow(0px 0px 0px #ffffff);
 }
 
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(3) {
