@@ -472,7 +472,7 @@ p {
 .products-with-benefits .honeys .linden-tree .benefits-icons-container p {
     position: absolute;
     left: 50%;
-    bottom: -15%;
+    bottom: -20%;
     transform: translateX(-50%);
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -573,31 +573,31 @@ p {
 /* LINDEN TREE */
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(1) {
-    background-image: url(./acacia_icons/crunch.png);
+    background-image: url(./linden_tree_icons/sweaty_dude.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(2) {
-    background-image: url(./acacia_icons/dude_injury.png);
+    background-image: url(./linden_tree_icons/sick_women.png)
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(3) {
-    background-image: url(./acacia_icons/guts.png);
+    background-image: url(./linden_tree_icons/calm_man.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(4) {
-    background-image: url(./acacia_icons/viruses.png);
+    background-image: url(./linden_tree_icons/blood_preasure.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(5) {
-    background-image: url(./acacia_icons/women_chillin.png);
+    background-image: url(./linden_tree_icons/baby.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(6) {
-    background-image: url(./acacia_icons/antioxidant.png);
+    background-image: url(./linden_tree_icons/coffin_breathe.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(7) {
-    background-image: url(./acacia_icons/wrzod.png);
+    background-image: url(./linden_tree_icons/viruses.png);
 }
 
 @keyframes arrow_moving_down {
