@@ -51,11 +51,10 @@ body {
     margin-top: 5%;
 
 
-    background-image: url(./images/pasieka_pod_brzozami_fixed.png);
-    background-position: center;
+    background-image: url(./images/new_logo_in_black.png);
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 120%;
+    background-size: contain;
+    background-size: 100%;
     min-width: 300px;
     min-height: 300px;
 
@@ -106,7 +105,7 @@ header {
 .info h1 {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(107, 0, 0);
+    color: rgba(0, 0, 0, 0.858);
     text-overflow: 1px 1px 1px;
     text-align: center;
     margin-bottom: 2%;
@@ -120,7 +119,7 @@ header {
     margin-bottom: 4px;
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(107, 0, 0);
+    color: rgba(0, 0, 0, 0.858);
     text-align: left;
     font-weight: 550;
 
