@@ -765,6 +765,8 @@ p {
     padding-bottom: 3%;
     text-align: left;
     letter-spacing: 2px;
+
+
 }
 
 .about-us .owner .contact p,
@@ -779,6 +781,7 @@ p {
     margin-left: 3%;
     letter-spacing: 1px;
     width: 100%;
+
 
 
 }
@@ -850,6 +853,13 @@ p {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.173);
+    border-radius: 5%;
+    padding: 3%;
+    margin-bottom: 5%;
 }
 
 @keyframes arrow_moving_down {
