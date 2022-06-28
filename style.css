@@ -611,11 +611,11 @@ p {
 }
 
 .about-us h2 {
-    position: absolute;
+    position: relative;
     font-family: 'Montserrat', sans-serif;
-    top: 2.5%;
+    top: 5vh;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     height: 2.5%;
     line-height: 2.5%;
     width: 100%;
@@ -625,6 +625,10 @@ p {
     color: rgba(0, 0, 0, 0.954);
     text-shadow: 1px 1px 0.5px rgba(57, 53, 53, 0.754);
 
+}
+
+.about-us .owner {
+    margin-top: 10vh;
 }
 
 .about-us .owner,
