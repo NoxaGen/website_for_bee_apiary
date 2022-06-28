@@ -630,7 +630,8 @@ p {
 .about-us .owner,
 .about-us .salesman,
 .about-us .bee-places,
-.about-us .honey-house {
+.about-us .honey-house,
+.about-us .authenticity {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -651,7 +652,7 @@ p {
 .about-us .salesman .picture,
 .about-us .bee-places .picture,
 .about-us .honey-house .picture,
-.about-us .honey-house .certyficate .picture-cert {
+.about-us .authenticity .picture {
 
     top: 3%;
     left: 3%;
@@ -681,14 +682,16 @@ p {
     background-image: url(./about_section/bee_store.png);
 }
 
-.about-us .honey-house .certyficate .picture-cert {
+
+.about-us .authenticity .picture {
     background-image: url(./about_section/certificate.png);
 }
 
 .about-us .owner .text,
 .about-us .salesman .text,
 .about-us .bee-places .text,
-.about-us .honey-house .text {
+.about-us .honey-house .text,
+.about-us .authenticity .text {
     display: flex;
 
     color: rgba(0, 0, 0, 0.954);
@@ -711,7 +714,8 @@ p {
 .about-us .owner .text h3,
 .about-us .salesman .text h3,
 .about-us .bee-places .text h3,
-.about-us .honey-house .text h3 {
+.about-us .honey-house .text h3,
+.about-us .authenticity .text h3 {
     display: block;
     font-size: 1.8rem;
     margin-bottom: 5%;
@@ -721,7 +725,8 @@ p {
 .about-us .owner .text h4,
 .about-us .salesman .text h4,
 .about-us .bee-places .text h4,
-.about-us .honey-house .text h4 {
+.about-us .honey-house .text h4,
+.about-us .authenticity .text h4 {
     display: block;
     font-size: 1.3rem;
     font-weight: 400;
@@ -735,7 +740,8 @@ p {
 .about-us .owner p,
 .about-us .salesman p,
 .about-us .bee-places p,
-.about-us .honey-house p {
+.about-us .honey-house p,
+.about-us .authenticity p {
     display: block;
     width: 90%;
     font-family: 'Montserrat', sans-serif;
@@ -749,7 +755,8 @@ p {
 
 .about-us .owner .contact p,
 .about-us .salesman .contact p,
-.about-us .bee-places .bee-spots p {
+.about-us .bee-places .bee-spots p,
+.about-us .authenticity .adress-number-id p {
     padding-top: 3%;
     font-weight: 500;
     text-align: center;
@@ -760,13 +767,25 @@ p {
 
 }
 
+.about-us .authenticity p {
+    margin-bottom: 5%;
+}
+
+.about-us .authenticity .adress-number-id h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
 .about-us .owner .contact p i,
 .about-us .salesman .contact p i,
-.about-us .bee-places .bee-spots p i {
+.about-us .bee-places .bee-spots p i,
+.about-us .authenticity .adress-number-id p i {
     font-size: 1.7rem;
 }
 
-.about-us .bee-places .bee-spots p i {
+.about-us .bee-places .bee-spots p i,
+.about-us .authenticity .adress-number-id p i {
     color: rgb(255, 194, 0);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.898);
 }
@@ -783,12 +802,18 @@ p {
 
 .about-us .bee-places .bee-spots h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: 5%;
 }
 
 .about-us .bee-places .bee-spots p {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.about-us .authenticity span {
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 /* .about-us .contact p {
