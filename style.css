@@ -442,7 +442,7 @@ p {
     transform: translateX(-50%);
     width: 120%;
     height: 65vh;
-    background-color: rgba(13, 13, 13, 0.8);
+    background-color: rgba(13, 13, 13, 0.9);
     border-radius: 10%;
     justify-content: space-around;
     align-items: center;
@@ -476,6 +476,7 @@ p {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+
 }
 
 /* SPRING ICONS */
