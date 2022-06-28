@@ -842,6 +842,12 @@ p {
     color: black;
 } */
 
+.about-us .map {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
 @keyframes arrow_moving_down {
     0% {
         top: -50%;
