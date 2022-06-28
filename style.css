@@ -605,7 +605,7 @@ p {
 .about-us {
     position: relative;
     z-index: 5;
-    height: 200vh;
+    /* height: 200vh; */
     background-color: #045de9;
     background-image: linear-gradient(315deg, #2c7af8 0%, #09c6f9 74%);
 }
@@ -623,10 +623,13 @@ p {
     text-align: center;
     font-size: 2.2rem;
     color: rgba(0, 0, 0, 0.954);
+    text-shadow: 1px 1px 0.5px rgba(57, 53, 53, 0.754);
+
 }
 
 .about-us .owner,
-.about-us .salesman {
+.about-us .salesman,
+.about-us .bee-places {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -642,7 +645,8 @@ p {
 }
 
 .about-us .owner .picture,
-.about-us .salesman .picture {
+.about-us .salesman .picture,
+.about-us .bee-places .picture {
 
     top: 3%;
     left: 3%;
@@ -664,8 +668,13 @@ p {
     background-image: url(./about_section/salesman.png);
 }
 
+.about-us .bee-places .picture {
+    background-image: url(./about_section/bee_house.png);
+}
+
 .about-us .owner .text,
-.about-us .salesman .text {
+.about-us .salesman .text,
+.about-us .bee-places .text {
     display: flex;
 
     color: rgba(0, 0, 0, 0.954);
@@ -686,7 +695,8 @@ p {
 }
 
 .about-us .owner .text h3,
-.about-us .salesman .text h3 {
+.about-us .salesman .text h3,
+.about-us .bee-places .text h3 {
     display: block;
     font-size: 1.8rem;
     margin-bottom: 5%;
@@ -694,7 +704,8 @@ p {
 }
 
 .about-us .owner .text h4,
-.about-us .salesman .text h4 {
+.about-us .salesman .text h4,
+.about-us .bee-places .text h4 {
     display: block;
     font-size: 1.3rem;
     font-weight: 400;
@@ -706,7 +717,8 @@ p {
 }
 
 .about-us .owner p,
-.about-us .salesman p {
+.about-us .salesman p,
+.about-us .bee-places p {
     display: block;
     width: 90%;
     font-family: 'Montserrat', sans-serif;
@@ -719,19 +731,27 @@ p {
 }
 
 .about-us .owner .contact p,
-.about-us .salesman .contact p {
+.about-us .salesman .contact p,
+.about-us .bee-places .bee-spots p {
     padding-top: 3%;
     font-weight: 500;
     text-align: center;
     font-size: 1.7rem;
     margin-left: 3%;
+    letter-spacing: 1px;
 
 
 }
 
 .about-us .owner .contact p i,
-.about-us .salesman .contact p i {
+.about-us .salesman .contact p i,
+.about-us .bee-places .bee-spots p i {
     font-size: 1.9rem;
+}
+
+.about-us .bee-places .bee-spots p i {
+    color: rgb(255, 194, 0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.898);
 }
 
 .about-us .owner .contact .fa-phone,
@@ -742,6 +762,16 @@ p {
 .about-us .owner .fa-envelope-open,
 .about-us .salesman .fa-envelope-open {
     color: rgba(14, 84, 14, 0.994);
+}
+
+.about-us .bee-places .bee-spots h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+}
+
+.about-us .bee-places .bee-spots p {
+    font-size: 1.3rem;
 }
 
 /* .about-us .contact p {
