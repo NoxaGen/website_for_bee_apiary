@@ -757,7 +757,7 @@ p {
 .about-us .authenticity p,
 .about-us .local-store p {
     display: block;
-    width: 90%;
+    width: 95%;
     font-family: 'Montserrat', sans-serif;
     color: rgba(0, 0, 0, 0.954);
     font-weight: 400;
@@ -881,6 +881,7 @@ p {
     border-radius: 5%;
     padding: 3%;
     margin-bottom: 5%;
+
 }
 
 
