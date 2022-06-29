@@ -636,7 +636,8 @@ p {
 .about-us .bee-places,
 .about-us .honey-house,
 .about-us .authenticity,
-.about-us .local-store {
+.about-us .local-store,
+.about-us .online-shop {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -658,7 +659,8 @@ p {
 .about-us .bee-places .picture,
 .about-us .honey-house .picture,
 .about-us .authenticity .picture,
-.about-us .local-store .picture {
+.about-us .local-store .picture,
+.about-us .online-shop .picture {
 
     top: 3%;
     left: 3%;
@@ -697,12 +699,17 @@ p {
     background-image: url(./about_section/store_house.png);
 }
 
+.about-us .online-shop .picture {
+    background-image: url(./about_section/allegro.png);
+}
+
 .about-us .owner .text,
 .about-us .salesman .text,
 .about-us .bee-places .text,
 .about-us .honey-house .text,
 .about-us .authenticity .text,
-.about-us .local-store .text {
+.about-us .local-store .text,
+.about-us .online-shop .text {
     display: flex;
 
     color: rgba(0, 0, 0, 0.954);
@@ -727,7 +734,8 @@ p {
 .about-us .bee-places .text h3,
 .about-us .honey-house .text h3,
 .about-us .authenticity .text h3,
-.about-us .local-store .text h3 {
+.about-us .local-store .text h3,
+.about-us .online-shop .text h3 {
     display: block;
     font-size: 1.8rem;
     margin-bottom: 5%;
@@ -739,7 +747,8 @@ p {
 .about-us .bee-places .text h4,
 .about-us .honey-house .text h4,
 .about-us .authenticity .text h4,
-.about-us .local-store .text h4 {
+.about-us .local-store .text h4,
+.about-us .online-shop .text h4 {
     display: block;
     font-size: 1.3rem;
     font-weight: 400;
@@ -755,7 +764,8 @@ p {
 .about-us .bee-places p,
 .about-us .honey-house p,
 .about-us .authenticity p,
-.about-us .local-store p {
+.about-us .local-store p,
+.about-us .online-shop p {
     display: block;
     width: 95%;
     font-family: 'Montserrat', sans-serif;
@@ -851,6 +861,7 @@ p {
 
 .about-us .location {
     position: relative;
+    height: 60vh;
 }
 
 .about-us .location h2 {
@@ -884,6 +895,60 @@ p {
 
 }
 
+.about-us .online-shop .auction {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.about-us .online-shop h2 {
+    top: 3%;
+}
+
+.about-us .online-shop h2 i {
+    font-size: 2.1rem;
+    color: rgba(250, 247, 247, 0.945);
+}
+
+.about-us .online-shop h2 i:nth-child(1) {
+    /* transform: rotate(90deg); */
+    animation: mini_left_hand 2s linear infinite;
+}
+
+.about-us .online-shop h2 i:nth-child(2) {
+    /* transform: rotate(270deg) rotateY(180deg); */
+
+    animation: mini_right_hand 2s linear infinite;
+}
+
+@keyframes mini_left_hand {
+    0% {
+        transform: rotate(90deg) translateY(5px)
+    }
+
+    50% {
+        transform: rotate(90deg) translateY(15px)
+    }
+
+    100% {
+        transform: rotate(90deg) translateY(5px)
+    }
+}
+
+@keyframes mini_right_hand {
+    0% {
+        transform: rotate(270deg) rotateY(180deg) translateY(5px);
+    }
+
+    50% {
+        transform: rotate(270deg) rotateY(180deg) translateY(15px);
+    }
+
+    100% {
+        transform: rotate(270deg) rotateY(180deg) translateY(5px);
+    }
+}
 
 @keyframes arrow_moving_down {
     0% {
