@@ -950,20 +950,33 @@ p {
 
 }
 
-.slider-mobile .prev {
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    left: 0%;
-    transform: translateY(-50%);
-}
 
+.slider-mobile .prev,
 .slider-mobile .next {
     position: absolute;
     z-index: 5;
     top: 50%;
-    right: 0%;
     transform: translateY(-50%);
+    width: 17vw;
+    height: 17vw;
+    background-color: rgba(0, 0, 0, 0.350);
+    border: none;
+    color: rgba(255, 255, 255, 0.896);
+    margin: 0px 2%;
+}
+
+.slider-mobile .prev i,
+.slider-mobile .next i {
+    font-size: 13vw;
+
+}
+
+.slider-mobile .prev {
+    left: 0%;
+}
+
+.slider-mobile .next {
+    right: 0%;
 }
 
 
