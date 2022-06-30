@@ -1,14 +1,27 @@
 const sliderMobileImgs = [...document.querySelectorAll('.slider-mobile img')];
-let sliderCounter = 0;
+const sliderMobileDots = [...document.querySelectorAll('.slider-mobile .dots div')];
 
-setInterval(sliderChanger, 3000)
+let sliderCounter = 0;
+let dotsCounter = 0;
+
+
+function dotsChanger() {
+    const changeDot = sliderMobileDots.findIndex(dot => dot.classList.contains('active-dot'));
+    sliderMobileDots[changeDot].classList.remove('active-dot');
+    dotsCounter++;
+    if (sliderCounter === sliderMobileDots.length) {
+        dotsCounter = 0;
+    }
+
+    sliderMobileDots[dotsCounter].classList.add('active-dot');
+
+}
+
+setInterval(dotsChanger, 3000)
+
+
 
 function sliderChanger() {
-
-
-
-    console.log(sliderCounter)
-
     const changeImage = sliderMobileImgs.findIndex(img => img.classList.contains('img-active'));
     sliderMobileImgs[changeImage].classList.remove('img-active');
     sliderCounter++;
@@ -16,8 +29,6 @@ function sliderChanger() {
         sliderCounter = 0;
     }
     sliderMobileImgs[sliderCounter].classList.add('img-active');
-
-
-
-
 };
+
+setInterval(sliderChanger, 3000)
