@@ -947,10 +947,14 @@ p {
 }
 
 
-.slider-mobile img:nth-child(1) {
+/* .slider-mobile img:nth-child(1) {
 
+    opacity: 0;
+
+} */
+
+.slider-mobile .img-active {
     opacity: 1;
-
 }
 
 
