@@ -1019,11 +1019,11 @@ p {
 .slider-mobile .dots .active-dot {
     background-color: rgba(255, 255, 255, 1);
 
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
 }
 
-.slider-mobile .dots .active-dot::after {}
+
 
 @keyframes mini_left_hand {
     0% {
