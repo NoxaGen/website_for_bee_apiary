@@ -1037,7 +1037,7 @@ footer h4 {
 }
 
 footer h5 {
-    color: pink;
+    color: rgba(255, 192, 203, 0.937);
     margin-bottom: 5%;
 }
 
@@ -1048,6 +1048,18 @@ footer .mail {
     letter-spacing: 1px;
     font-weight: 400;
 
+}
+
+footer h4 a {
+    color: rgba(172, 255, 47, 0.863);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+footer h5 a {
+    color: rgba(255, 192, 203, 0.937);
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 @keyframes mini_left_hand {
