@@ -936,6 +936,7 @@ p {
     margin: 5vh 0px;
     z-index: 8;
     overflow: hidden;
+
 }
 
 .slider-mobile img {
@@ -947,6 +948,7 @@ p {
     max-width: 100%;
     min-width: 100%;
     opacity: 0;
+    transition: 1s;
 }
 
 .slider-mobile .img-active {
