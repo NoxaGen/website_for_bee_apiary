@@ -1064,6 +1064,51 @@ footer h5 a {
     font-size: 1.2rem;
 }
 
+.hamburger-menu {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 70vw;
+    height: 100vh;
+    background-color: rgb(255, 194, 0);
+    z-index: 15;
+}
+
+.hamburger-menu h2 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    padding: 3%;
+    border-bottom: 3px solid black;
+}
+
+.hamburger-menu ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 88%;
+
+
+}
+
+.hamburger-menu li {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+.hamburger-menu-active {}
+
 @keyframes mini_left_hand {
     0% {
         transform: rotate(90deg) translateY(5px)
