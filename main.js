@@ -7,7 +7,7 @@ let sliderCounter = 0;
 let dotsCounter = 0;
 
 
-function dotsChanger() {
+function nextDot() {
     const changeDot = sliderMobileDots.findIndex(dot => dot.classList.contains('active-dot'));
     sliderMobileDots[changeDot].classList.remove('active-dot');
     dotsCounter++;
@@ -19,7 +19,22 @@ function dotsChanger() {
 
 }
 
-let autoDots = setInterval(dotsChanger, 3000)
+function prevDot() {
+    if (dotsCounter > 0) {
+        dotsCounter--;
+
+    } else if (dotsCounter <= 0) {
+        dotsCounter = sliderMobileDots.length - 1;
+
+    }
+    const changeDot = sliderMobileDots.findIndex(dot => dot.classList.contains('active-dot'));
+    sliderMobileDots[changeDot].classList.remove('active-dot');
+
+
+    sliderMobileDots[dotsCounter].classList.add('active-dot');
+}
+
+let autoDots = setInterval(nextDot, 3000)
 
 
 
@@ -63,18 +78,20 @@ function nextArrow() {
     clearInterval(autoDots);
     clearInterval(autoSlide);
     nextSlide();
+    nextDot();
 
 
 
-    autoDots = setInterval(dotsChanger, 3000);
+    autoDots = setInterval(nextDot, 3000);
     autoSlide = setInterval(nextSlide, 3000);
 }
 
 function prevArrow() {
     clearInterval(autoDots);
     clearInterval(autoSlide);
-    autoDots = setInterval(dotsChanger, 3000);
+    autoDots = setInterval(nextDot, 3000);
     autoSlide = setInterval(nextSlide, 3000);
     prevSlide();
+    prevDot();
 
 }
