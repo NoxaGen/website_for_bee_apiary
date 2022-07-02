@@ -83,14 +83,28 @@ function prevArrow() {
 
 //MOBILE MENU SCRIPT
 
-const hamburgerBtn = document.querySelector('.hamburger');
+// const hamburgerBtn = document.querySelector('.hamburger');
 const hiddenNavMobile = document.querySelector('.hamburger-menu');
 const closeNavBtn = document.querySelector('.hamburger-menu .close');
+// const btnIcon = document.querySelector('.hambuger-menu .fas fa-bars');
 
-hamburgerBtn.addEventListener('click', function () {
-    hiddenNavMobile.classList.add('hamburger-menu-active');
-});
+// hamburgerBtn.addEventListener('click', function () {
+//     hiddenNavMobile.classList.add('hamburger-menu-active');
+// });
 
-closeNavBtn.addEventListener('click', function () {
-    hiddenNavMobile.classList.remove('hamburger-menu-active');
-})
+// closeNavBtn.addEventListener('click', function () {
+//     hiddenNavMobile.classList.remove('hamburger-menu-active');
+// })
+
+function switchMenu() {
+    hiddenNavMobile.classList.toggle('hamburger-menu-active');
+    if (hiddenNavMobile.classList.contains('hamburger-menu-active')) {
+        console.log('menu here i have this class')
+        closeNavBtn.innerHTML = '<i class="fas fa-times">';
+
+    } else {
+        closeNavBtn.innerHTML = '<i class="fas fa-bars">';
+    }
+}
+
+closeNavBtn.addEventListener('click', switchMenu);

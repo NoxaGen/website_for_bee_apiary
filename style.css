@@ -1078,12 +1078,13 @@ footer h5 a {
 .hamburger-menu {
     position: fixed;
     top: 0%;
-    right: 100%;
+    left: 100%;
 
     width: 70vw;
     height: 100vh;
     background-color: rgb(255, 194, 0);
     z-index: 15;
+    transition: 1s;
 }
 
 .hamburger-menu h2 {
@@ -1120,24 +1121,31 @@ footer h5 a {
 }
 
 .hamburger-menu-active {
-    right: 0%;
+    left: 30%;
+    transition: 1s;
 }
 
 .hamburger-menu .close {
     position: absolute;
     top: 0%;
-    left: -20%;
-    margin: 5%;
+    left: -30%;
+    margin: 8%;
     z-index: 10;
     color: rgb(255, 194, 0);
     text-shadow: black 1px 1px 1px;
     background-color: transparent;
     border: none;
+
+
+
 }
 
 .hamburger-menu .close i {
     font-size: 4rem;
 }
+
+
+
 
 @keyframes mini_left_hand {
     0% {
