@@ -1,3 +1,5 @@
+// SLIDER SCRIPT
+
 const sliderMobileImgs = [...document.querySelectorAll('.slider-mobile img')];
 const sliderMobileDots = [...document.querySelectorAll('.slider-mobile .dots div')];
 const btnPrev = document.querySelector('.slider-mobile .prev');
@@ -78,3 +80,17 @@ function prevArrow() {
     prevSlide();
     prevDot();
 }
+
+//MOBILE MENU SCRIPT
+
+const hamburgerBtn = document.querySelector('.hamburger');
+const hiddenNavMobile = document.querySelector('.hamburger-menu');
+const closeNavBtn = document.querySelector('.hamburger-menu .close');
+
+hamburgerBtn.addEventListener('click', function () {
+    hiddenNavMobile.classList.add('hamburger-menu-active');
+});
+
+closeNavBtn.addEventListener('click', function () {
+    hiddenNavMobile.classList.remove('hamburger-menu-active');
+})
