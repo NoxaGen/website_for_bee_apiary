@@ -285,6 +285,10 @@ p {
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.579);
     background-color: rgba(0, 0, 0, 0.515);
     padding: 15px 10px;
+    border: solid 3px rgb(225, 191, 127);
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
 }
 
 .products-with-benefits .introduction h2>.arrow-hint {
@@ -311,6 +315,7 @@ p {
     position: relative;
     background-size: cover;
     background-position: center;
+
 }
 
 .products-with-benefits .quality {
@@ -413,7 +418,9 @@ p {
     color: rgb(248, 242, 242);
     text-shadow: 1px 1px 1px black;
     font-family: 'Montserrat', sans-serif;
-    border: solid 3px rgb(248, 242, 242);
+    border: solid 3px rgb(225, 191, 127);
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .products-with-benefits .honeys .multiflorous-spring-banner .text h2,
@@ -447,6 +454,8 @@ p {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 3%;
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .products-with-benefits .honeys .acacia-banner .benefits-icons-container {
