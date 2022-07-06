@@ -108,9 +108,10 @@ const headerMobile = document.getElementById('head');
 const promoMobile = document.querySelector('.promotion');
 const springMobile = document.querySelector('.multiflorous-spring-banner');
 const summerMobile = document.querySelector('.multiflorous-summer-banner');
+const lindenMobile = document.querySelector('.linden-tree');
 const acaciaMobile = document.querySelector('.acacia-banner');
-const aboutMobile = document.querySelector('.about-us');
-const galeryMobile = document.querySelector('.slider-mobile');
+const aboutMobile = document.querySelector('section.about-us');
+const galeryMobile = document.querySelector('div.slider-mobile');
 const authenticityMobile = document.querySelector('.authenticity');
 const shopMobile = document.querySelector('.local-store');
 const onlineShopMobile = document.querySelector('.online-shop');
@@ -120,6 +121,8 @@ const rightsMobile = document.querySelector('footer');
 
 mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function () {
 
+    hiddenNavMobile.classList.remove('hamburger-menu-active');
+    closeNavBtn.innerHTML = '<i class="fas fa-bars">';
     const test = this.dataset.option;
     console.log(test)
 
@@ -144,22 +147,23 @@ mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function 
         case 'linden':
             window.scroll(0, lindenMobile.offsetTop + lindenMobile.offsetHeight);
             break;
-
-        case 'promotion':
-            window.scroll(0, promoMobile.offsetTop * 2); //cause css effect
+        case 'about_us':
+            window.scroll(0, aboutMobile.offsetTop)
             break;
-
-        case 'spring':
-            window.scroll(0, springMobile.offsetTop + springMobile.offsetHeight);
+        case 'galery':
+            window.scroll(0, galeryMobile.offsetTop + galeryMobile.offsetHeight);
             break;
-        case 'summer':
-            window.scroll(0, summerMobile.offsetTop + summerMobile.offsetHeight);
+        case 'authenticity':
+            window.scroll(0, authenticityMobile.offsetTop + authenticityMobile.offsetHeight);
             break;
-        case 'acacia':
-            window.scroll(0, acaciaMobile.offsetTop + acaciaMobile.offsetHeight);
+        case 'shop':
+            window.scroll(0, shopMobile.offsetTop + shopMobile.offsetHeight);
             break;
-        case 'linden':
-            window.scroll(0, lindenMobile.offsetTop + lindenMobile.offsetHeight);
+        case 'online_shop':
+            window.scroll(0, onlineShopMobile.offsetTop + onlineShopMobile.offsetHeight);
+            break;
+        case 'rights':
+            window.scroll(0, rightsMobile.offsetTop + rightsMobile.offsetHeight);
             break;
     }
 
