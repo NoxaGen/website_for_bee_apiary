@@ -99,3 +99,38 @@ function switchMenu() {
 }
 
 closeNavBtn.addEventListener('click', switchMenu);
+
+
+//MENU PROGRAM FOR AUTOSCROLL
+
+const mobileMenuLis = document.querySelectorAll('.hamburger-menu li');
+const headerMobile = document.getElementById('head');
+const promoMobile = document.querySelector('.promotion');
+const springMobile = document.querySelector('.multiflorous-spring-banner');
+const summerMobile = document.querySelector('.multiflorous-summer-banner');
+const acaciaMobile = document.querySelector('.acacia-banner');
+const lindenMobile = document.querySelector('.linden-tree');
+
+
+
+mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function () {
+
+    const test = this.dataset.option;
+    console.log(test)
+
+    switch (test) {
+        case 'main_site':
+            window.scroll(0, headerMobile.offsetTop);
+            break;
+
+        case 'promotion':
+            window.scroll(0, promoMobile.offsetTop * 2); //cause css effect
+            break;
+
+        case 'spring':
+            window.scroll(0, springMobile.offsetTop + springMobile.offsetHeight);
+            break;
+    }
+
+
+}));
