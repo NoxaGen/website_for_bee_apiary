@@ -111,7 +111,7 @@ const summerMobile = document.querySelector('.multiflorous-summer-banner');
 const lindenMobile = document.querySelector('.linden-tree');
 const acaciaMobile = document.querySelector('.acacia-banner');
 const aboutMobile = document.querySelector('section.about-us');
-const galeryMobile = document.querySelector('div.slider-mobile');
+const galeryMobile = document.querySelector('.slider-mobile');
 const authenticityMobile = document.querySelector('.authenticity');
 const shopMobile = document.querySelector('.local-store');
 const onlineShopMobile = document.querySelector('.online-shop');
@@ -151,19 +151,19 @@ mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function 
             window.scroll(0, aboutMobile.offsetTop)
             break;
         case 'galery':
-            window.scroll(0, galeryMobile.offsetTop + galeryMobile.offsetHeight);
+            window.scroll(0, galeryMobile.offsetTop + aboutMobile.offsetTop);
             break;
-        case 'authenticity':
-            window.scroll(0, authenticityMobile.offsetTop + authenticityMobile.offsetHeight);
-            break;
+            // case 'authenticity':
+            //     window.scroll(0, authenticityMobile.offsetTop); // + authenticityMobile.offsetHeight
+            //     break;
         case 'shop':
-            window.scroll(0, shopMobile.offsetTop + shopMobile.offsetHeight);
+            window.scroll(0, shopMobile.offsetTop + (aboutMobile.offsetTop));
             break;
         case 'online_shop':
-            window.scroll(0, onlineShopMobile.offsetTop + onlineShopMobile.offsetHeight);
+            window.scroll(0, onlineShopMobile.offsetTop + aboutMobile.offsetTop);
             break;
         case 'rights':
-            window.scroll(0, rightsMobile.offsetTop + rightsMobile.offsetHeight);
+            window.scroll(0, rightsMobile.offsetTop + aboutMobile.offsetTop);
             break;
     }
 
