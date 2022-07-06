@@ -82,19 +82,10 @@ function prevArrow() {
 }
 
 //MOBILE MENU SCRIPT
-
-// const hamburgerBtn = document.querySelector('.hamburger');
+//refactor of variables name later
 const hiddenNavMobile = document.querySelector('.hamburger-menu');
 const closeNavBtn = document.querySelector('.hamburger-menu .close');
-// const btnIcon = document.querySelector('.hambuger-menu .fas fa-bars');
 
-// hamburgerBtn.addEventListener('click', function () {
-//     hiddenNavMobile.classList.add('hamburger-menu-active');
-// });
-
-// closeNavBtn.addEventListener('click', function () {
-//     hiddenNavMobile.classList.remove('hamburger-menu-active');
-// })
 
 function switchMenu() {
     hiddenNavMobile.classList.toggle('hamburger-menu-active');
