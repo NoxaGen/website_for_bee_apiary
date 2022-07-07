@@ -48,8 +48,8 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-size: 100%;
-    min-width: 300px;
-    min-height: 300px;
+    /* min-width: 300px;
+    min-height: 300px; */
 }
 
 header {
@@ -1094,5 +1094,39 @@ footer h5 a {
     100% {
         top: 100%
     }
+
+}
+
+/* HORIZONTAL MOBILE */
+
+@media (orientation: landscape) {
+    .logo {
+        width: 100vw;
+
+        background-size: contain;
+        background-position: center;
+
+    }
+
+    .info h1 {
+        font-size: 1.4rem;
+    }
+
+    .info p {
+        font-size: 1.3rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
