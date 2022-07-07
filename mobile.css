@@ -1326,7 +1326,7 @@ footer h5 a {
     }
 
     .hamburger-menu-active {
-        left: 50%;
+        left: 55%;
         transition: 1s;
     }
 
@@ -1342,7 +1342,10 @@ footer h5 a {
         border: none;
     }
 
-    .hamburger-menu h2 {}
+    .hamburger-menu h2 {
+        padding: 0%;
+        left: 35%;
+    }
 
 
 
