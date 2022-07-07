@@ -436,11 +436,6 @@ p {
 
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(2) {
     background-image: url(./multiflorous_spring_icons/bones_shield.png);
-    filter: drop-shadow(2px 2px 3px #ffffff);
-}
-
-.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(2) {
-    filter: drop-shadow(0px 0px 0px #ffffff);
 }
 
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(3) {
@@ -1115,6 +1110,186 @@ footer h5 a {
     .info p {
         font-size: 1.3rem;
     }
+
+    .products-with-benefits .introduction {
+        background-image: url(./images_mobile_landscape/1.jpg);
+    }
+
+    .products-with-benefits .promotion {
+        background-image: url(./images_mobile_landscape/5.jpg);
+    }
+
+    .products-with-benefits .quality {
+        background-image: url(./images_mobile_landscape/6.jpg);
+    }
+
+    .products-with-benefits .quality .icons-container {
+        height: 90%;
+        border-radius: 5%;
+    }
+
+    .products-with-benefits .honeys .multiflorous-spring-banner {
+        background-image: url(./images_mobile_landscape/5.jpg);
+    }
+
+    /* honeys icons containters and text */
+
+    .products-with-benefits .honeys .multiflorous-spring-banner .text,
+    .products-with-benefits .honeys .multiflorous-summer-banner .text,
+    .products-with-benefits .honeys .acacia-banner .text,
+    .products-with-benefits .honeys .linden-tree .text {
+        padding: 1% 0%;
+    }
+
+    .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container,
+    .products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container,
+    .products-with-benefits .honeys .acacia-banner .benefits-icons-container,
+    .products-with-benefits .honeys .linden-tree .benefits-icons-container {
+        border-radius: 3%;
+        height: 70vh;
+    }
+
+    .about-us h2 {
+        top: 7.5vh;
+    }
+
+    .about-us .owner {
+        margin-top: 15vh;
+    }
+
+    /* about us pictures and descriptions */
+
+    .about-us .owner .picture,
+    .about-us .salesman .picture,
+    .about-us .bee-places .picture,
+    .about-us .honey-house .picture,
+    .about-us .authenticity .picture,
+    .about-us .local-store .picture,
+    .about-us .online-shop .picture {
+
+        width: 45vh;
+        height: 45vh;
+
+    }
+
+    .about-us .owner .text,
+    .about-us .salesman .text,
+    .about-us .bee-places .text,
+    .about-us .honey-house .text,
+    .about-us .authenticity .text,
+    .about-us .local-store .text,
+    .about-us .online-shop .text {
+        width: 70vh;
+        height: 45vh;
+
+    }
+
+
+    .about-us .owner .text h3,
+    .about-us .salesman .text h3,
+    .about-us .bee-places .text h3,
+    .about-us .honey-house .text h3,
+    .about-us .authenticity .text h3,
+    .about-us .local-store .text h3,
+    .about-us .online-shop .text h3 {
+        display: block;
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+
+    .about-us .owner .text h4,
+    .about-us .salesman .text h4,
+    .about-us .bee-places .text h4,
+    .about-us .honey-house .text h4,
+    .about-us .authenticity .text h4,
+    .about-us .local-store .text h4,
+    .about-us .online-shop .text h4 {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+
+    .about-us .owner p,
+    .about-us .salesman p,
+    .about-us .bee-places p,
+    .about-us .honey-house p,
+    .about-us .authenticity p,
+    .about-us .local-store p,
+    .about-us .online-shop p {
+        font-size: 2rem;
+    }
+
+    .about-us .owner .contact p,
+    .about-us .salesman .contact p,
+    .about-us .bee-places .bee-spots p,
+    .about-us .authenticity .adress-number-id p,
+    .about-us .local-store .adress-and-hours p {
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+
+    .about-us .owner .contact p i,
+    .about-us .salesman .contact p i,
+    .about-us .bee-places .bee-spots p i,
+    .about-us .authenticity .adress-number-id p i,
+    .about-us .local-store .adress-and-hours p i {
+        font-size: 2.5rem;
+    }
+
+    .about-us .owner .contact p,
+    .about-us .salesman .contact p,
+    .about-us .bee-places .bee-spots p,
+    .about-us .authenticity .adress-number-id p,
+    .about-us .local-store .adress-and-hours p {
+        font-size: 2.2rem;
+    }
+
+    .about-us .bee-places .bee-spots h3 {
+        width: 90vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .description {
+        border-radius: 2%;
+    }
+
+    footer {
+        margin-top: 5%;
+        font-size: 2rem;
+    }
+
+    /* SLIDER DIFFRENT SIZE OF IMGS  */
+
+    .slider-mobile .prev,
+    .slider-mobile .next {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .slider-mobile .prev i,
+    .slider-mobile .next i {
+        font-size: 6vw;
+    }
+
+    .slider-mobile .dots {
+        top: 90%;
+    }
+
+    .slider-mobile .dots div {
+        width: 10px;
+        height: 10px;
+    }
+
+    .slider-mobile .dots .active-dot {
+        width: 14px;
+        height: 14px;
+    }
+
+
+
+
 
 
 
