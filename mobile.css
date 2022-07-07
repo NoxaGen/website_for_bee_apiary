@@ -1149,6 +1149,10 @@ footer h5 a {
         height: 70vh;
     }
 
+    .about-us {
+        margin-bottom: 1vh;
+    }
+
     .about-us h2 {
         top: 7.5vh;
     }
@@ -1286,6 +1290,41 @@ footer h5 a {
         width: 14px;
         height: 14px;
     }
+
+    .slider-mobile {
+        margin: 0vh 0vh;
+    }
+
+
+
+    .slider-mobile img:nth-child(1) {
+        content: url(./images_mobile_landscape/7.jpg);
+    }
+
+    .slider-mobile img:nth-child(2) {
+        content: url(./images_mobile_landscape/8.jpg);
+    }
+
+    .slider-mobile img:nth-child(3) {
+        content: url(./images_mobile_landscape/9.jpg);
+    }
+
+    .slider-mobile img:nth-child(4) {
+        content: url(./images_mobile_landscape/10.jpg);
+    }
+
+    .slider-mobile img:nth-child(5) {
+        content: url(./images_mobile_landscape/11.jpg);
+    }
+
+    .slider-mobile img:nth-child(6) {
+        content: url(./images_mobile_landscape/12.jpg);
+    }
+
+    .slider-mobile img:nth-child(7) {
+        content: url(./images_mobile_landscape/13.jpg);
+    }
+
 
 
 
