@@ -1,0 +1,1098 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+
+.wrapper {
+    background-color: rgb(137, 220, 253);
+}
+
+.hamburger {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    margin: 5%;
+    z-index: 10;
+    color: rgb(255, 194, 0);
+    text-shadow: black 1px 1px 1px;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger i {
+    font-size: 3rem;
+}
+
+.logo {
+    width: 90vw;
+    height: 90vw;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    background-image: url(./images/pasieka_logo_mobile_devices.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #2c7af8 0%, #09c6f9 74%);
+    z-index: 1;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    height: 35vh;
+    margin-top: 3%;
+    margin-bottom: 6vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info h1 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.858);
+    text-overflow: 1px 1px 1px;
+    text-align: center;
+    margin-bottom: 2%;
+    text-shadow: 1px 1px 0.5px rgba(57, 53, 53, 0.754);
+}
+
+.info p {
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.858);
+    text-align: left;
+    font-weight: 550;
+    text-align: center;
+}
+
+.info p i {
+    font-weight: 800;
+    font-size: 1.9rem;
+    color: rgb(255, 194, 0);
+    text-shadow: black 1px 1px 1px;
+}
+
+.main {
+    position: relative;
+    top: 0%;
+    background-color: #67d1fb;
+    width: 100%;
+}
+
+.arrow-hint {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px rgb(255, 194, 0) solid;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.766);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.arrow-hint i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+    line-height: 3.4rem;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 -10px 0 black, 0 10px 0 black;
+    animation-name: arrow_moving_down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.products-with-benefits .arrow-hint {
+    top: 6%;
+    z-index: 5;
+}
+
+.products {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(137, 220, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 5%;
+}
+
+.products h2 {
+    width: 100vw;
+    margin-top: 5%;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(107, 0, 0);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+.products-with-benefits {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    top: 0%;
+    z-index: 4;
+    margin-top: 100vh;
+}
+
+/* ALL SCREENS MOBILE WILL TAKE 100VH */
+
+.products-with-benefits .introduction,
+.products-with-benefits .promotion,
+.products-with-benefits .quality,
+.products-with-benefits .honeys .multiflorous-spring-banner,
+.products-with-benefits .honeys .multiflorous-summer-banner,
+.products-with-benefits .honeys .acacia-banner,
+.products-with-benefits .honeys .linden-tree {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.products-with-benefits .introduction {
+    background-image: url(./new_look/1.jpg);
+}
+
+.products-with-benefits .introduction h2,
+.products-with-benefits .promotion h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    text-align: center;
+    width: 100%;
+    color: rgb(248, 242, 242);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.743);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.products-with-benefits .promotion h2 {
+    top: 20%;
+}
+
+.products-with-benefits .promotion p {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.1rem;
+    width: 80%;
+    line-height: 1.8;
+    border: solid 3px rgb(248, 242, 242);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.579);
+    background-color: rgba(0, 0, 0, 0.515);
+    padding: 15px 10px;
+    border: solid 3px rgb(225, 191, 127);
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.products-with-benefits .introduction h2>.arrow-hint {
+    margin-top: 50%;
+    width: 15vh;
+    height: 15vh;
+    color: rgb(255, 194, 0);
+    border: 8px rgb(255, 194, 0) solid;
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.766);
+}
+
+.products-with-benefits .introduction h2>.arrow-hint i {
+    font-size: 8rem;
+    text-shadow: 0 -30px 0 black, 0 30px 0 black;
+}
+
+.products-with-benefits .promotion {
+    background-image: url(./new_look/2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.products-with-benefits .quality {
+    background-image: url(./new_look/3.jpg);
+}
+
+.products-with-benefits .quality .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-around;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(13, 13, 13, 0.8);
+    width: 80%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+.products-with-benefits .quality .icons-container div {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 35%;
+    position: relative;
+
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(1) {
+    background-image: url(./icons_quality_section/1.png);
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(2) {
+    background-image: url(./icons_quality_section/2.png);
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(3) {
+    background-image: url(./icons_quality_section/3.png);
+}
+
+.products-with-benefits .quality .icons-container div:nth-child(4) {
+    background-image: url(./icons_quality_section/4.png);
+}
+
+.products-with-benefits .quality .icons-container div p {
+    position: absolute;
+    left: 50%;
+    bottom: -28%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+/* HONEYS */
+
+.products-with-benefits .honeys .multiflorous-spring-banner {
+    background-image: url(./new_look/4.jpg);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner {
+    background-image: url(./new_look/5.jpg);
+}
+
+.products-with-benefits .honeys .acacia-banner {
+    background-image: url(./new_look/6.jpg);
+}
+
+.products-with-benefits .honeys .linden-tree {
+    background-image: url(./new_look/7.jpg);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .text,
+.products-with-benefits .honeys .multiflorous-summer-banner .text,
+.products-with-benefits .honeys .acacia-banner .text,
+.products-with-benefits .honeys .linden-tree .text {
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(2, 2, 2, 0.8);
+    width: 80%;
+    padding: 5%;
+    letter-spacing: 1.5px;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 3px rgb(225, 191, 127);
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .text h2,
+.products-with-benefits .honeys .multiflorous-summer-banner .text h2,
+.products-with-benefits .honeys .acacia-banner .text h2,
+.products-with-benefits .honeys .linden-tree .text h2 {
+    padding-bottom: 3%;
+    font-size: 1.8rem;
+    line-height: 100%;
+}
+
+.products-with-benefits .honeys .acacia-banner .text h2 {
+    padding-bottom: 0;
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container,
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container,
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container,
+.products-with-benefits .honeys .linden-tree .benefits-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 65vh;
+    background-color: rgba(13, 13, 13, 0.9);
+    border-radius: 10%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3%;
+    color: rgb(225, 191, 127);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container {
+    margin-top: 3%;
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div,
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div,
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div,
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 26%;
+    height: 26%;
+    position: relative;
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container p,
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container p,
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container p,
+.products-with-benefits .honeys .linden-tree .benefits-icons-container p {
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+/* SPRING ICONS */
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(1) {
+    background-image: url(./multiflorous_spring_icons/blood_sad.png);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(2) {
+    background-image: url(./multiflorous_spring_icons/bones_shield.png);
+    filter: drop-shadow(2px 2px 3px #ffffff);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(2) {
+    filter: drop-shadow(0px 0px 0px #ffffff);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(3) {
+    background-image: url(./multiflorous_spring_icons/cholesterol.png);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(4) {
+    background-image: url(./multiflorous_spring_icons/gastric.png);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(5) {
+    background-image: url(./multiflorous_spring_icons/iron.png);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(6) {
+    background-image: url(./multiflorous_spring_icons/kidneys.png);
+}
+
+.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(7) {
+    background-image: url(./multiflorous_spring_icons/muscle.png);
+}
+
+/* SUMMER ICONS */
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(1) {
+    background-image: url(./multi_summer_icons/batery.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(2) {
+    background-image: url(./multi_summer_icons/brain.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(3) {
+    background-image: url(./multi_summer_icons/heart.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(4) {
+    background-image: url(./multi_summer_icons/infection.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(5) {
+    background-image: url(./multi_summer_icons/sick_nose.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(6) {
+    background-image: url(./multi_summer_icons/tired_hard.png);
+}
+
+/* ACACIA ICONS */
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(1) {
+    background-image: url(./acacia_icons/crunch.png);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(2) {
+    background-image: url(./acacia_icons/dude_injury.png);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(3) {
+    background-image: url(./acacia_icons/guts.png);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(4) {
+    background-image: url(./acacia_icons/viruses.png);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(5) {
+    background-image: url(./acacia_icons/women_chillin.png);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(6) {
+    background-image: url(./acacia_icons/antioxidant.png);
+}
+
+.products-with-benefits .honeys .acacia-banner .benefits-icons-container div:nth-child(7) {
+    background-image: url(./acacia_icons/wrzod.png);
+}
+
+/* LINDEN TREE */
+
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(1) {
+    background-image: url(./linden_tree_icons/sweaty_dude.png);
+}
+
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(2) {
+    background-image: url(./linden_tree_icons/sick_women.png)
+}
+
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(3) {
+    background-image: url(./linden_tree_icons/calm_man.png);
+}
+
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(4) {
+    background-image: url(./linden_tree_icons/blood_preasure.png);
+}
+
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(5) {
+    background-image: url(./linden_tree_icons/baby.png);
+}
+
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(6) {
+    background-image: url(./linden_tree_icons/coffin_breathe.png);
+}
+
+.products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(7) {
+    background-image: url(./linden_tree_icons/viruses.png);
+}
+
+/* ABOUT US */
+
+.about-us {
+    position: relative;
+    z-index: 5;
+    /* height: 200vh; */
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #2c7af8 0%, #09c6f9 74%);
+}
+
+.about-us h2 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2.5%;
+    line-height: 2.5%;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.954);
+    text-shadow: 1px 1px 0.5px rgba(57, 53, 53, 0.754);
+
+}
+
+.about-us .owner {
+    margin-top: 10vh;
+}
+
+.about-us .owner,
+.about-us .salesman,
+.about-us .bee-places,
+.about-us .honey-house,
+.about-us .authenticity,
+.about-us .local-store,
+.about-us .online-shop {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 5%;
+    left: 0%;
+
+    width: 100%;
+
+    z-index: 4;
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+.about-us .online-shop {
+    margin-bottom: 0%;
+}
+
+
+
+.about-us .owner .picture,
+.about-us .salesman .picture,
+.about-us .bee-places .picture,
+.about-us .honey-house .picture,
+.about-us .authenticity .picture,
+.about-us .local-store .picture,
+.about-us .online-shop .picture {
+    top: 3%;
+    left: 3%;
+    width: 45vw;
+    height: 45vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-us .owner .picture {
+    background-image: url(./about_section/beekeeper.png);
+}
+
+.about-us .salesman .picture {
+    background-image: url(./about_section/salesman.png);
+}
+
+.about-us .bee-places .picture {
+    background-image: url(./about_section/bee_house.png);
+}
+
+.about-us .honey-house .picture {
+    background-image: url(./about_section/bee_store.png);
+}
+
+.about-us .authenticity .picture {
+    background-image: url(./about_section/certificate.png);
+}
+
+.about-us .local-store .picture {
+    background-image: url(./about_section/store_house.png);
+}
+
+.about-us .online-shop .picture {
+    background-image: url(./about_section/allegro.png);
+}
+
+.about-us .owner .text,
+.about-us .salesman .text,
+.about-us .bee-places .text,
+.about-us .honey-house .text,
+.about-us .authenticity .text,
+.about-us .local-store .text,
+.about-us .online-shop .text {
+    display: flex;
+    color: rgba(0, 0, 0, 0.954);
+    font-family: 'Montserrat', sans-serif;
+    top: 20%;
+    left: 55%;
+    text-align: center;
+    width: 45vw;
+    height: 45vw;
+    margin-bottom: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.173);
+    border-radius: 10%;
+}
+
+.about-us .owner .text h3,
+.about-us .salesman .text h3,
+.about-us .bee-places .text h3,
+.about-us .honey-house .text h3,
+.about-us .authenticity .text h3,
+.about-us .local-store .text h3,
+.about-us .online-shop .text h3 {
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 5%;
+}
+
+.about-us .owner .text h4,
+.about-us .salesman .text h4,
+.about-us .bee-places .text h4,
+.about-us .honey-house .text h4,
+.about-us .authenticity .text h4,
+.about-us .local-store .text h4,
+.about-us .online-shop .text h4 {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.about-us .contact {
+    width: 100%;
+}
+
+.about-us .owner p,
+.about-us .salesman p,
+.about-us .bee-places p,
+.about-us .honey-house p,
+.about-us .authenticity p,
+.about-us .local-store p,
+.about-us .online-shop p {
+    display: block;
+    width: 95%;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.954);
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding-bottom: 3%;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.about-us .owner .contact p,
+.about-us .salesman .contact p,
+.about-us .bee-places .bee-spots p,
+.about-us .authenticity .adress-number-id p,
+.about-us .local-store .adress-and-hours p {
+    padding-top: 3%;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-left: 3%;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.about-us .authenticity p {
+    margin-bottom: 5%;
+}
+
+.about-us .authenticity .adress-number-id h3,
+.about-us .local-store .adress-and-hours h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.about-us .owner .contact p i,
+.about-us .salesman .contact p i,
+.about-us .bee-places .bee-spots p i,
+.about-us .authenticity .adress-number-id p i,
+.about-us .local-store .adress-and-hours p i {
+    font-size: 1.7rem;
+}
+
+.about-us .bee-places .bee-spots p i,
+.about-us .authenticity .adress-number-id p i,
+.about-us .local-store .adress-and-hours p i {
+    color: rgb(255, 194, 0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.898);
+}
+
+.about-us .owner .contact .fa-phone,
+.about-us .salesman .contact .fa-phone {
+    color: rgba(184, 16, 16, 0.839)
+}
+
+.about-us .owner .fa-envelope-open,
+.about-us .salesman .fa-envelope-open {
+    color: rgba(14, 84, 14, 0.994);
+}
+
+.about-us .bee-places .bee-spots h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+}
+
+.about-us .bee-places .bee-spots p,
+.about-us .local-store .adress-and-hours p {
+    font-size: 1.7rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.about-us .authenticity span {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.about-us .location {
+    position: relative;
+    height: 60vh;
+}
+
+.about-us .location h2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+}
+
+.about-us .location .map {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.about-us .location .map iframe {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.173);
+    border-radius: 5%;
+    padding: 3%;
+    margin-bottom: 5%;
+}
+
+.about-us .online-shop .auction {
+    position: relative;
+    height: 5vh;
+    line-height: 5vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.about-us .online-shop h2 {
+    top: 3%;
+}
+
+.about-us .online-shop h2 i {
+    font-size: 2.1rem;
+    color: rgba(250, 247, 247, 0.945);
+}
+
+.about-us .online-shop h2 i:nth-child(1) {
+    animation: mini_left_hand 2s linear infinite;
+}
+
+.about-us .online-shop h2 i:nth-child(2) {
+    animation: mini_right_hand 2s linear infinite;
+}
+
+/* SLIDER MOBILE */
+
+.slider-mobile {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 5vh 0px;
+    z-index: 8;
+    overflow: hidden;
+}
+
+.slider-mobile img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.slider-mobile .img-active {
+    opacity: 1;
+}
+
+.slider-mobile .prev,
+.slider-mobile .next {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15vw;
+    height: 15vw;
+    background-color: rgba(0, 0, 0, 0.350);
+    border: none;
+    color: rgba(255, 255, 255, 0.896);
+    margin: 0px 2%;
+    border-radius: 10%;
+}
+
+.slider-mobile .prev i,
+.slider-mobile .next i {
+    font-size: 13vw;
+}
+
+.slider-mobile .prev {
+    left: 0%;
+}
+
+.slider-mobile .next {
+    right: 0%;
+}
+
+.slider-mobile .dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 85%;
+    width: 70%;
+    height: 5%;
+}
+
+.slider-mobile .dots div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.724);
+}
+
+.slider-mobile .dots .active-dot {
+    background-color: rgba(255, 255, 255, 1);
+    width: 19px;
+    height: 19px;
+}
+
+footer {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    padding: 5%;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+footer h4 {
+    color: rgba(172, 255, 47, 0.863);
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+}
+
+footer h5 {
+    color: rgba(255, 192, 203, 0.937);
+    margin-bottom: 5%;
+}
+
+footer .phone,
+footer .mail {
+    color: rgba(255, 255, 255, 0.963);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
+
+footer h4 a {
+    color: rgba(172, 255, 47, 0.863);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+footer h5 a {
+    color: rgba(255, 192, 203, 0.937);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    width: 70vw;
+    height: 100vh;
+    background-color: rgb(255, 194, 0);
+    z-index: 15;
+    transition: 1s;
+}
+
+.hamburger-menu h2 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    padding: 3%;
+    border-bottom: 3px solid black;
+}
+
+.hamburger-menu ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 88%;
+}
+
+.hamburger-menu li {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+.hamburger-menu-active {
+    left: 30%;
+    transition: 1s;
+}
+
+.hamburger-menu .close {
+    position: absolute;
+    top: 0%;
+    left: -30%;
+    margin: 8%;
+    z-index: 10;
+    color: rgb(255, 194, 0);
+    text-shadow: black 1px 1px 1px;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger-menu .close i {
+    font-size: 4rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes mini_left_hand {
+    0% {
+        transform: rotate(90deg) translateY(5px)
+    }
+
+    50% {
+        transform: rotate(90deg) translateY(15px)
+    }
+
+    100% {
+        transform: rotate(90deg) translateY(5px)
+    }
+}
+
+@keyframes mini_right_hand {
+    0% {
+        transform: rotate(270deg) rotateY(180deg) translateY(5px);
+    }
+
+    50% {
+        transform: rotate(270deg) rotateY(180deg) translateY(15px);
+    }
+
+    100% {
+        transform: rotate(270deg) rotateY(180deg) translateY(5px);
+    }
+}
+
+@keyframes arrow_moving_down {
+    0% {
+        top: -50%;
+    }
+
+    15% {
+        top: -25%;
+    }
+
+    30% {
+        top: 0%;
+    }
+
+    45% {
+        top: 25%
+    }
+
+    60% {
+        top: 50%
+    }
+
+    75% {
+        top: 75%
+    }
+
+    100% {
+        top: 100%
+    }
+
+}
