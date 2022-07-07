@@ -1325,7 +1325,24 @@ footer h5 a {
         content: url(./images_mobile_landscape/13.jpg);
     }
 
+    .hamburger-menu-active {
+        left: 50%;
+        transition: 1s;
+    }
 
+    .hamburger-menu .close {
+        position: absolute;
+        top: -5%;
+        left: -20%;
+        margin: 8%;
+        z-index: 10;
+        color: rgb(255, 194, 0);
+        text-shadow: black 1px 1px 1px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .hamburger-menu h2 {}
 
 
 
