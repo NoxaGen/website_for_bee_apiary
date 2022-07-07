@@ -597,7 +597,7 @@ p {
 }
 
 .about-us .online-shop {
-    margin-bottom: 0%;
+    margin-bottom: 5%;
 }
 
 
@@ -820,15 +820,17 @@ p {
 }
 
 .about-us .online-shop .auction {
-    position: relative;
-    height: 5vh;
-    line-height: 5vh;
+    /* position: absolute; */
+
+    bottom: 0%;
+    height: 15vh;
+    line-height: 30vh;
     width: 100%;
     z-index: 10;
 }
 
 .about-us .online-shop h2 {
-    top: 3%;
+    top: 0%;
 }
 
 .about-us .online-shop h2 i {
@@ -1029,6 +1031,11 @@ footer h5 a {
 
 .hamburger-menu .close i {
     font-size: 4rem;
+}
+
+.auction h2 {
+    display: block;
+    margin: 5vh 0vh;
 }
 
 /* ANIMATIONS */
@@ -1260,8 +1267,9 @@ footer h5 a {
     }
 
     footer {
-        margin-top: 5%;
+
         font-size: 2rem;
+        z-index: 1;
     }
 
     /* SLIDER DIFFRENT SIZE OF IMGS  */
@@ -1346,6 +1354,7 @@ footer h5 a {
         padding: 0%;
         left: 35%;
     }
+
 
 
 
