@@ -48,63 +48,69 @@ function prevSlide() {
         sliderCounter--;
 
     } else if (sliderCounter <= 0) {
-        sliderCounter = sliderMobileImgs.length - 1;
+        sliderCounter = sliderMobileImgs.length - 1; //cause index != lenght
     }
     const changeImage = sliderMobileImgs.findIndex(img => img.classList.contains('img-active'));
     sliderMobileImgs[changeImage].classList.remove('img-active');
     sliderMobileImgs[sliderCounter].classList.add('img-active');
 }
-
-
+//assign it to var to get index for recall
 let autoSlide = setInterval(nextSlide, 3000)
 
 btnNext.addEventListener('click', nextArrow);
 btnPrev.addEventListener('click', prevArrow);
 
-function nextArrow() {
+//cleaning interval after user change slide manualy
+function cleaner() {
     clearInterval(autoDots);
     clearInterval(autoSlide);
-    //after 3 seconds of inactivity interval will back to auto
+}
+
+//after 3 seconds of inactivity interval will back to auto
+function setter() {
     autoDots = setInterval(nextDot, 3000);
     autoSlide = setInterval(nextSlide, 3000);
+}
+
+function nextArrow() {
+    cleaner();
     nextSlide();
     nextDot();
+    setter();
 }
 
 function prevArrow() {
-    clearInterval(autoDots);
-    clearInterval(autoSlide);
-    //after 3 seconds of inactivity interval will back to auto
-    autoDots = setInterval(nextDot, 3000);
-    autoSlide = setInterval(nextSlide, 3000);
+    cleaner();
     prevSlide();
     prevDot();
+    setter();
 }
+
+
 
 //MOBILE MENU SCRIPT
 //refactor of variables name later
 const hiddenNavMobile = document.querySelector('.hamburger-menu');
-const closeNavBtn = document.querySelector('.hamburger-menu .close');
+const navBtn = document.querySelector('.hamburger-menu .close');
 
 
 function switchMenu() {
     hiddenNavMobile.classList.toggle('hamburger-menu-active');
     if (hiddenNavMobile.classList.contains('hamburger-menu-active')) {
         console.log('menu here i have this class')
-        closeNavBtn.innerHTML = '<i class="fas fa-times">';
+        navBtn.innerHTML = '<i class="fas fa-times">';
 
     } else {
-        closeNavBtn.innerHTML = '<i class="fas fa-bars">';
+        navBtn.innerHTML = '<i class="fas fa-bars">';
     }
 }
 
-closeNavBtn.addEventListener('click', switchMenu);
-
-
+navBtn.addEventListener('click', switchMenu);
 //MENU PROGRAM FOR AUTOSCROLL
 
+//all elements from mobile html here
 const mobileMenuLis = document.querySelectorAll('.hamburger-menu li');
-const headerMobile = document.getElementById('head');
+const headerMobile = document.querySelector('header')
 const promoMobile = document.querySelector('.promotion');
 const springMobile = document.querySelector('.multiflorous-spring-banner');
 const summerMobile = document.querySelector('.multiflorous-summer-banner');
@@ -117,24 +123,18 @@ const shopMobile = document.querySelector('.local-store');
 const onlineShopMobile = document.querySelector('.online-shop');
 const rightsMobile = document.querySelector('footer');
 
-
-
 mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function () {
 
     hiddenNavMobile.classList.remove('hamburger-menu-active');
-    closeNavBtn.innerHTML = '<i class="fas fa-bars">';
+    navBtn.innerHTML = '<i class="fas fa-bars">';
     const test = this.dataset.option;
-    console.log(test)
-
     switch (test) {
         case 'main_site':
             window.scroll(0, headerMobile.offsetTop);
             break;
-
         case 'promotion':
             window.scroll(0, promoMobile.offsetTop * 2); //cause css effect
             break;
-
         case 'spring':
             window.scroll(0, springMobile.offsetTop + springMobile.offsetHeight);
             break;
@@ -153,9 +153,6 @@ mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function 
         case 'galery':
             window.scroll(0, galeryMobile.offsetTop + aboutMobile.offsetTop);
             break;
-            // case 'authenticity':
-            //     window.scroll(0, authenticityMobile.offsetTop); // + authenticityMobile.offsetHeight
-            //     break;
         case 'shop':
             window.scroll(0, shopMobile.offsetTop + (aboutMobile.offsetTop));
             break;
@@ -166,6 +163,4 @@ mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function 
             window.scroll(0, rightsMobile.offsetTop + aboutMobile.offsetTop);
             break;
     }
-
-
 }));
