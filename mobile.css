@@ -979,7 +979,7 @@ footer h5 a {
     height: 100vh;
     background-color: rgb(255, 194, 0);
     z-index: 15;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .hamburger-menu h2 {
