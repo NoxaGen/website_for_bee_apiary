@@ -20,7 +20,7 @@ body {
     background-color: #54d5f8;
 }
 
-.hamburger {
+/* .hamburger {
     position: fixed;
     top: 0%;
     right: 0%;
@@ -30,11 +30,11 @@ body {
     text-shadow: black 1px 1px 1px;
     background-color: transparent;
     border: none;
-}
+} */
 
-.hamburger i {
-    font-size: 3rem;
-}
+/* .hamburger i {
+    font-size: 5rem;
+} */
 
 .logo {
     width: 90vw;
@@ -1370,14 +1370,42 @@ footer h5 a {
         padding: 0%;
         left: 35%;
     }
+}
 
-    /* .movie-mobile {
-        content: url(./movies/movie_bees_mobile_landscape.mp4);
-    } */
+/* MEDIUM DEVICES - TABLETS */
 
-    .movie-mobile video {
-        content: url(./movies/movie_bees_mobile_landscape.mp4);
+/* portrait first */
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+    .logo {
+        width: 100vw;
+        height: 100vh;
+        background-size: contain;
+        background-image: url(./images_tablet/main_logo_medium_devices.png);
+        background-position: center;
     }
+
+    .info h1 {
+        font-size: 5rem;
+    }
+
+    .info p {
+        font-size: 2.8rem;
+        line-height: 150%;
+    }
+
+    .info p i {
+        font-size: 2.9rem;
+    }
+
+    .products-with-benefits .introduction {
+        background-image: url(./images_tablet/1.jpg);
+    }
+
+
+
+
 
 
 
