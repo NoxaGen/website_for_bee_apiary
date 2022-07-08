@@ -1247,7 +1247,10 @@ footer h5 a {
         font-size: 2rem;
     }
 
-    .about-us .owner .contact p,
+
+
+
+    .owner .contact p,
     .about-us .salesman .contact p,
     .about-us .bee-places .bee-spots p,
     .about-us .authenticity .adress-number-id p,
@@ -1376,7 +1379,7 @@ footer h5 a {
 
 /* portrait first */
 
-@media (min-width: 768px) and (orientation: portrait) {
+@media (min-width: 768px) {
 
     .logo {
         width: 100vw;
@@ -1387,26 +1390,137 @@ footer h5 a {
     }
 
     .info h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     .info p {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         line-height: 150%;
     }
 
     .info p i {
-        font-size: 2.9rem;
+        font-size: 2.7rem;
     }
 
     .products-with-benefits .introduction {
         background-image: url(./images_tablet/1.jpg);
     }
 
+    .products-with-benefits .introduction h2 {
+        font-size: 5rem;
+    }
 
+    .products-with-benefits .promotion {
+        background-image: url(./images_tablet/2.jpg);
+    }
 
+    .products-with-benefits .promotion h2 {
+        font-size: 5rem;
+    }
 
+    .products-with-benefits .promotion p {
+        font-size: 3.5rem;
+    }
 
+    .products-with-benefits .quality {
+        background-image: url(./images_tablet/3.jpg);
+    }
+
+    .products-with-benefits .quality p {
+        font-size: 2rem;
+    }
+
+    .products-with-benefits .honeys .multiflorous-spring-banner {
+        background-image: url(./images_tablet/4.jpg);
+    }
+
+    .products-with-benefits .honeys .multiflorous-summer-banner {
+        background-image: url(./images_tablet/5.jpg);
+    }
+
+    .products-with-benefits .honeys .acacia-banner {
+        background-image: url(./images_tablet/6.jpg);
+    }
+
+    .products-with-benefits .honeys .linden-tree {
+        background-image: url(./images_tablet/7.jpg);
+    }
+
+    .products-with-benefits .honeys .multiflorous-spring-banner .text h2,
+    .products-with-benefits .honeys .multiflorous-summer-banner .text h2,
+    .products-with-benefits .honeys .acacia-banner .text h2,
+    .products-with-benefits .honeys .linden-tree .text h2 {
+
+        font-size: 3rem;
+
+    }
+
+    .products-with-benefits .honeys .text {
+        font-size: 2rem;
+    }
+
+    .about-us h2 {
+        font-size: 4rem;
+    }
+
+    .about-us .owner .picture,
+    .about-us .salesman .picture,
+    .about-us .bee-places .picture,
+    .about-us .honey-house .picture,
+    .about-us .authenticity .picture,
+    .about-us .local-store .picture,
+    .about-us .online-shop .picture {
+
+        width: 25vh;
+        height: 25vh;
+
+    }
+
+    .about-us .owner .text,
+    .about-us .salesman .text,
+    .about-us .bee-places .text,
+    .about-us .honey-house .text,
+    .about-us .authenticity .text,
+    .about-us .local-store .text,
+    .about-us .online-shop .text {
+        width: 40vh;
+        height: 25vh;
+        border-radius: 3%;
+
+    }
+
+    .about-us .owner .text h3,
+    .about-us .salesman .text h3,
+    .about-us .bee-places .text h3,
+    .about-us .honey-house .text h3,
+    .about-us .authenticity .text h3,
+    .about-us .local-store .text h3,
+    .about-us .online-shop .text h3 {
+        font-size: 4rem;
+    }
+
+    .about-us .owner .text h4,
+    .about-us .salesman .text h4,
+    .about-us .bee-places .text h4,
+    .about-us .honey-house .text h4,
+    .about-us .authenticity .text h4,
+    .about-us .local-store .text h4,
+    .about-us .online-shop .text h4 {
+        font-size: 3rem;
+        line-height: 200%;
+
+    }
+
+    .about-us .owner p,
+    .about-us .salesman p,
+    .about-us .bee-places p,
+    .about-us .honey-house p,
+    .about-us .authenticity p,
+    .about-us .local-store p,
+    .about-us .online-shop p {
+        font-size: 2.6rem;
+        border-radius: 3%;
+    }
 
 
 }
