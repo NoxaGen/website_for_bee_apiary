@@ -97,7 +97,6 @@ const navBtn = document.querySelector('.hamburger-menu .close');
 function switchMenu() {
     hiddenNavMobile.classList.toggle('hamburger-menu-active');
     if (hiddenNavMobile.classList.contains('hamburger-menu-active')) {
-        console.log('menu here i have this class')
         navBtn.innerHTML = '<i class="fas fa-times">';
 
     } else {
