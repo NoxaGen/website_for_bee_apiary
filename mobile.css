@@ -1046,7 +1046,6 @@ footer h5 a {
     overflow: hidden;
 }
 
-.movie-mobile video {}
 
 
 
@@ -1365,6 +1364,10 @@ footer h5 a {
     .hamburger-menu h2 {
         padding: 0%;
         left: 35%;
+    }
+
+    .movie-mobile video {
+        content: url(./movies/movie_bees_mobile_landscape.mp4);
     }
 
 
