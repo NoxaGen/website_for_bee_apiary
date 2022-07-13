@@ -18,6 +18,7 @@ body {
 
 .wrapper {
     background-color: #54d5f8;
+    overflow-x: hidden;
 }
 
 /* .hamburger {
@@ -558,11 +559,11 @@ p {
 .about-us h2 {
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    top: 5vh;
+    top: 15px;
     left: 50%;
-    transform: translate(-50%);
-    height: 2.5%;
-    line-height: 2.5%;
+    transform: translateX(-50%);
+    height: 30px;
+    /* line-height: 30px; */
     width: 100%;
     z-index: 10;
     text-align: center;
@@ -723,7 +724,7 @@ p {
 .about-us .authenticity .adress-number-id p,
 .about-us .local-store .adress-and-hours p {
     padding-top: 3%;
-    font-weight: 500;
+    font-weight: 450;
     text-align: center;
     font-size: 1.7rem;
     margin-left: 3%;
@@ -781,10 +782,10 @@ p {
     margin-bottom: 3%;
 }
 
-.about-us .authenticity span {
-    font-size: 1.4rem;
+/* .about-us .authenticity span {
+    font-size: 2rem;
     font-weight: 600;
-}
+} */
 
 .about-us .location {
     position: relative;
@@ -792,11 +793,13 @@ p {
 }
 
 .about-us .location h2 {
-    position: absolute;
+    /* position: absolute; */
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
+    margin: 10px;
+
 }
 
 .about-us .location .map {
@@ -804,7 +807,7 @@ p {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    margin: 10px 0px;
+
 }
 
 .about-us .location .map iframe {
@@ -825,8 +828,8 @@ p {
     /* position: absolute; */
 
     /* bottom: 0%; */
-    /* height: 15vh; */
-    line-height: 15vh;
+    height: 50px;
+    line-height: 50px;
     width: 100%;
     z-index: 10;
 }
@@ -1217,6 +1220,7 @@ footer h5 a {
         height: 45vh;
         flex-grow: 1;
         margin: 5vh;
+        border-radius: 3%;
 
     }
 
@@ -1228,9 +1232,7 @@ footer h5 a {
     .about-us .authenticity .text h3,
     .about-us .local-store .text h3,
     .about-us .online-shop .text h3 {
-
         font-size: 2.5rem;
-        margin-bottom: 5%;
         padding: 3%;
     }
 
@@ -1242,7 +1244,7 @@ footer h5 a {
     .about-us .local-store .text h4,
     .about-us .online-shop .text h4 {
         display: block;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 400;
         /* line-height: 2rem; */
         padding: 3%;
@@ -1365,6 +1367,8 @@ footer h5 a {
         content: url(./images_mobile_landscape/13.jpg);
     }
 
+
+
     .hamburger-menu-active {
         left: 55%;
         transition: 1s;
@@ -1392,7 +1396,7 @@ footer h5 a {
 
 /* portrait first */
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 768px) {
 
     .logo {
         width: 100vw;
@@ -1536,4 +1540,6 @@ footer h5 a {
     }
 
 
-} */
+}
+
+*/
