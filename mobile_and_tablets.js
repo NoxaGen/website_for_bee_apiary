@@ -167,13 +167,15 @@ mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function 
 
 //PROGRAM FOR CHANGING VIDEO MOBILE LANDSCAPE
 
-const mobileVideo = document.querySelector('.movie-mobile video');
+//we leave it for later
 
-function changeVideoSize() {
-    if (window.innerWidth > window.innerHeight) {
-        mobileVideo.src = "./movies/movie_bees_mobile_portrait.mp4";
-    } else if (window.innerWidth < window.innerHeight) {
-        mobileVideo.src = "./movies/movie_bees_mobile_landscape.mp4";
-    }
-}
-window.addEventListener('orientationchange', changeVideoSize);
+// const mobileVideo = document.querySelector('.movie-mobile video');
+
+// function changeVideoSize() {
+//     if (window.innerWidth > window.innerHeight) {
+//         mobileVideo.src = "./movies/movie_bees_mobile_portrait.mp4";
+//     } else if (window.innerWidth < window.innerHeight) {
+//         mobileVideo.src = "./movies/movie_bees_mobile_landscape.mp4";
+//     }
+// }
+// window.addEventListener('orientationchange', changeVideoSize);
