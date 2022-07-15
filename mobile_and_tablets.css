@@ -599,7 +599,7 @@ p {
 }
 
 .about-us .online-shop {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 
 
@@ -825,12 +825,14 @@ p {
 }
 
 .about-us .online-shop .auction {
-    /* position: absolute; */
-
-    /* bottom: 0%; */
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    line-height: 10vh;
+    width: 100vw;
     z-index: 10;
 }
 
@@ -972,12 +974,6 @@ footer h4 a {
     font-size: 1.4rem;
 }
 
-footer h5 a {
-    color: rgba(255, 192, 203, 0.937);
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
 .hamburger-menu {
     position: fixed;
     top: 0%;
@@ -986,7 +982,7 @@ footer h5 a {
     height: 100vh;
     background-color: rgb(255, 194, 0);
     z-index: 15;
-    /* transition: 1s; */
+    transition: 1s;
 }
 
 .hamburger-menu h2 {
@@ -1300,11 +1296,11 @@ footer h5 a {
         border-radius: 2%;
     }
 
-    footer {
+    /* footer {
 
         font-size: 2rem;
         z-index: 1;
-    }
+    } */
 
     /* SLIDER DIFFRENT SIZE OF IMGS  */
 
@@ -1556,6 +1552,18 @@ footer h5 a {
         font-size: 2.6rem;
         font-weight: 600;
         text-align: center;
+
+
+    }
+
+    .about-us .owner .contact h3,
+    .about-us .salesman .contact h3,
+    .about-us .bee-places .bee-spots h3,
+    .about-us .authenticity .adress-number-id h3,
+    .about-us .local-store .adress-and-hours h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 30px;
     }
 
     .about-us .owner .contact p i,
@@ -1615,4 +1623,67 @@ footer h5 a {
     .slider-mobile img:nth-child(7) {
         content: url(./tablet_photos_portrait/7.jpg);
     }
+
+    .slider-mobile .prev,
+    .slider-mobile .next {
+        width: 100px;
+        height: 100px;
+    }
+
+    .slider-mobile .prev i,
+    .slider-mobile .next i {
+        font-size: 7rem;
+    }
+
+    .about-us .location h2 {
+        height: 10vh;
+        line-height: 10vh;
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .about-us .location .map iframe {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer .phone,
+    footer .mail {
+
+        font-size: 2rem;
+        letter-spacing: 1.2px;
+        font-weight: 500;
+
+    }
+
+    footer h4 {
+        font-size: 2rem;
+    }
+
+    footer h4 a {
+        letter-spacing: 1.2px;
+        font-size: 2rem;
+    }
+
+    footer h5 a {
+        letter-spacing: 1.2px;
+        font-size: 2rem;
+    }
+
+    .hamburger-menu h2 {
+        font-size: 2.7rem;
+        font-weight: 600;
+    }
+
+    .hamburger-menu li {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .hamburger-menu .close i {
+        font-size: 6rem;
+    }
+
 }
