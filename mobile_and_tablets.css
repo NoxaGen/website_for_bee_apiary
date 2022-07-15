@@ -827,7 +827,8 @@ p {
 }
 
 .about-us .online-shop .auction {
-    position: relative;
+    /* position: relative; */
+    margin: 30px 0px;
 
 }
 
