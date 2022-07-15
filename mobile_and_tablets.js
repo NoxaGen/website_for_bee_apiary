@@ -31,7 +31,7 @@ function prevDot() {
     sliderMobileDots[dotsCounter].classList.add('active-dot');
 }
 
-let autoDots = setInterval(nextDot, 3000)
+let autoDots = setInterval(nextDot, 4500)
 
 function nextSlide() {
     const changeImage = sliderMobileImgs.findIndex(img => img.classList.contains('img-active'));
@@ -55,7 +55,7 @@ function prevSlide() {
     sliderMobileImgs[sliderCounter].classList.add('img-active');
 }
 //assign it to var to get index for recall
-let autoSlide = setInterval(nextSlide, 3000)
+let autoSlide = setInterval(nextSlide, 4500)
 
 btnNext.addEventListener('click', nextArrow);
 btnPrev.addEventListener('click', prevArrow);
@@ -68,8 +68,8 @@ function cleaner() {
 
 //after 3 seconds of inactivity interval will back to auto
 function setter() {
-    autoDots = setInterval(nextDot, 3000);
-    autoSlide = setInterval(nextSlide, 3000);
+    autoDots = setInterval(nextDot, 4500);
+    autoSlide = setInterval(nextSlide, 4500);
 }
 
 function nextArrow() {
