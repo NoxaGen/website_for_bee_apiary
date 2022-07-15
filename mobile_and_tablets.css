@@ -1265,7 +1265,7 @@ footer h5 a {
 
 
 
-    .owner .contact p,
+    .about-us .owner .contact p,
     .about-us .salesman .contact p,
     .about-us .bee-places .bee-spots p,
     .about-us .authenticity .adress-number-id p,
@@ -1478,6 +1478,9 @@ footer h5 a {
 
     .about-us h2 {
         font-size: 4rem;
+        line-height: 5rem;
+        height: 5rem;
+
     }
 
     .about-us .owner .picture,
@@ -1490,6 +1493,7 @@ footer h5 a {
 
         width: 25vh;
         height: 25vh;
+        margin: 30px;
 
     }
 
@@ -1500,9 +1504,13 @@ footer h5 a {
     .about-us .authenticity .text,
     .about-us .local-store .text,
     .about-us .online-shop .text {
-        width: 40vh;
+        width: 35vh;
         height: 25vh;
         border-radius: 3%;
+        margin: 30px;
+        flex-grow: 1;
+        padding: 10px;
+
 
     }
 
@@ -1513,7 +1521,7 @@ footer h5 a {
     .about-us .authenticity .text h3,
     .about-us .local-store .text h3,
     .about-us .online-shop .text h3 {
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
 
     .about-us .owner .text h4,
@@ -1523,7 +1531,7 @@ footer h5 a {
     .about-us .authenticity .text h4,
     .about-us .local-store .text h4,
     .about-us .online-shop .text h4 {
-        font-size: 3rem;
+        font-size: 2.6rem;
         line-height: 200%;
 
     }
@@ -1537,9 +1545,74 @@ footer h5 a {
     .about-us .online-shop p {
         font-size: 2.6rem;
         border-radius: 3%;
+        margin: 0px 30px;
     }
 
+    .about-us .owner .contact p,
+    .about-us .salesman .contact p,
+    .about-us .bee-places .bee-spots p,
+    .about-us .authenticity .adress-number-id p,
+    .about-us .local-store .adress-and-hours p {
+        font-size: 2.6rem;
+        font-weight: 600;
+        text-align: center;
+    }
 
+    .about-us .owner .contact p i,
+    .about-us .salesman .contact p i,
+    .about-us .bee-places .bee-spots p i,
+    .about-us .authenticity .adress-number-id p i,
+    .about-us .local-store .adress-and-hours p i {
+        font-size: 2.5rem;
+    }
+
+    .about-us .bee-places .bee-spots {
+        width: 100vw;
+        margin-top: 30px;
+
+    }
+
+    .about-us .bee-places .bee-spots h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+
+    }
+
+    .about-us .bee-places .bee-spots h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 200%;
+
+    }
+
+    .slider-mobile img:nth-child(1) {
+        content: url(./tablet_photos_portrait/1.jpg);
+    }
+
+    .slider-mobile img:nth-child(2) {
+        content: url(./tablet_photos_portrait/2.jpg);
+    }
+
+    .slider-mobile img:nth-child(3) {
+        content: url(./tablet_photos_portrait/3.jpg);
+    }
+
+    .slider-mobile img:nth-child(4) {
+        content: url(./tablet_photos_portrait/4.jpg);
+    }
+
+    .slider-mobile img:nth-child(5) {
+        content: url(./tablet_photos_portrait/5.jpg);
+    }
+
+    .slider-mobile img:nth-child(6) {
+        content: url(./tablet_photos_portrait/6.jpg);
+    }
+
+    .slider-mobile img:nth-child(7) {
+        content: url(./tablet_photos_portrait/7.jpg);
+    }
 }
-
-*/
