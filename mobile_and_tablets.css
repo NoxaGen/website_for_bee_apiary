@@ -1768,7 +1768,7 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .bar {
-        position: absolute;
+        position: relative;
         background-color: rgb(22, 131, 251);
         top: 100%;
         left: 0%;
@@ -1776,6 +1776,55 @@ body>div>section.about-us>div.online-shop>p {
         height: 50px;
         z-index: 51;
         border-bottom: none;
+    }
+
+    .bar .navbar {
+        position: relative;
+        top: 0%;
+        left: 40%;
+        width: 60%;
+        height: 100%;
+        /* background-color: rgba(67, 54, 56, 0.206); */
+    }
+
+    .bar .navbar ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .bar .navbar li {
+
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 450;
+        color: rgb(243, 238, 238);
+        text-decoration: none;
+        list-style: none;
+
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(255, 194, 0);
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.924);
+        border-radius: 5%;
+        transition: 0.5s;
+    }
+
+    .bar .navbar li:hover {
+        font-size: 17px;
+        padding: 5px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.406);
     }
 
     header {
@@ -1824,12 +1873,6 @@ body>div>section.about-us>div.online-shop>p {
         transform: translate(-50%, -50%);
     }
 
-
-
-
-
-
-
     .contact-container p {
         line-height: 30px;
         padding-left: 10px;
@@ -1838,6 +1881,13 @@ body>div>section.about-us>div.online-shop>p {
         font-weight: 450;
         color: rgb(243, 238, 238)
     }
+
+
+
+
+
+
+
 
 
 }
