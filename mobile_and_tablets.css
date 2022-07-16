@@ -1888,7 +1888,31 @@ body>div>section.about-us>div.online-shop>p {
         color: rgb(243, 238, 238)
     }
 
+    .description {
+        position: absolute;
+        left: 40.5%;
+        top: 200%;
+        width: 56%;
+        height: 200px;
+        /* background-color: red; */
+        padding: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: rgb(255, 194, 0);
+        /* background-color: transparent; */
+        text-shadow: 1px 1px 1px black;
+        letter-spacing: 1.8px;
 
+
+    }
+
+    .description h2:nth-child(2) {
+        color: rgb(2, 45, 93);
+    }
+
+    .description h2:nth-child(4) {
+        color: rgb(2, 45, 93);
+    }
 
 
 
