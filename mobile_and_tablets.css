@@ -22,9 +22,10 @@ body {
 }
 
 
-.contact-container {
+.panel-desktop {
     display: none;
 }
+
 
 /* .hamburger {
     position: fixed;
