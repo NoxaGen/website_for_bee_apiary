@@ -21,6 +21,11 @@ body {
     overflow-x: hidden;
 }
 
+
+.contact-container {
+    display: none;
+}
+
 /* .hamburger {
     position: fixed;
     top: 0%;
@@ -1776,6 +1781,20 @@ body>div>section.about-us>div.online-shop>p {
 
     header {
         display: none;
+    }
+
+    .contact-container {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(192, 44, 69, 0.665);
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+        height: 100%;
+        z-index: 52;
     }
 
 
