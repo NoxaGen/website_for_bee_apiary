@@ -1788,13 +1788,35 @@ body>div>section.about-us>div.online-shop>p {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: rgba(192, 44, 69, 0.665);
         top: 50%;
         left: 50%;
         transform: translateY(-50%);
         width: 50%;
         height: 100%;
         z-index: 52;
+    }
+
+    .contact-container .icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(255, 194, 0);
+        z-index: 53;
+
+    }
+
+    .contact-container .phone,
+    .contact-container .mail {
+        display: flex;
+    }
+
+    .contact-container p {
+        line-height: 30px;
+        padding-left: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 450;
+        color: rgb(243, 238, 238)
     }
 
 
