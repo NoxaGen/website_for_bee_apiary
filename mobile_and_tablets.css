@@ -1713,9 +1713,6 @@ body>div>section.about-us>div.online-shop>p {
 
 @media (min-width: 768px) and (min-height: 768px) and (orientation: landscape) {
 
-
-
-
     .about-us .owner .text,
     .about-us .salesman .text,
     .about-us .bee-places .text,
@@ -1725,9 +1722,6 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .online-shop .text {
         flex-grow: 1;
         padding: 5px;
-
-
-
     }
 }
 
@@ -1735,8 +1729,13 @@ body>div>section.about-us>div.online-shop>p {
 
 @media (min-width: 992px) {
 
+    .wrapper-mobile-tablet {
+        display: none;
+    }
+
+
     .panel-desktop {
-        position: fixed;
+        position: absolute;
         top: 0%;
         left: 0%;
         width: 100%;
@@ -1757,12 +1756,12 @@ body>div>section.about-us>div.online-shop>p {
 
     .logo-desktop {
         position: absolute;
-        left: 10%;
+        left: 25%;
         top: 70%;
-        /* transform: translateX(-50%); */
+        transform: translateX(-50%);
         background-image: url(./images/pasieka_logo_mobile_devices.png);
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         z-index: 52;
         background-position: center;
         background-size: contain;
@@ -1809,6 +1808,27 @@ body>div>section.about-us>div.online-shop>p {
     .contact-container .mail {
         display: flex;
     }
+
+    .contact-container .phone .icon,
+    .contact-container .mail .icon {
+        display: flex;
+        position: relative;
+    }
+
+    .contact-container .phone .icon i,
+    .contact-container .mail .icon i {
+        position: absolute;
+        font-size: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+
+
+
 
     .contact-container p {
         line-height: 30px;
