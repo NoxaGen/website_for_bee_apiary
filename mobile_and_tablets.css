@@ -14,6 +14,8 @@ html {
 body {
     height: 100vh;
     height: -webkit-fill-available;
+    background-color: #54d5f8;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -1747,7 +1749,7 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         top: 0%;
         left: 0%;
-        width: 100%;
+        width: 100vw;
         height: 90px;
         z-index: 50;
         background-color: rgb(2, 45, 93);
@@ -1770,8 +1772,8 @@ body>div>section.about-us>div.online-shop>p {
         top: 30%;
         transform: translateX(-50%);
         background-image: url(./images/pasieka_logo_mobile_devices.png);
-        width: 35vw;
-        height: 35vw;
+        width: 450px;
+        height: 450px;
         z-index: 52;
         background-position: center;
         background-size: contain;
@@ -1785,7 +1787,7 @@ body>div>section.about-us>div.online-shop>p {
         top: 100%;
         left: 0%;
         width: 100%;
-        height: 50px;
+        height: 60px;
         z-index: 51;
         border-bottom: none;
     }
