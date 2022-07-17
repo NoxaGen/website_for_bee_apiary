@@ -1921,7 +1921,28 @@ body>div>section.about-us>div.online-shop>p {
         flex-grow: 1;
     }
 
+    .description .desc-icons-container {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        top: 111%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 170px;
+        width: 100%;
+        background-color: pink;
+        padding: 20px;
+    }
 
+    .description .desc-icons-container div {
+        width: 20%;
+        /* height: same-as-width; */
+        min-width: 20%;
+        background-color: #6a54f8;
+
+    }
+
+    .quality .icons-container {}
 
 
 
