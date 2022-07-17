@@ -1775,6 +1775,8 @@ body>div>section.about-us>div.online-shop>p {
         z-index: 52;
         background-position: center;
         background-size: contain;
+        -webkit-filter: drop-shadow(3px 3px 4px rgba(32, 32, 32, 0.679));
+        filter: drop-shadow(3px 3px 4px rgba(32, 32, 32, 0.679));
     }
 
     .bar {
@@ -1917,6 +1919,9 @@ body>div>section.about-us>div.online-shop>p {
         letter-spacing: 2px;
         text-align: center;
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
+        -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
+        -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
+
 
     }
 
@@ -1963,6 +1968,7 @@ body>div>section.about-us>div.online-shop>p {
         background-repeat: no-repeat;
         flex-grow: 1;
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
+
 
     }
 
