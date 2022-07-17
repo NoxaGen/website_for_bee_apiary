@@ -1736,8 +1736,12 @@ body>div>section.about-us>div.online-shop>p {
 
     .panel-desktop {
         display: block;
+        background-color: #54d5f8;
     }
 
+    body {
+        background-color: #54d5f8;
+    }
 
     .panel-desktop {
         position: absolute;
@@ -1816,7 +1820,7 @@ body>div>section.about-us>div.online-shop>p {
         color: rgb(243, 238, 238);
         text-decoration: none;
         list-style: none;
-        width: 22%;
+        width: 17%;
 
         text-align: center;
         padding: 3px;
@@ -1912,9 +1916,15 @@ body>div>section.about-us>div.online-shop>p {
 
     }
 
+    .description h2,
+    .description h1 {
+        text-shadow: 1px 1px 1px black;
+    }
+
     .description h2:nth-child(2) {
         color: rgba(16, 16, 16, 0.935);
         font-weight: 900;
+        text-shadow: none;
     }
 
     .description h2 {
@@ -1930,19 +1940,41 @@ body>div>section.about-us>div.online-shop>p {
         transform: translateX(-50%);
         height: 170px;
         width: 100%;
-        background-color: pink;
-        padding: 20px;
+        /* background-color: pink; */
+
     }
 
     .description .desc-icons-container div {
-        width: 20%;
-        /* height: same-as-width; */
-        min-width: 20%;
-        background-color: #6a54f8;
+        width: 18%;
+        height: same-as-width;
+        /* min-width: 20%; */
+        /* padding-bottom: 18%; */
+        padding: 10%;
+        margin: 10px;
+        border-radius: 5%;
+        background-color: rgba(0, 0, 0, 0.245);
+        background-position: center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        flex-grow: 1;
 
     }
 
-    .quality .icons-container {}
+    .description .desc-icons-container div:nth-child(1) {
+        background-image: url(./icons_quality_section/1.png);
+    }
+
+    .description .desc-icons-container div:nth-child(2) {
+        background-image: url(./icons_quality_section/2.png);
+    }
+
+    .description .desc-icons-container div:nth-child(3) {
+        background-image: url(./icons_quality_section/3.png);
+    }
+
+    .description .desc-icons-container div:nth-child(4) {
+        background-image: url(./icons_quality_section/4.png);
+    }
 
 
 
