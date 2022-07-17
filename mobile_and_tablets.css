@@ -1747,7 +1747,7 @@ body>div>section.about-us>div.online-shop>p {
         height: 90px;
         z-index: 50;
         background-color: rgb(2, 45, 93);
-        min-width: 1050px;
+        min-width: 1152px;
         /* background-color: rgb(22, 131, 251); */
         /* border-bottom: 3px black solid; */
     }
@@ -1890,30 +1890,36 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .description {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
+        align-items: center;
+        align-content: center;
         left: 40.5%;
-        top: 200%;
+        top: 125%;
         width: 56%;
         height: 220px;
         /* background-color: red; */
-        padding: 15px;
+        padding: 30px;
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 1.8rem;
         color: rgb(255, 194, 0);
         /* background-color: transparent; */
-        text-shadow: 1px 1px 1px black;
-        letter-spacing: 1.8px;
+        /* text-shadow: 1px 1px 1px black; */
+        letter-spacing: 2px;
         text-align: center;
 
     }
 
     .description h2:nth-child(2) {
-        color: rgba(30, 30, 30, 0.87);
+        color: rgba(16, 16, 16, 0.935);
+        font-weight: 900;
     }
 
+    .description h2 {
+        flex-grow: 1;
+    }
 
 
 
