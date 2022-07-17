@@ -1767,11 +1767,11 @@ body>div>section.about-us>div.online-shop>p {
     .logo-desktop {
         position: absolute;
         left: 20%;
-        top: 70%;
+        top: 30%;
         transform: translateX(-50%);
         background-image: url(./images/pasieka_logo_mobile_devices.png);
-        width: 350px;
-        height: 350px;
+        width: 35vw;
+        height: 35vw;
         z-index: 52;
         background-position: center;
         background-size: contain;
