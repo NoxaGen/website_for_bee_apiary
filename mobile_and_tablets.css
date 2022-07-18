@@ -1748,14 +1748,23 @@ body>div>section.about-us>div.online-shop>p {
         display: none;
     }
 
+    .wrapper-desktop {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .panel-desktop {
         display: block;
         background-color: #54d5f8;
         width: 100vw;
+
+
     }
 
     body {
         background-color: #54d5f8;
+        overflow-x: hidden;
     }
 
     .panel-desktop {
@@ -1802,6 +1811,7 @@ body>div>section.about-us>div.online-shop>p {
         height: 60px;
         z-index: 51;
         border-bottom: none;
+        overflow-x: hidden;
     }
 
     .bar .navbar {
