@@ -15,11 +15,17 @@ body {
     height: 100vh;
     height: -webkit-fill-available;
     background-color: #54d5f8;
-    overflow-x: hidden;
+
 }
 
 .wrapper {
     background-color: #54d5f8;
+    display: block;
+
+}
+
+.wrapper-mobile-tablet {
+    display: block;
     overflow-x: hidden;
 }
 
@@ -1730,7 +1736,7 @@ body>div>section.about-us>div.online-shop>p {
 
 /* // Large devices (avarage desktops, 992px and up)  */
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation: landscape) {
 
     .wrapper-mobile-tablet {
         display: none;
@@ -1739,6 +1745,7 @@ body>div>section.about-us>div.online-shop>p {
     .panel-desktop {
         display: block;
         background-color: #54d5f8;
+        width: 100vw;
     }
 
     body {
@@ -1754,8 +1761,7 @@ body>div>section.about-us>div.online-shop>p {
         z-index: 50;
         background-color: rgb(2, 45, 93);
         min-width: 1152px;
-        /* background-color: rgb(22, 131, 251); */
-        /* border-bottom: 3px black solid; */
+
     }
 
     .hamburger-menu {
@@ -1799,7 +1805,7 @@ body>div>section.about-us>div.online-shop>p {
         width: 60%;
         height: 100%;
 
-        /* background-color: rgba(67, 54, 56, 0.206); */
+
     }
 
     .bar .navbar ul {
@@ -1913,36 +1919,22 @@ body>div>section.about-us>div.online-shop>p {
         top: 125%;
         width: 56%;
         height: 220px;
-        /* background-color: red; */
+
         padding: 30px;
         font-family: 'Poppins', sans-serif;
         font-size: 1.8rem;
         color: rgb(255, 194, 0);
-        /* background-color: transparent; */
-        /* text-shadow: 1px 1px 1px black; */
+
         letter-spacing: 2px;
         text-align: center;
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
-        -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
+
 
 
     }
 
-    Come on,
-    skinny love,
-    just last the year Pour a little salt,
-    we were never here My,
-    my,
-    my,
-    my,
-    my,
-    my,
-    my,
-    my,
-    my,
-    my,
-    my Staring at the sink of blood and crushed veneer And I told you to be patient And I told you to be fine And I told you to be balanced And I told you to be kind .description h2,
+    .description h2,
     .description h1 {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.886);
     }
@@ -1966,7 +1958,7 @@ body>div>section.about-us>div.online-shop>p {
         transform: translateX(-50%);
         height: 170px;
         width: 100%;
-        /* background-color: pink; */
+
 
     }
 
@@ -1974,8 +1966,7 @@ body>div>section.about-us>div.online-shop>p {
         position: relative;
         width: 18%;
         height: same-as-width;
-        /* min-width: 20%; */
-        /* padding-bottom: 18%; */
+
         padding: 10%;
         margin: 10px;
         border-radius: 5%;
@@ -2016,7 +2007,4 @@ body>div>section.about-us>div.online-shop>p {
         text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     }
-
-
-
 }
