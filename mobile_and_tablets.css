@@ -16,6 +16,7 @@ body {
     height: -webkit-fill-available;
     background-color: #54d5f8;
 
+
 }
 
 .wrapper {
@@ -63,6 +64,8 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(32, 32, 32, 0.456));
+    filter: drop-shadow(1px 1px 1px rgba(32, 32, 32, 0.456));
     /* background-size: 100%; */
     /* min-width: 300px;
     min-height: 300px; */
@@ -686,6 +689,8 @@ p {
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.173);
     border-radius: 10%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.694);
+
 }
 
 .about-us .owner .text h3,
@@ -840,6 +845,7 @@ p {
     border-radius: 5%;
     padding: 3%;
     margin-bottom: 0%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.694);
 
 }
 
