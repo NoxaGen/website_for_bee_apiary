@@ -1754,6 +1754,8 @@ body>div>section.about-us>div.online-shop>p {
 
     body {
 
+        -webkit-transition: 1s;
+        transition: 1s;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1765,6 +1767,7 @@ body>div>section.about-us>div.online-shop>p {
         width: 100%;
         overflow-x: hidden;
         background-color: rgba(98, 98, 86, 0.434);
+
 
 
     }
