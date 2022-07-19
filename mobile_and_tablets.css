@@ -1985,9 +1985,9 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .description h2:nth-child(2) {
-        color: rgba(16, 16, 16, 0.935);
+        color: rgb(51, 220, 235);
         font-weight: 900;
-        text-shadow: none;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.886);
     }
 
     .description h2 {
