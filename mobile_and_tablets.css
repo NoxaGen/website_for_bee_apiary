@@ -1815,6 +1815,11 @@ body>div>section.about-us>div.online-shop>p {
         background-color: pink;
     }
 
+    .slider-desktop-main div {
+        width: 100%;
+        height: 100%;
+    }
+
 
 
     .bar {
@@ -2038,5 +2043,21 @@ body>div>section.about-us>div.online-shop>p {
         border-radius: 5%;
         text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
+
     }
+
+    .description .desc-movie {
+        position: absolute;
+        top: calc(100% + 85px + 220px);
+        /* margin: 20px; */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 400px;
+        background-color: green;
+    }
+
+
+
+
 }
