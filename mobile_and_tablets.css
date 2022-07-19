@@ -1771,7 +1771,7 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .panel-desktop {
-        position: absolute;
+        position: relative;
         top: 0%;
         left: 0%;
         width: 100vw;
@@ -1804,6 +1804,18 @@ body>div>section.about-us>div.online-shop>p {
         -webkit-filter: drop-shadow(3px 3px 4px rgba(32, 32, 32, 0.679));
         filter: drop-shadow(3px 3px 4px rgba(32, 32, 32, 0.679));
     }
+
+    .slider-desktop-main {
+        position: absolute;
+        left: 20%;
+        top: calc(55% + 450px);
+        transform: translateX(-50%);
+        width: 450px;
+        height: 450px;
+        background-color: pink;
+    }
+
+
 
     .bar {
         position: relative;
