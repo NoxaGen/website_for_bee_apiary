@@ -1751,10 +1751,18 @@ body>div>section.about-us>div.online-shop>p {
         display: none;
     }
 
+    body {
+        background-image: url(./desktop_background_images/bee_keeper.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .wrapper-desktop {
         height: 100%;
         width: 100%;
         overflow-x: hidden;
+        background-color: rgba(124, 124, 78, 0.434);
     }
 
     .panel-desktop {
@@ -1812,7 +1820,7 @@ body>div>section.about-us>div.online-shop>p {
         transform: translateX(-50%);
         width: 450px;
         height: 450px;
-        background-color: pink;
+        background-color: rgba(0, 0, 0, 0.185);
     }
 
     .slider-desktop-main div {
@@ -2058,6 +2066,7 @@ body>div>section.about-us>div.online-shop>p {
         z-index: 2;
         border-radius: 2%;
         overflow: hidden;
+        box-shadow: none;
     }
 
     .description .desc-movie video {
@@ -2065,6 +2074,7 @@ body>div>section.about-us>div.online-shop>p {
         z-index: 1;
         left: 50%;
         transform: translateX(-50%);
+        box-shadow: none;
     }
 
     .description .desc-movie .cover {
@@ -2075,7 +2085,9 @@ body>div>section.about-us>div.online-shop>p {
         left: 50%;
         transform: translateX(-50%);
         background-color: rgba(0, 0, 0, 0.452);
-
+        box-shadow: none;
+        overflow: hidden;
+        padding: 0px 5px;
     }
 
     .description .desc-movie:hover .cover {
