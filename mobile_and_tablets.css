@@ -2,10 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* outline: solid 1px red; */
 }
 
 html {
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 10px;
@@ -13,8 +14,9 @@ html {
 
 body {
     height: 100vh;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
     background-color: #54d5f8;
+    /* overflow: hidden; */
 
 
 }
@@ -1741,8 +1743,9 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 /* // Large devices (avarage desktops, 992px and up)  */
+/* and (max-height: 1022px) */
 
-@media (min-width: 1198px) and (max-height: 1022px) and (orientation: landscape) {
+@media (min-width: 1198px) and (orientation: landscape) {
 
     .wrapper-mobile-tablet {
         display: none;
@@ -1764,7 +1767,7 @@ body>div>section.about-us>div.online-shop>p {
 
     body {
         background-color: #54d5f8;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     .panel-desktop {
@@ -1881,6 +1884,7 @@ body>div>section.about-us>div.online-shop>p {
         width: 70%;
         height: 100%;
         z-index: 52;
+        overflow-x: hidden;
 
     }
 
