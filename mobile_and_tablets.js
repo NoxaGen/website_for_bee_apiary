@@ -191,7 +191,10 @@ function backgroundDesktopAuto() {
         imgCounter = 0;
     }
     imgCounter++;
+
     document.body.style.backgroundImage = imagesInnerHTML[imgCounter];
+    document.body.style.transition = "all 1s";
+
 }
 
 setInterval(backgroundDesktopAuto, 5000);
