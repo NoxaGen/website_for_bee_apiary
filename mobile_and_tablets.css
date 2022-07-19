@@ -1880,10 +1880,10 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .bar .navbar li:hover {
-        font-size: 20px;
+
         cursor: pointer;
-        color: rgba(0, 0, 0, 0.406);
-        background-color: rgba(235, 216, 153, 0.936);
+        color: rgb(243, 215, 10);
+        background-color: rgb(3, 3, 3);
     }
 
     header {
