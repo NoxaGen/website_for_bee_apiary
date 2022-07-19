@@ -187,13 +187,14 @@ const imagesInnerHTML = ["url('./desktop_background_images/bee_keeper.jpg')", "u
 let imgCounter = 0;
 
 function backgroundDesktopAuto() {
-    if (imgCounter === imagesInnerHTML.length - 1) {
+    if (imgCounter === imagesInnerHTML.length) {
         imgCounter = 0;
     }
-    imgCounter++;
+
 
     document.body.style.backgroundImage = imagesInnerHTML[imgCounter];
     document.body.style.transition = "all 1s";
+    imgCounter++;
 
 }
 
