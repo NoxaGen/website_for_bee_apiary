@@ -179,3 +179,19 @@ mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function 
 //     }
 // }
 // window.addEventListener('orientationchange', changeVideoSize);
+
+
+//PROGRAM FOR CHANGING DESKTOP BACKGROUND AUTOMATICLY
+
+const imagesInnerHTML = ["url('./desktop_background_images/bee_keeper.jpg')", "url('./desktop_background_images/bee_keeper2.jpg')", "url('./desktop_background_images/bee_keeper3.jpg')"];
+let imgCounter = 0;
+
+function backgroundDesktopAuto() {
+    if (imgCounter === imagesInnerHTML.length - 1) {
+        imgCounter = 0;
+    }
+    imgCounter++;
+    document.body.style.backgroundImage = imagesInnerHTML[imgCounter];
+}
+
+setInterval(backgroundDesktopAuto, 5000);
