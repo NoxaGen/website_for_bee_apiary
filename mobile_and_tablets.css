@@ -1974,7 +1974,7 @@ body>div>section.about-us>div.online-shop>p {
         justify-content: space-around;
         align-items: center;
         align-content: center;
-        left: 40.5%;
+        left: 0%;
         top: 125%;
         width: 56%;
         height: 220px;
@@ -2128,6 +2128,17 @@ body>div>section.about-us>div.online-shop>p {
         width: 90%;
         font-size: 3rem;
 
+    }
+
+    .main-content {
+        position: relative;
+        /* width: 50%; */
+        top: 10%;
+        left: 40%;
+        height: max-content;
+        z-index: 111;
+        background-color: pink;
+        /* overflow: hidden; */
     }
 
 }
