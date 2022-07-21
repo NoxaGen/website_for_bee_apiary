@@ -2015,8 +2015,14 @@ body>div>section.about-us>div.online-shop>p {
 
     }
 
+    .description h2:nth-child(1) {
+        animation: jumper-desktop 10s infinite;
+        animation-delay: 3s;
+    }
+
     .description h2 {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.886);
+
 
     }
 
@@ -2024,7 +2030,14 @@ body>div>section.about-us>div.online-shop>p {
         color: rgba(22, 22, 22, 0.856);
         font-weight: 900;
         font-size: 3rem;
+        animation: jumper-desktop 10s infinite;
+        animation-delay: 4s;
         /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.676); */
+    }
+
+    .description h2:nth-child(3) {
+        animation: jumper-desktop 10s infinite;
+        animation-delay: 5s;
     }
 
     .description h2 {
@@ -2071,18 +2084,26 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .desc-icons-container div:nth-child(1) {
+        animation: jumper-desktop 10s infinite;
+        animation-delay: 6s;
         background-image: url(./icons_quality_section/1.png);
     }
 
     .desc-icons-container div:nth-child(2) {
+        animation: jumper-desktop 10s infinite;
+        animation-delay: 7s;
         background-image: url(./icons_quality_section/2.png);
     }
 
     .desc-icons-container div:nth-child(3) {
+        animation: jumper-desktop 10s infinite;
+        animation-delay: 8s;
         background-image: url(./icons_quality_section/3.png);
     }
 
     .desc-icons-container div:nth-child(4) {
+        animation: jumper-desktop 10s infinite;
+        animation-delay: 9s;
         background-image: url(./icons_quality_section/4.png);
     }
 
@@ -2107,7 +2128,7 @@ body>div>section.about-us>div.online-shop>p {
     .main-content .desc-movie {
         position: relative;
         z-index: 2;
-        padding-top: 10px;
+
         cursor: pointer;
         overflow: hidden;
         border-radius: 2%;
@@ -2116,7 +2137,7 @@ body>div>section.about-us>div.online-shop>p {
         width: 100%;
         /* background-color: red; */
         box-shadow: none;
-        margin: 2vw 0vw;
+        margin-top: 30px;
         /* margin-bottom: 5%;
         margin-top: 5%; */
         background-image: url(./dekstop_movies/main_site_honey.mp4);
@@ -2131,6 +2152,7 @@ body>div>section.about-us>div.online-shop>p {
         transform: translateX(-50%) scale(120%);
         box-shadow: none; */
         position: relative;
+
         height: 400px;
         width: 100%;
         transform: scale(115%)
@@ -2271,4 +2293,28 @@ body>div>section.about-us>div.online-shop>p {
 
 
 
+}
+
+/* ANIMATION DESKTOP */
+
+@keyframes jumper-desktop {
+    0% {
+        transform: scale(108%);
+    }
+
+    5% {
+        transform: scale(108%);
+    }
+
+    25% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
 }
