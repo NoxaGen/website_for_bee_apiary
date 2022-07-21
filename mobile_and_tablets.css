@@ -2234,8 +2234,39 @@ body>div>section.about-us>div.online-shop>p {
         line-height: 250%;
     }
 
+    .foot-desk {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(2, 45, 93);
+        position: relative;
+        bottom: 0%;
+        margin-top: 20vh;
+        height: 100px;
+        padding: 10px;
+
+    }
+
+    .foot-desk h4 {
+        width: 100%;
+        color: rgb(255, 194, 0);
+        font-size: 1.5rem;
+        text-align: center;
 
 
+    }
+
+    .foot-desk h4 a {
+        text-decoration: none;
+        color: rgb(255, 194, 0);
+    }
+
+    .foot-desk p {
+        color: rgb(242, 234, 234);
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 5px;
+    }
 
 
 
