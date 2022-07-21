@@ -2182,7 +2182,7 @@ body>div>section.about-us>div.online-shop>p {
         font-family: 'Poppins', sans-serif;
         text-align: center;
 
-        color: rgba(0, 0, 0, 0.245);
+        color: rgb(18, 17, 17);
         text-shadow: 1px 1px 1px black;
         transform: translate(-50%, -50%);
         z-index: 11;
@@ -2196,6 +2196,48 @@ body>div>section.about-us>div.online-shop>p {
         color: rgb(255, 194, 0);
         text-shadow: 1px 1px 1px rgb(37, 37, 36);
     }
+
+    .panel-desktop .slider-desktop-main {
+        position: absolute;
+        border-radius: 10%;
+        overflow: hidden;
+        cursor: pointer;
+
+
+    }
+
+    .panel-desktop .slider-desktop-main video {
+        opacity: 0.7;
+    }
+
+    .panel-desktop .slider-desktop-main h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+        opacity: 1;
+        z-index: 12;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        color: rgb(255, 194, 0);
+        text-shadow: 0px 0px 5px black;
+        line-height: 200%;
+        opacity: 1;
+
+        transition: 1s;
+    }
+
+    .panel-desktop .slider-desktop-main:hover h2 {
+        opacity: 1;
+        line-height: 250%;
+    }
+
+
+
+
+
 
 
 }
