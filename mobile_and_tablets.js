@@ -199,3 +199,21 @@ function backgroundDesktopAuto() {
 }
 
 setInterval(backgroundDesktopAuto, 5000);
+
+
+
+//test prog
+
+let testDiv = [...document.querySelectorAll('.desc-icons-container div')];
+
+// function divGuardDesktop() {
+//     testDiv.forEach(test => {
+//         test.style.width = test.style.height + 'px';
+//         // console.log(test.style.width);
+//         // console.log(test.client.height);
+//     });
+
+
+// }
+
+// document.addEventListener('load', divGuardDesktop);
