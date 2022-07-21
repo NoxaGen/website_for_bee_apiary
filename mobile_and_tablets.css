@@ -1979,7 +1979,7 @@ body>div>section.about-us>div.online-shop>p {
         width: 58%;
         /* height: 60vh; */
         z-index: 111;
-        background-color: pink;
+        /* background-color: pink; */
         /* overflow: hidden; */
         /* max-width: 800px; */
         /* height: 120vh; */
@@ -2114,7 +2114,7 @@ body>div>section.about-us>div.online-shop>p {
         height: 400px;
         max-height: 400px;
         width: 100%;
-        background-color: red;
+        /* background-color: red; */
         box-shadow: none;
         margin: 2vw 0vw;
         /* margin-bottom: 5%;
@@ -2174,15 +2174,28 @@ body>div>section.about-us>div.online-shop>p {
         height: 0%;
     }
 
+
     .main-content .desc-movie h3 {
         position: absolute;
         top: 50%;
         left: 50%;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+
+        color: rgba(0, 0, 0, 0.245);
+        text-shadow: 1px 1px 1px black;
         transform: translate(-50%, -50%);
-        z-index: 1110;
+        z-index: 11;
         width: 90%;
         font-size: 3rem;
+        transition: 1s;
 
     }
+
+    .main-content .desc-movie:hover h3 {
+        color: rgb(255, 194, 0);
+        text-shadow: 1px 1px 1px rgb(37, 37, 36);
+    }
+
 
 }
