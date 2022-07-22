@@ -2263,15 +2263,15 @@ body>div>section.about-us>div.online-shop>p {
     }
 
 
-    .wrapper-desktop .foot-desk {
-        position: absolute;
+    .foot-desk {
+        position: relative;
         display: flex;
         flex-direction: column;
         font-family: 'Poppins', sans-serif;
         background-color: rgb(2, 45, 93);
         /* position: relative; */
-        top: 100%;
-        width: 100%;
+        bottom: 0%;
+        width: 100vw;
 
         z-index: 1;
         /* margin-top: 20vh; */
