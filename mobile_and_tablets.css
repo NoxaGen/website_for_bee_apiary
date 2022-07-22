@@ -1769,6 +1769,7 @@ body>div>section.about-us>div.online-shop>p {
         min-height: 100%;
         overflow-x: hidden;
         background-color: rgba(98, 98, 86, 0.434);
+        position: relative;
 
 
 
@@ -1969,11 +1970,13 @@ body>div>section.about-us>div.online-shop>p {
     }
 
 
-    .main-content {
+    .main-content,
+    .honeys-desktop {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         /* width: 50%; */
         top: 10%;
         left: 40%;
@@ -1987,10 +1990,17 @@ body>div>section.about-us>div.online-shop>p {
         min-width: 700px;
         margin-bottom: 100px;
 
-        display: block;
 
 
     }
+
+    .main-content {
+        display: none;
+    }
+
+
+
+
 
 
     .description {
@@ -2271,10 +2281,11 @@ body>div>section.about-us>div.online-shop>p {
         background-color: rgb(2, 45, 93);
         /* position: relative; */
         bottom: 0%;
+        transform: translateY(50%);
         width: 100vw;
 
         z-index: 1;
-        /* margin-top: 20vh; */
+        margin-top: 30px;
         height: 100px;
         padding: 10px;
         overflow: hidden;
@@ -2310,7 +2321,28 @@ body>div>section.about-us>div.online-shop>p {
 
 /* DESKTOP-HONEY-CONTAINER */
 
+/* <section class="honeys-desktop">
+<div class="multiflorous-spring"></div>
+<div class="multiflorous-summer"></div>
+<div class="acacia"></div>
+<div class="linden-tree"></div>
+</section> */
 
+.honeys-desktop {
+    /* background-color: rgba(255, 0, 0, 0.746); */
+    min-height: 100vh;
+    height: 140vh;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.honeys-desktop div {
+    width: 100%;
+    height: 22%;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.245);
+    z-index: 112;
+}
 
 
 
