@@ -2342,6 +2342,31 @@ body>div>section.about-us>div.online-shop>p {
     border-radius: 5%;
     background-color: rgba(0, 0, 0, 0.245);
     z-index: 112;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.honeys-desktop .multiflorous-spring {
+    background-image: url(./desktop_honeys_section/2.jpg);
+
+}
+
+.honeys-desktop .multiflorous-summer {
+    background-image: url(./desktop_honeys_section/1.jpg);
+}
+
+.honeys-desktop .acacia {
+    background-image: url(./desktop_honeys_section/3.jpg);
+}
+
+.honeys-desktop .linden-tree {
+    background-image: url(./desktop_honeys_section/4.jpg);
+}
+
+.honeys-desktop div h2 {
+    font-family: ;
 }
 
 
