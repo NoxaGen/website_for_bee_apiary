@@ -1972,7 +1972,7 @@ body>div>section.about-us>div.online-shop>p {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         /* width: 50%; */
         top: 10%;
         left: 40%;
@@ -2064,13 +2064,14 @@ body>div>section.about-us>div.online-shop>p {
 
     .desc-icons-container div {
         /* position: relative; */
-
+        width: 170px;
+        height: 170px;
 
         position: relative;
-        width: 22%;
+        /* width: 22%;
         padding-bottom: 22%;
-        /* padding: 11%; */
-        height: same-as-width;
+       
+        height: same-as-width; */
         margin: 10px 0px;
         border-radius: 5%;
         background-color: rgba(0, 0, 0, 0.245);
@@ -2256,12 +2257,14 @@ body>div>section.about-us>div.online-shop>p {
         line-height: 250%;
     }
 
+
     .foot-desk {
         display: flex;
         flex-direction: column;
         font-family: 'Poppins', sans-serif;
         background-color: rgb(2, 45, 93);
         position: relative;
+        /* bottom: 0%; */
         bottom: 0%;
         margin-top: 20vh;
         height: 100px;
