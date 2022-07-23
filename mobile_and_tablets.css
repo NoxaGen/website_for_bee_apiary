@@ -2472,6 +2472,12 @@ body>div>section.about-us>div.online-shop>p {
 
 }
 
+.honeys-desktop .multi-spring-icons div:hover,
+.honeys-desktop .multi-summer-icons div:hover,
+.honeys-desktop .acacia-icons div:hover,
+.honeys-desktop .linden-icons div:hover {
+    transform: scale(120%);
+}
 
 
 .honeys-desktop div p {
