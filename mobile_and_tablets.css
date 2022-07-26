@@ -2090,6 +2090,7 @@ body>div>section.about-us>div.online-shop>p {
     }
 
 
+
     .local-store-desktop .info-with-photo .house-info p {
         font-family: 'Poppins', sans-serif;
         font-size: 2.3rem;
@@ -2118,7 +2119,11 @@ body>div>section.about-us>div.online-shop>p {
     } */
 
     .local-store-desktop .info-with-photo .house-photo {
-        background-color: rgba(0, 68, 255, 0.188);
+        background-image: url(./desktop_images/house_store_photo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 3%;
         width: 47.5%;
         height: 100%;
     }
