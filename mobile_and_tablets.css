@@ -2069,6 +2069,7 @@ body>div>section.about-us>div.online-shop>p {
         align-content: space-between;
         margin-top: 30px;
         width: 100%;
+        max-width: 100%;
         height: 600px;
         /* background-color: rgba(0, 128, 0, 0.219); */
         padding: 0px;
@@ -2078,6 +2079,7 @@ body>div>section.about-us>div.online-shop>p {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        flex-wrap: nowrap;
         align-items: center;
         justify-items: center;
         text-align: center;
@@ -2137,6 +2139,7 @@ body>div>section.about-us>div.online-shop>p {
         /* position: relative; */
         display: flex;
         flex-flow: column;
+
         justify-content: space-around;
         align-items: center;
         align-content: center;
@@ -2158,6 +2161,15 @@ body>div>section.about-us>div.online-shop>p {
 
 
 
+    }
+
+    .local-store-desktop .desktop-map {
+        margin-top: 30px;
+        border-radius: 3%;
+        overflow: hidden;
+        height: 400px;
+        width: 100%;
+        background-color: red;
     }
 
     .description h2:nth-child(1) {
