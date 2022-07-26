@@ -33,9 +33,9 @@ body {
     overflow-x: hidden;
 }
 
-/* .wrapper-desktop {
+.wrapper-desktop {
     display: none;
-} */
+}
 
 .panel-desktop {
     display: none;
@@ -48,6 +48,19 @@ body {
 .honeys-desktop {
     display: none;
 }
+
+.local-store-desktop {
+    display: none;
+}
+
+.slider-desktop-main {
+    display: none;
+}
+
+.main-content {
+    display: none;
+}
+
 
 
 /* .hamburger {
@@ -1819,6 +1832,8 @@ body>div>section.about-us>div.online-shop>p {
         overflow-x: hidden;
         background-color: rgba(98, 98, 86, 0.434);
         position: relative;
+        display: block;
+        ;
 
 
 
@@ -1886,6 +1901,7 @@ body>div>section.about-us>div.online-shop>p {
         width: 450px;
         height: 450px;
         background-color: rgba(0, 0, 0, 0.185);
+        display: block;
     }
 
     .slider-desktop-main div {
@@ -2050,6 +2066,7 @@ body>div>section.about-us>div.online-shop>p {
         min-height: 100vh;
         display: block;
         /* background-color: rgba(0, 0, 0, 0.245); */
+        display: none;
     }
 
     .local-store-desktop .store-info {
@@ -2303,6 +2320,10 @@ body>div>section.about-us>div.online-shop>p {
         /* box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886); */
 
 
+    }
+
+    .online-shop-desktop {
+        min-height: 100vh;
     }
 
     .main-content .desc-movie {
