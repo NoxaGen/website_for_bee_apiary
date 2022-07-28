@@ -2721,7 +2721,8 @@ body>div>section.about-us>div.online-shop>p {
 
 .about-us-desktop .members,
 .about-us .bees,
-.about-us .honey {
+.about-us .honey,
+.about-us .authenticity {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -2733,7 +2734,8 @@ body>div>section.about-us>div.online-shop>p {
 .owner-info,
 .sub-owner-info,
 .bees-info,
-.honey-info {
+.honey-info,
+.authenticity-info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2751,7 +2753,8 @@ body>div>section.about-us>div.online-shop>p {
 .owner-icon,
 .sub-owner-icon,
 .bees-icon,
-.honey-icon {
+.honey-icon,
+.authenticity-icon {
     position: relative;
     width: 35%;
     height: 200px;
@@ -2762,7 +2765,8 @@ body>div>section.about-us>div.online-shop>p {
 .owner-icon .icon-container,
 .sub-owner-icon .icon-container,
 .bees-icon .icon-container,
-.honey-icon .icon-container {
+.honey-icon .icon-container,
+.authenticity-icon .icon-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2776,7 +2780,8 @@ body>div>section.about-us>div.online-shop>p {
 
 .sub-owner-icon,
 .bees-icon,
-.honey-icon {
+.honey-icon,
+.authenticity-icon {
     margin-top: 20px;
 }
 
@@ -2792,10 +2797,15 @@ body>div>section.about-us>div.online-shop>p {
     background-image: url(./about_section/bee_store.png);
 }
 
+.authenticity-icon .icon-container {
+    background-image: url(./about_section/certificate.png);
+}
+
 .owner .name-and-status,
 .sub-owner .name-and-status,
 .bees .bees-description,
-.honey .honey-description {
+.honey .honey-description,
+.authenticity .authenticity-description {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.245);
@@ -2810,7 +2820,8 @@ body>div>section.about-us>div.online-shop>p {
 
 .sub-owner .name-and-status,
 .bees .bees-description,
-.honey .honey-description {
+.honey .honey-description,
+.authenticity .authenticity-description {
     margin-top: 20px;
 }
 
@@ -2821,7 +2832,9 @@ body>div>section.about-us>div.online-shop>p {
 .bees .bees-description h3,
 .bees .bees-description p,
 .honey .honey-description h3,
-.honey .honey-description p {
+.honey .honey-description p,
+.authenticity .authenticity-description h3,
+.authenticity .authenticity-description p {
     font-size: 2.3rem;
     color: rgb(255, 194, 0);
     text-shadow: 0px 0px 5px black;
@@ -2838,7 +2851,8 @@ body>div>section.about-us>div.online-shop>p {
 .owner .name-and-status h4,
 .sub-owner .name-and-status h4,
 .bees .bees-description h4,
-.honey .honey-description h4 {
+.honey .honey-description h4,
+.authenticity .authenticity-description h4 {
     font-size: 2rem;
     color: rgb(10, 10, 10);
     background-color: rgba(255, 196, 0, 0.567);
@@ -2853,7 +2867,8 @@ body>div>section.about-us>div.online-shop>p {
 .owner .owner-desc,
 .sub-owner .sub-owner-desc,
 .bees .bees-desc,
-.honey .honey-desc {
+.honey .honey-desc,
+.authenticity .authenticity-desc {
     margin-top: 20px;
     font-size: 1.8rem;
     color: rgb(255, 194, 0);
