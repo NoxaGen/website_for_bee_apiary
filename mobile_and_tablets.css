@@ -2034,11 +2034,13 @@ body>div>section.about-us>div.online-shop>p {
         color: rgb(243, 238, 238)
     }
 
+    /* PANEL FOR ALL SECTIONS, NO SUBPAGES, ALL WILL CHANGE DYNAMICLY IN JS */
 
     .main-content,
     .honeys-desktop,
     .local-store-desktop,
-    .online-shop-desktop {
+    .online-shop-desktop,
+    .about-us-desktop {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -2062,19 +2064,18 @@ body>div>section.about-us>div.online-shop>p {
 
     }
 
+    .about-us-desktop {
+        display: block;
+    }
+
 
     /* LOCAL STORE AREA */
 
 
-    .local-store-desktop {
-        min-height: 100vh;
-        display: block;
-        /* background-color: rgba(0, 0, 0, 0.245); */
-        display: none;
-    }
 
     .local-store-desktop .store-info,
-    .online-shop-info {
+    .online-shop-info,
+    .about-us-desktop .about-us-header {
         width: 100%;
         height: 240px;
         background-color: rgba(0, 0, 0, 0.245);
@@ -2082,21 +2083,24 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .local-store-desktop .store-info p,
-    .online-shop-info p {
+    .online-shop-info p,
+    .about-us-desktop .about-us-header p {
         font-size: 2.5rem;
         font-weight: 800;
         letter-spacing: 2px;
     }
 
     .local-store-desktop .store-info p:nth-child(1),
-    .online-shop-info p:nth-child(1) {
+    .online-shop-info p:nth-child(1),
+    .about-us-desktop .about-us-header p:nth-child(1) {
         animation: jumper-desktop 10s infinite;
         animation-delay: 3s;
 
     }
 
     .local-store-desktop .store-info p:nth-child(2),
-    .online-shop-info p:nth-child(2) {
+    .online-shop-info p:nth-child(2),
+    .about-us-desktop .about-us-header p:nth-child(2) {
         color: rgb(0, 0, 0);
         text-shadow: 0px 0px 0px rgb(0, 0, 0);
         animation: jumper-desktop 10s infinite;
@@ -2104,7 +2108,8 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .local-store-desktop .store-info p:nth-child(3),
-    .online-shop-info p:nth-child(3) {
+    .online-shop-info p:nth-child(3),
+    .about-us-desktop .about-us-header p:nth-child(3) {
         animation: jumper-desktop 10s infinite;
         animation-delay: 5s;
     }
@@ -2186,10 +2191,7 @@ body>div>section.about-us>div.online-shop>p {
 
     /* ONLINE-SHOP AREA */
 
-    .online-shop-desktop {
 
-        display: block;
-    }
 
     .online-shop-desktop .how-to-order {
 
@@ -2224,7 +2226,8 @@ body>div>section.about-us>div.online-shop>p {
 
     .description,
     .local-store-desktop .store-info,
-    .online-shop-desktop .online-shop-info {
+    .online-shop-desktop .online-shop-info,
+    .about-us-desktop .about-us-header {
         /* position: relative; */
         display: flex;
         flex-flow: column;
@@ -2705,6 +2708,17 @@ body>div>section.about-us>div.online-shop>p {
 
 }
 
+/* ABOUT-US DESKTOP AREA */
+
+.about-us-desktop .members {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.245);
+    border-radius: 3%;
+}
 
 
 
