@@ -2713,14 +2713,54 @@ body>div>section.about-us>div.online-shop>p {
 .about-us-desktop .members {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 500px;
     width: 100%;
     margin-top: 30px;
+    /* background-color: rgba(0, 0, 0, 0.245); */
+    border-radius: 3%;
+}
+
+.owner-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.owner-info .name-and-status {
+    width: 60%;
+    height: 200px;
+    background-color: pink;
+}
+
+.owner-icon {
+    position: relative;
+    width: 35%;
+    height: 200px;
+    /* background-color: green; */
     background-color: rgba(0, 0, 0, 0.245);
     border-radius: 3%;
 }
 
+.owner-icon .icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 180px;
+    width: 180px;
+    background-image: url(./about_section/beekeeper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.owner .name-and-status {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.245);
+    border-radius: 3%;
+}
 
 
 
