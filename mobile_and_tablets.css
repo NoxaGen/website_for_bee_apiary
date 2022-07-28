@@ -2719,7 +2719,8 @@ body>div>section.about-us>div.online-shop>p {
     padding-left: 0px;
 }
 
-.about-us-desktop .members {
+.about-us-desktop .members,
+.about-us .bees {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -2733,7 +2734,8 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .owner-info,
-.sub-owner-info {
+.sub-owner-info,
+.bee-houses-info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2741,14 +2743,16 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .owner-info .name-and-status,
-.sub-owner-info .name-and-status {
+.sub-owner-info .name-and-status,
+.bee-description {
     width: 60%;
     height: 200px;
     /* background-color: pink; */
 }
 
 .owner-icon,
-.sub-owner-icon {
+.sub-owner-icon,
+.bee-icon {
     position: relative;
     width: 35%;
     height: 200px;
@@ -2758,7 +2762,8 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .owner-icon .icon-container,
-.sub-owner-icon .icon-container {
+.sub-owner-icon .icon-container,
+.bee-icon .icon-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2770,7 +2775,8 @@ body>div>section.about-us>div.online-shop>p {
     background-repeat: no-repeat;
 }
 
-.sub-owner-icon {
+.sub-owner-icon,
+.bee-icon {
     margin-top: 20px;
 }
 
@@ -2778,8 +2784,13 @@ body>div>section.about-us>div.online-shop>p {
     background-image: url(./about_section/salesman.png);
 }
 
+.bee-icon .icon-container {
+    background-image: url(./about_section/bee_house.png);
+}
+
 .owner .name-and-status,
-.sub-owner .name-and-status {
+.sub-owner .name-and-status,
+.bees .bee-description {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.245);
@@ -2789,14 +2800,17 @@ body>div>section.about-us>div.online-shop>p {
     align-items: center;
 }
 
-.sub-owner .name-and-status {
+.sub-owner .name-and-status,
+.bees .bee-description {
     margin-top: 20px;
 }
 
 .owner .name-and-status h3,
 .owner .name-and-status p,
 .sub-owner .name-and-status h3,
-.sub-owner .name-and-status p {
+.sub-owner .name-and-status p,
+.bees .bee-description h3,
+.bees .bee-description p {
     font-size: 2.3rem;
     color: rgb(255, 194, 0);
     text-shadow: 0px 0px 5px black;
@@ -2806,12 +2820,14 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .owner .name-and-status p,
-.sub-owner .name-and-status p {
+.sub-owner .name-and-status p,
+.bees .bee-description p {
     font-size: 1.8rem;
 }
 
 .owner .name-and-status h4,
-.sub-owner .name-and-status h4 {
+.sub-owner .name-and-status h4,
+.bees .bee-description h4 {
     font-size: 2rem;
     color: rgb(10, 10, 10);
     background-color: rgba(255, 196, 0, 0.567);
@@ -2824,7 +2840,8 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .owner .owner-desc,
-.sub-owner .sub-owner-desc {
+.sub-owner .sub-owner-desc,
+.bees .bees-desc {
     margin-top: 20px;
     font-size: 1.8rem;
     color: rgb(255, 194, 0);
@@ -2834,7 +2851,43 @@ body>div>section.about-us>div.online-shop>p {
     text-align: justify;
     font-family: 'Poppins', sans-serif;
     background-color: rgba(0, 0, 0, 0.245);
+    border-radius: 3%;
 }
+
+.bees .bees-desc .bee-spots {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.bees .bees-desc .bee-spots p:nth-child(1) {
+    margin-bottom: 15px;
+    color: rgb(10, 10, 10);
+    background-color: rgba(255, 196, 0, 0.567);
+    text-shadow: 0px 0px 0px black;
+    font-weight: 700;
+    width: 100%;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 3%;
+}
+
+.bees .bees-desc p:nth-child(2),
+.bees .bees-desc p:nth-child(3),
+.bees .bees-desc p:nth-child(4) {
+    width: 30%;
+    padding: 5px 0px;
+}
+
+.bees .bees-desc .bee-spots {
+    margin-top: 20px;
+    /* width: 100%; */
+    text-align: center;
+}
+
+
 
 /* ANIMATION DESKTOP */
 
