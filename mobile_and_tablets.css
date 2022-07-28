@@ -2710,31 +2710,45 @@ body>div>section.about-us>div.online-shop>p {
 
 /* ABOUT-US DESKTOP AREA */
 
+.about-us-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
 .about-us-desktop .members {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 500px;
+    /* align-items: center;
+    align-content: center; */
+    /* height: 500px; */
     width: 100%;
-    margin-top: 20px;
+    margin: 20px;
     /* background-color: rgba(0, 0, 0, 0.245); */
     border-radius: 3%;
 }
 
-.owner-info {
+.owner-info,
+.sub-owner-info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.owner-info .name-and-status {
+.owner-info .name-and-status,
+.sub-owner-info .name-and-status {
     width: 60%;
     height: 200px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
-.owner-icon {
+.owner-icon,
+.sub-owner-icon {
     position: relative;
     width: 35%;
     height: 200px;
@@ -2743,7 +2757,8 @@ body>div>section.about-us>div.online-shop>p {
     border-radius: 3%;
 }
 
-.owner-icon .icon-container {
+.owner-icon .icon-container,
+.sub-owner-icon .icon-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2755,7 +2770,16 @@ body>div>section.about-us>div.online-shop>p {
     background-repeat: no-repeat;
 }
 
-.owner .name-and-status {
+.sub-owner-icon {
+    margin-top: 20px;
+}
+
+.sub-owner-icon .icon-container {
+    background-image: url(./about_section/salesman.png);
+}
+
+.owner .name-and-status,
+.sub-owner .name-and-status {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.245);
@@ -2765,8 +2789,14 @@ body>div>section.about-us>div.online-shop>p {
     align-items: center;
 }
 
+.sub-owner .name-and-status {
+    margin-top: 20px;
+}
+
 .owner .name-and-status h3,
-.owner .name-and-status p {
+.owner .name-and-status p,
+.sub-owner .name-and-status h3,
+.sub-owner .name-and-status p {
     font-size: 2.3rem;
     color: rgb(255, 194, 0);
     text-shadow: 0px 0px 5px black;
@@ -2775,11 +2805,13 @@ body>div>section.about-us>div.online-shop>p {
     text-align: center;
 }
 
-.owner .name-and-status p {
+.owner .name-and-status p,
+.sub-owner .name-and-status p {
     font-size: 1.8rem;
 }
 
-.owner .name-and-status h4 {
+.owner .name-and-status h4,
+.sub-owner .name-and-status h4 {
     font-size: 2rem;
     color: rgb(10, 10, 10);
     background-color: rgba(255, 196, 0, 0.567);
@@ -2791,7 +2823,8 @@ body>div>section.about-us>div.online-shop>p {
     width: 80%;
 }
 
-.owner .owner-desc {
+.owner .owner-desc,
+.sub-owner .sub-owner-desc {
     margin-top: 20px;
     font-size: 1.8rem;
     color: rgb(255, 194, 0);
