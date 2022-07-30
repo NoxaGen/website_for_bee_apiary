@@ -285,6 +285,8 @@ p {
     top: 20%;
 }
 
+
+
 .products-with-benefits .promotion p {
     position: absolute;
     top: 200%;
@@ -1249,6 +1251,16 @@ body>div>section.about-us>div.online-shop>p {
 
     .info p {
         font-size: 1.3rem;
+    }
+
+    .products-with-benefits .introduction h2 {
+        z-index: 10;
+        /* margin-top: 50vh; */
+        /* transform: translateY(20%); */
+    }
+
+    body>div.wrapper-mobile-tablet>section.products-with-benefits>div.introduction>h2>div {
+        display: none;
     }
 
     .products-with-benefits .introduction {
@@ -2654,7 +2666,7 @@ body>div>section.about-us>div.online-shop>p {
     background-image: url(./desktop_honeys_section/3.jpg);
 }
 
-.honeys-desktop .linden-tree {
+.honeys-desktop .linden-tree-desktop {
     background-image: url(./desktop_honeys_section/4.jpg);
 }
 
