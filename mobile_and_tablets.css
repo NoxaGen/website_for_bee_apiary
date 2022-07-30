@@ -996,6 +996,7 @@ p {
 .slider-desktop .next {
     width: 70px;
     height: 70px;
+    cursor: pointer;
 }
 
 .slider-mobile .prev i,
