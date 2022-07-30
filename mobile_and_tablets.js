@@ -217,3 +217,93 @@ let testDiv = [...document.querySelectorAll('.desc-icons-container div')];
 // }
 
 // document.addEventListener('load', divGuardDesktop);
+
+
+// SLIDER DESKTOP (ALMOST THE SAME WORKING LIKE IN MOBILE)
+
+const sliderDesktopImgs = [...document.querySelectorAll('.slider-desktop img')];
+const sliderDesktopDots = [...document.querySelectorAll('.slider-desktop .dots div')];
+const btnPrevD = document.querySelector('.slider-desktop .prev');
+const btnNextD = document.querySelector('.slider-desktop .next');
+
+let sliderCounterD = 0;
+let dotsCounterD = 0;
+
+function nextDotD() {
+    const changeDot = sliderDesktopDots.findIndex(dot => dot.classList.contains('active-dot'));
+    sliderDesktopDots[changeDot].classList.remove('active-dot');
+    dotsCounterD++;
+    if (dotsCounterD === sliderDesktopDots.length) {
+        dotsCounterD = 0;
+    }
+    sliderDesktopDots[dotsCounter].classList.add('active-dot');
+}
+
+function prevDotD() {
+    if (dotsCounterD > 0) {
+        dotsCounterD--;
+
+    } else if (dotsCounterD <= 0) {
+        dotsCounterD = sliderDesktopDots.length - 1;
+
+    }
+    const changeDot = slideDesktopeDots.findIndex(dot => dot.classList.contains('active-dot'));
+    sliderDesktopDots[changeDot].classList.remove('active-dot');
+    sliderDesktopDots[dotsCounterD].classList.add('active-dot');
+}
+
+let autoDotsD = setInterval(nextDotD, 4500)
+
+function nextSlideD() {
+    const changeImage = sliderDesktopImgs.findIndex(img => img.classList.contains('img-active'));
+    sliderDesktopImgs[changeImage].classList.remove('img-active');
+    sliderCounterD++;
+    if (sliderCounterD === sliderMobileImgs.length) {
+        sliderCounterD = 0;
+    }
+    sliderDesktopImgs[sliderCounterD].classList.add('img-active');
+};
+
+function prevSlideD() {
+    if (sliderCounterD > 0) {
+        sliderCounterD--;
+
+    } else if (sliderCounterD <= 0) {
+        sliderCounterD = sliderDesktopImgs.length - 1; //cause index != lenght
+    }
+    const changeImage = sliderDesktopImgs.findIndex(img => img.classList.contains('img-active'));
+    sliderDesktopImgs[changeImage].classList.remove('img-active');
+    sliderDesktopImgs[sliderCounterD].classList.add('img-active');
+}
+//assign it to var to get index for recall
+let autoSlideD = setInterval(nextSlideD, 4500)
+
+
+function nextArrowD() {
+    cleanerD();
+    nextSlideD();
+    nextDoD();
+    setterD();
+}
+
+function prevArrowD() {
+    cleanerD();
+    prevSlideD();
+    prevDotD();
+    setterD();
+}
+
+btnNextD.addEventListener('click', nextArrowD);
+btnPrevD.addEventListener('click', prevArrowD);
+
+//cleaning interval after user change slide manualy
+function cleanerD() {
+    clearInterval(autoDotsD);
+    clearInterval(autoSlideD);
+}
+
+//after 3 seconds of inactivity interval will back to auto
+function setterD() {
+    autoDotsD = setInterval(nextDotD, 4500);
+    autoSlideD = setInterval(nextSlideD, 4500);
+}
