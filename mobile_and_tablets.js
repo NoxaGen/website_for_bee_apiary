@@ -310,10 +310,10 @@ const navOptionsLi = [...document.querySelectorAll('.wrapper-desktop .navbar ul 
 const mainContentD = document.querySelector('.main-content');
 const honeysD = document.querySelector('.honeys-desktop');
 const localStoreD = document.querySelector('.local-store-desktop');
-const onlineShopD = document.querySelector('online-shop-desktop');
-const aboutUsD = document.querySelector('about-us-desktop');
+const onlineShopD = document.querySelector('.online-shop-desktop');
+const aboutUsD = document.querySelector('.about-us-desktop');
 
-const desktopContents = [...document.querySelectorAll('')]
+const desktopContents = [mainContentD, honeysD, localStoreD, onlineShopD, aboutUsD];
 
 function contentChanger() {
     console.log(this.dataset.deskOption);
