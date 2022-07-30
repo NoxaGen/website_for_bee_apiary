@@ -282,7 +282,7 @@ let autoSlideD = setInterval(nextSlideD, 4500)
 function nextArrowD() {
     cleanerD();
     nextSlideD();
-    nextDoD();
+    nextDotD();
     setterD();
 }
 
