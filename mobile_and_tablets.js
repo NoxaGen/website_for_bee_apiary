@@ -167,7 +167,7 @@ mobileMenuLis.forEach(liElement => liElement.addEventListener('click', function 
 
 //PROGRAM FOR CHANGING VIDEO MOBILE LANDSCAPE
 
-//we leave it for later
+//we leave it for later, if client want it becaue hes not decided
 
 // const mobileVideo = document.querySelector('.movie-mobile video');
 
@@ -200,9 +200,7 @@ function backgroundDesktopAuto() {
 
 setInterval(backgroundDesktopAuto, 5000);
 
-
-
-//test prog
+//PROGRAM FOR TEST SIZE OF ICONS - leave it for later
 
 let testDiv = [...document.querySelectorAll('.desc-icons-container div')];
 
@@ -212,10 +210,7 @@ let testDiv = [...document.querySelectorAll('.desc-icons-container div')];
 //         // console.log(test.style.width);
 //         // console.log(test.client.height);
 //     });
-
-
 // }
-
 // document.addEventListener('load', divGuardDesktop);
 
 
@@ -307,3 +302,26 @@ function setterD() {
     autoDotsD = setInterval(nextDotD, 4500);
     autoSlideD = setInterval(nextSlideD, 4500);
 }
+
+//DESKTOP NAVIGATION BAR PROGRAM
+//whole website working without subpages, content will change dynamicaly
+
+const navOptionsLi = [...document.querySelectorAll('.wrapper-desktop .navbar ul li')];
+const mainContentD = document.querySelector('.main-content');
+const honeysD = document.querySelector('.honeys-desktop');
+const localStoreD = document.querySelector('.local-store-desktop');
+const onlineShopD = document.querySelector('online-shop-desktop');
+const aboutUsD = document.querySelector('about-us-desktop');
+
+const desktopContents = [...document.querySelectorAll('')]
+
+function contentChanger() {
+    console.log(this.dataset.deskOption);
+    if (this.dataset.deskOption === 'main') {
+
+    }
+
+
+};
+
+navOptionsLi.forEach(li => li.addEventListener('click', contentChanger));
