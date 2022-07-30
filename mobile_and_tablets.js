@@ -236,7 +236,7 @@ function nextDotD() {
     if (dotsCounterD === sliderDesktopDots.length) {
         dotsCounterD = 0;
     }
-    sliderDesktopDots[dotsCounter].classList.add('active-dot');
+    sliderDesktopDots[dotsCounterD].classList.add('active-dot');
 }
 
 function prevDotD() {
@@ -247,7 +247,7 @@ function prevDotD() {
         dotsCounterD = sliderDesktopDots.length - 1;
 
     }
-    const changeDot = slideDesktopeDots.findIndex(dot => dot.classList.contains('active-dot'));
+    const changeDot = sliderDesktopDots.findIndex(dot => dot.classList.contains('active-dot'));
     sliderDesktopDots[changeDot].classList.remove('active-dot');
     sliderDesktopDots[dotsCounterD].classList.add('active-dot');
 }
@@ -258,7 +258,7 @@ function nextSlideD() {
     const changeImage = sliderDesktopImgs.findIndex(img => img.classList.contains('img-active'));
     sliderDesktopImgs[changeImage].classList.remove('img-active');
     sliderCounterD++;
-    if (sliderCounterD === sliderMobileImgs.length) {
+    if (sliderCounterD === sliderDesktopImgs.length) {
         sliderCounterD = 0;
     }
     sliderDesktopImgs[sliderCounterD].classList.add('img-active');
