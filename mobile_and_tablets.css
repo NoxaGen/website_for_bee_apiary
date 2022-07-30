@@ -61,7 +61,9 @@ body {
     display: none;
 }
 
-
+.about-us-desktop {
+    display: none;
+}
 
 /* .hamburger {
     position: fixed;
@@ -2096,9 +2098,8 @@ body>div>section.about-us>div.online-shop>p {
 
     }
 
-    .about-us-desktop {
-        display: block;
-    }
+
+
 
 
     /* LOCAL STORE AREA */
@@ -2968,7 +2969,23 @@ body>div>section.about-us>div.online-shop>p {
 
 }
 
+.about-us-desktop {
+    display: none;
 
+}
+
+.honeys-desktop {
+    display: none;
+}
+
+.main-content {
+    display: block;
+
+}
+
+/* body {
+    max-width: 1440px;
+} */
 
 /* ANIMATION DESKTOP */
 
