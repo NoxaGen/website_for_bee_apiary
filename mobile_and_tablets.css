@@ -2659,14 +2659,17 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .honeys-desktop .multiflorous-summer {
+    margin-top: 30px;
     background-image: url(./desktop_honeys_section/1.jpg);
 }
 
 .honeys-desktop .acacia {
+    margin-top: 30px;
     background-image: url(./desktop_honeys_section/3.jpg);
 }
 
 .honeys-desktop .linden-tree-desktop {
+    margin-top: 30px;
     background-image: url(./desktop_honeys_section/4.jpg);
 }
 
