@@ -2914,6 +2914,28 @@ body>div>section.about-us>div.online-shop>p {
     text-align: center;
 }
 
+.authenticity-desktop .adress-number-id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.authenticity-desktop .adress-number-id p {
+    padding: 5px;
+}
+
+.authenticity-desktop .adress-number-id p:nth-child(odd) {
+    color: rgb(10, 10, 10);
+    background-color: rgba(255, 196, 0, 0.567);
+    text-shadow: 0px 0px 0px black;
+    width: 40%;
+    text-align: center;
+    border-radius: 5%;
+
+}
+
 
 
 /* ANIMATION DESKTOP */
