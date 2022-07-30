@@ -316,10 +316,20 @@ const aboutUsD = document.querySelector('.about-us-desktop');
 const desktopContents = [mainContentD, honeysD, localStoreD, onlineShopD, aboutUsD];
 
 function contentChanger() {
+    desktopContents.forEach(liElement => liElement.style.display = 'none');
     console.log(this.dataset.deskOption);
     if (this.dataset.deskOption === 'main') {
-
+        mainContentD.style.display = 'block';
+    } else if (this.dataset.deskOption === 'honeys') {
+        honeysD.style.display = 'block';
+    } else if (this.dataset.deskOption === 'shop') {
+        localStoreD.style.display = 'block';
+    } else if (this.dataset.deskOption === 'allegro') {
+        onlineShopD.style.display = 'block';
+    } else if (this.dataset.deskOption === 'about') {
+        aboutUsD.style.display = 'block';
     }
+
 
 
 };
