@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    position: relative;
     height: 100vh;
     /* height: -webkit-fill-available; */
     background-color: #54d5f8;
@@ -3046,19 +3047,53 @@ body>div>section.about-us>div.online-shop>p {
 
 @media (min-width: 3839.98px) {
 
-    .main-content,
+    .bar-imitation {
+        height: 135px;
+    }
+
+    .bar-imitation-2 {
+        height: 135px
+    }
+
+    .panel-desktop {
+        left: 30%;
+        transform: scale(200%);
+    }
+
+    /* .main-content,
     .honeys-desktop,
     .local-store-desktop,
     .online-shop-desktop,
     .about-us-desktop {
-        left: 46%;
-        top: 5%;
-        min-height: 95vh;
+        transform: scale(200%);
+    } */
+
+    .main-content {
+        width: 1950px;
+        max-width: none;
+
+
     }
 
     .slider-desktop {
         height: 900px;
         margin-bottom: 20px;
+    }
+
+    .foot-desk {
+        position: relative;
+        margin-top: 300px;
+        transform: scale(200%);
+        /* top: 130%; */
+    }
+
+    .honeys-desktop {
+        width: 1950px;
+        max-width: none;
+        /* left: 55%;
+        top: 80%; */
+        /* min-height: 95vh; */
+
     }
 
 
