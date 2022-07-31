@@ -327,7 +327,7 @@ function contentChanger() {
     } else if (this.dataset.deskOption === 'allegro') {
         onlineShopD.style.display = 'block';
     } else if (this.dataset.deskOption === 'about') {
-        aboutUsD.style.display = 'block';
+        aboutUsD.style.display = 'flex';
     }
 
 
