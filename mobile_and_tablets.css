@@ -600,37 +600,37 @@ p {
 /* LINDEN TREE */
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(1),
-.honeys-desktop .linden-tree .linden-icons div:nth-child(1) {
+.honeys-desktop .linden-tree-desktop .linden-icons div:nth-child(1) {
     background-image: url(./linden_tree_icons/sweaty_dude.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(2),
-.honeys-desktop .linden-tree .linden-icons div:nth-child(2) {
+.honeys-desktop .linden-tree-desktop .linden-icons div:nth-child(2) {
     background-image: url(./linden_tree_icons/sick_women.png)
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(3),
-.honeys-desktop .linden-tree .linden-icons div:nth-child(3) {
+.honeys-desktop .linden-tree-desktop .linden-icons div:nth-child(3) {
     background-image: url(./linden_tree_icons/calm_man.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(4),
-.honeys-desktop .linden-tree .linden-icons div:nth-child(4) {
+.honeys-desktop .linden-tree-desktop .linden-icons div:nth-child(4) {
     background-image: url(./linden_tree_icons/blood_preasure.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(5),
-.honeys-desktop .linden-tree .linden-icons div:nth-child(5) {
+.honeys-desktop .linden-tree-desktop .linden-icons div:nth-child(5) {
     background-image: url(./linden_tree_icons/baby.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(6),
-.honeys-desktop .linden-tree .linden-icons div:nth-child(6) {
+.honeys-desktop .linden-tree-desktop .linden-icons div:nth-child(6) {
     background-image: url(./linden_tree_icons/coffin_breathe.png);
 }
 
 .products-with-benefits .honeys .linden-tree .benefits-icons-container div:nth-child(7),
-.honeys-desktop .linden-tree .linden-icons div:nth-child(7) {
+.honeys-desktop .linden-tree-desktop .linden-icons div:nth-child(7) {
     background-image: url(./linden_tree_icons/viruses.png);
 }
 
@@ -1869,6 +1869,7 @@ body>div>section.about-us>div.online-shop>p {
         background-image: url(./desktop_background_images/bee_keeper.jpg);
         -webkit-transition: 1s;
         transition: 1s;
+        /* max-width: 1585px; */
     }
 
     .wrapper-desktop {
@@ -1879,7 +1880,8 @@ body>div>section.about-us>div.online-shop>p {
         background-color: rgba(98, 98, 86, 0.434);
         position: relative;
         display: block;
-        ;
+
+
 
 
 
@@ -1904,15 +1906,39 @@ body>div>section.about-us>div.online-shop>p {
         /* overflow-x: hidden; */
     }
 
+    .bar-imitation {
+        position: absolute;
+
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        z-index: 50;
+        background-color: rgb(2, 45, 93);
+        height: 90px;
+    }
+
+    .bar-imitation-2 {
+        position: absolute;
+        background-color: rgb(22, 131, 251);
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 60px;
+        z-index: 51;
+    }
+
     .panel-desktop {
         position: relative;
         top: 0%;
-        left: 0%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100vw;
         height: 90px;
         z-index: 50;
         background-color: rgb(2, 45, 93);
         min-width: 1152px;
+        max-width: 1585px;
 
     }
 
@@ -2102,7 +2128,8 @@ body>div>section.about-us>div.online-shop>p {
         /* overflow: hidden; */
         /* max-width: 800px; */
         /* height: 120vh; */
-        min-height: 100vh;
+        /* min-height: 70vh; */
+        max-width: 920px;
         margin-bottom: 100px;
 
         display: none;
@@ -2568,7 +2595,7 @@ body>div>section.about-us>div.online-shop>p {
         width: 100vw;
 
         z-index: 1;
-        margin-top: 30px;
+        margin-top: 10px;
         height: 100px;
         padding: 10px;
         overflow: hidden;
@@ -2708,9 +2735,7 @@ body>div>section.about-us>div.online-shop>p {
     height: 100%;
     z-index: 113;
     transition: 1s;
-    padding: 0px 150px;
-
-
+    padding: 0px 30px
 }
 
 
@@ -2982,6 +3007,11 @@ body>div>section.about-us>div.online-shop>p {
     text-align: center;
     border-radius: 5%;
 
+}
+
+.slider-desktop img {
+    border-radius: 3%;
+    overflow: hidden;
 }
 
 .about-us-desktop {
