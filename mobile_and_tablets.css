@@ -3028,6 +3028,43 @@ body>div>section.about-us>div.online-shop>p {
 
 }
 
+@media (min-width: 1199.98px) {
+
+    .main-content,
+    .honeys-desktop,
+    .local-store-desktop,
+    .online-shop-desktop,
+    .about-us-desktop {
+        left: 41%;
+    }
+
+    .slider-desktop {
+        height: 900px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 3839.98px) {
+
+    .main-content,
+    .honeys-desktop,
+    .local-store-desktop,
+    .online-shop-desktop,
+    .about-us-desktop {
+        left: 46%;
+        top: 5%;
+        min-height: 95vh;
+    }
+
+    .slider-desktop {
+        height: 900px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
 /* body {
     max-width: 1440px;
 } */
