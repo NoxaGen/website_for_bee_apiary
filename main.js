@@ -329,10 +329,8 @@ const clickHereMobile = document.querySelector('div.auction h2');
 
 allegroIcon.addEventListener('click', function () {
     window.open("https://allegro.pl/uzytkownik/Pasieka_pod_Brz")
-    console.log('z')
 })
 
 clickHereMobile.addEventListener('click', function () {
     window.open("https://allegro.pl/uzytkownik/Pasieka_pod_Brz")
-    console.log('x')
 })
