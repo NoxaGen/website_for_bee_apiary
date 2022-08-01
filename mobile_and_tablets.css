@@ -2,11 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* outline: solid 1px red; */
+
 }
 
 html {
-    /* height: -webkit-fill-available; */
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 10px;
@@ -15,18 +14,13 @@ html {
 body {
     position: relative;
     height: 100vh;
-    /* height: -webkit-fill-available; */
     background-color: #54d5f8;
-    /* overflow: hidden; */
     background-image: none;
-
-
 }
 
 .wrapper {
     background-color: #54d5f8;
     display: block;
-
 }
 
 .wrapper-mobile-tablet {
@@ -34,53 +28,17 @@ body {
     overflow-x: hidden;
 }
 
-.wrapper-desktop {
-    display: none;
-}
+/* DISABLE ALL DESKTOP ELEMENTS */
 
-.panel-desktop {
-    display: none;
-}
-
-.local-store-desktop {
-    display: none;
-}
-
-.honeys-desktop {
-    display: none;
-}
-
-.local-store-desktop {
-    display: none;
-}
-
-.slider-desktop-main {
-    display: none;
-}
-
-.main-content {
-    display: none;
-}
-
+.wrapper-desktop,
+.panel-desktop,
+.local-store-desktop,
+.honeys-desktop,
+.slider-desktop-main,
+.main-content,
 .about-us-desktop {
     display: none;
 }
-
-/* .hamburger {
-    position: fixed;
-    top: 0%;
-    right: 0%;
-    margin: 5%;
-    z-index: 10;
-    color: rgb(255, 194, 0);
-    text-shadow: black 1px 1px 1px;
-    background-color: transparent;
-    border: none;
-} */
-
-/* .hamburger i {
-    font-size: 5rem;
-} */
 
 .logo {
     width: 90vw;
@@ -96,9 +54,6 @@ body {
     background-position: center;
     -webkit-filter: drop-shadow(1px 1px 1px rgba(32, 32, 32, 0.456));
     filter: drop-shadow(1px 1px 1px rgba(32, 32, 32, 0.456));
-    /* background-size: 100%; */
-    /* min-width: 300px;
-    min-height: 300px; */
 }
 
 header {
@@ -113,7 +68,6 @@ header {
     justify-content: space-around;
     background-color: rgb(0, 190, 228);
     box-shadow: 0px 0px 5px 10vh rgb(0, 190, 228);
-    /* background-image: linear-gradient(315deg, #2c7af8 0%, #09c6f9 74%); */
     z-index: 1;
     border-radius: 3%;
 }
@@ -132,13 +86,6 @@ header {
     padding-bottom: 0vh;
     font-family: 'Montserrat', sans-serif;
 }
-
-
-/* div.arrow-hint:nth-child(4) {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-} */
 
 .info h1 {
     font-size: 2rem;
@@ -286,8 +233,6 @@ p {
     top: 20%;
 }
 
-
-
 .products-with-benefits .promotion p {
     position: absolute;
     top: 200%;
@@ -355,7 +300,6 @@ p {
     width: 35%;
     height: 35%;
     position: relative;
-
 }
 
 .products-with-benefits .quality .icons-container div:nth-child(1) {
@@ -640,10 +584,7 @@ p {
 .about-us {
     position: relative;
     z-index: 5;
-    /* height: 200vh; */
     background-color: #54d5f8;
-
-    /* background-image: linear-gradient(315deg, #2c7af8 0%, #09c6f9 74%); */
 }
 
 .about-us h2 {
@@ -653,14 +594,12 @@ p {
     left: 50%;
     transform: translateX(-50%);
     height: 30px;
-    /* line-height: 30px; */
     width: 100%;
     z-index: 10;
     text-align: center;
     font-size: 2.2rem;
     color: rgba(0, 0, 0, 0.954);
     text-shadow: 1px 1px 0.5px rgba(57, 53, 53, 0.754);
-
 }
 
 .about-us .owner {
@@ -680,9 +619,7 @@ p {
     justify-content: space-around;
     top: 5%;
     left: 0%;
-
     width: 100%;
-
     z-index: 4;
     overflow: hidden;
     margin: 30px 0px;
@@ -691,8 +628,6 @@ p {
 .about-us .online-shop {
     margin-bottom: 0%;
 }
-
-
 
 .about-us .owner .picture,
 .about-us .salesman .picture,
@@ -755,12 +690,10 @@ p {
     height: 45vw;
     margin-bottom: 10px;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.173);
     border-radius: 10%;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.694);
-
 }
 
 .about-us .owner .text h3,
@@ -772,7 +705,6 @@ p {
 .about-us .online-shop .text h3 {
     display: block;
     font-size: 1.8rem;
-    /* margin-bottom: 5%; */
 }
 
 .about-us .owner .text h4,
@@ -875,24 +807,17 @@ p {
     margin-bottom: 3%;
 }
 
-/* .about-us .authenticity span {
-    font-size: 2rem;
-    font-weight: 600;
-} */
-
 .about-us .location {
     position: relative;
     height: 60vh;
 }
 
 .about-us .location h2 {
-    /* position: absolute; */
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
     margin: 10px;
-
 }
 
 .about-us .location .map {
@@ -900,7 +825,6 @@ p {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-
 }
 
 .about-us .location .map iframe {
@@ -920,9 +844,7 @@ p {
 }
 
 .about-us .online-shop .auction {
-    /* position: relative; */
     margin: 30px 0px;
-
 }
 
 .about-us .online-shop .auction h2 {
@@ -947,12 +869,8 @@ p {
 .slider-mobile,
 .slider-desktop {
     position: relative;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     width: 100%;
     height: 100vh;
-    /* margin-bottom: 10px; */
     z-index: 8;
     overflow: hidden;
 }
@@ -1158,23 +1076,22 @@ footer h4 a {
     font-size: 4rem;
 }
 
-
 /* MOVIE MOBILE  */
 
-.movie-mobile {
+/* .movie-mobile {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     margin-top: 0;
     margin-bottom: 5vh;
-}
+} */
 
 body>div>section.about-us>div.online-shop>p {
     margin-bottom: 0px;
 }
 
 
-/* ANIMATIONS */
+/* ANIMATIONS MOBILE & TABLETS */
 
 @keyframes mini_left_hand {
     0% {
@@ -1240,10 +1157,8 @@ body>div>section.about-us>div.online-shop>p {
 @media (orientation: landscape) {
     .logo {
         width: 100vw;
-
         background-size: contain;
         background-position: center;
-
     }
 
     .info h1 {
@@ -1256,8 +1171,6 @@ body>div>section.about-us>div.online-shop>p {
 
     .products-with-benefits .introduction h2 {
         z-index: 10;
-        /* margin-top: 50vh; */
-        /* transform: translateY(20%); */
     }
 
     body>div.wrapper-mobile-tablet>section.products-with-benefits>div.introduction>h2>div {
@@ -1302,12 +1215,6 @@ body>div>section.about-us>div.online-shop>p {
         height: 70vh;
     }
 
-    /* .about-us {
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-    } */
-
     .about-us h2 {
         top: 7.5vh;
     }
@@ -1325,13 +1232,9 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .authenticity .picture,
     .about-us .local-store .picture,
     .about-us .online-shop .picture {
-
         width: 45vh;
         height: 45vh;
-        /* flex-grow: 1; */
         margin: 5vh;
-
-
     }
 
     .about-us .owner .text,
@@ -1346,20 +1249,15 @@ body>div>section.about-us>div.online-shop>p {
         align-content: space-around;
         align-items: center;
         justify-content: center;
-
-
         width: 70vh;
         height: 45vh;
-        /* flex-grow: 1; */
         margin: 5vh;
         border-radius: 3%;
-
     }
 
     .about-us .online-shop .text {
         margin-bottom: 0;
     }
-
 
     .about-us .owner .text h3,
     .about-us .salesman .text h3,
@@ -1382,10 +1280,7 @@ body>div>section.about-us>div.online-shop>p {
         display: block;
         font-size: 1.6rem;
         font-weight: 400;
-        /* line-height: 2rem; */
         padding: 3%;
-
-
     }
 
     .about-us .owner p,
@@ -1398,9 +1293,6 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 2rem;
         margin-bottom: 5%;
     }
-
-
-
 
     .about-us .owner .contact p,
     .about-us .salesman .contact p,
@@ -1437,13 +1329,7 @@ body>div>section.about-us>div.online-shop>p {
         border-radius: 2%;
     }
 
-    /* footer {
-
-        font-size: 2rem;
-        z-index: 1;
-    } */
-
-    /* SLIDER DIFFRENT SIZE OF IMGS  */
+    /* SLIDER DIFFRENT SIZE OF IMGS FOR HORIZONTAL LOOK */
 
     .slider-mobile .prev,
     .slider-mobile .next {
@@ -1474,8 +1360,6 @@ body>div>section.about-us>div.online-shop>p {
         margin: 0vh 0vh;
     }
 
-
-
     .slider-mobile img:nth-child(1) {
         content: url(./images_mobile_landscape/7.jpg);
     }
@@ -1503,8 +1387,6 @@ body>div>section.about-us>div.online-shop>p {
     .slider-mobile img:nth-child(7) {
         content: url(./images_mobile_landscape/13.jpg);
     }
-
-
 
     .hamburger-menu-active {
         left: 55%;
@@ -1604,9 +1486,7 @@ body>div>section.about-us>div.online-shop>p {
     .products-with-benefits .honeys .multiflorous-summer-banner .text h2,
     .products-with-benefits .honeys .acacia-banner .text h2,
     .products-with-benefits .honeys .linden-tree .text h2 {
-
         font-size: 3rem;
-
     }
 
     .products-with-benefits .honeys .text {
@@ -1617,7 +1497,6 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 4rem;
         line-height: 5rem;
         height: 5rem;
-
     }
 
     .about-us .owner .picture,
@@ -1627,12 +1506,10 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .authenticity .picture,
     .about-us .local-store .picture,
     .about-us .online-shop .picture {
-
         width: 25vh;
         height: 25vh;
         margin: 30px;
         flex-grow: 1;
-
     }
 
     .about-us .owner .text,
@@ -1648,8 +1525,6 @@ body>div>section.about-us>div.online-shop>p {
         margin: 30px;
         flex-grow: 1;
         padding: 10px;
-
-
     }
 
     .about-us .owner .text h3,
@@ -1671,7 +1546,6 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .online-shop .text h4 {
         font-size: 2.6rem;
         line-height: 200%;
-
     }
 
     .about-us .owner p,
@@ -1694,8 +1568,6 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 2.6rem;
         font-weight: 600;
         text-align: center;
-
-
     }
 
     .about-us .owner .contact h3,
@@ -1719,7 +1591,6 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .bee-places .bee-spots {
         width: 100vw;
         margin-top: 30px;
-
     }
 
     .about-us .bee-places .bee-spots h3 {
@@ -1727,7 +1598,6 @@ body>div>section.about-us>div.online-shop>p {
         text-align: center;
         font-size: 2.5rem;
         letter-spacing: 2px;
-
     }
 
     .about-us .bee-places .bee-spots h3 {
@@ -1735,7 +1605,6 @@ body>div>section.about-us>div.online-shop>p {
         text-align: center;
         font-size: 2rem;
         letter-spacing: 200%;
-
     }
 
     .slider-mobile img:nth-child(1) {
@@ -1831,9 +1700,6 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .online-shop .auction h2 i {
         font-size: 4rem;
     }
-
-
-
 }
 
 /* TABLETS landscape */
@@ -1862,15 +1728,12 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     body {
-
-
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(./desktop_background_images/bee_keeper.jpg);
         -webkit-transition: 1s;
         transition: 1s;
-        /* max-width: 1585px; */
     }
 
     .wrapper-desktop {
@@ -1881,18 +1744,7 @@ body>div>section.about-us>div.online-shop>p {
         background-color: rgba(98, 98, 86, 0.434);
         position: relative;
         display: block;
-
-
-
-
-
     }
-
-    /* .bgc-img-container {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    } */
 
     .panel-desktop {
         display: block;
@@ -1904,12 +1756,10 @@ body>div>section.about-us>div.online-shop>p {
 
     body {
         background-color: #54d5f8;
-        /* overflow-x: hidden; */
     }
 
     .bar-imitation {
         position: absolute;
-
         top: 0%;
         left: 50%;
         transform: translateX(-50%);
@@ -1940,7 +1790,6 @@ body>div>section.about-us>div.online-shop>p {
         background-color: rgb(2, 45, 93);
         min-width: 1152px;
         max-width: 1585px;
-
     }
 
     .hamburger-menu {
@@ -1982,8 +1831,6 @@ body>div>section.about-us>div.online-shop>p {
         height: 100%;
     }
 
-
-
     .bar {
         position: relative;
         background-color: rgb(22, 131, 251);
@@ -2002,8 +1849,6 @@ body>div>section.about-us>div.online-shop>p {
         left: 40%;
         width: 60%;
         height: 100%;
-
-
     }
 
     .bar .navbar ul {
@@ -2021,8 +1866,6 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .bar .navbar li {
-
-
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
         font-weight: 450;
@@ -2030,7 +1873,6 @@ body>div>section.about-us>div.online-shop>p {
         text-decoration: none;
         list-style: none;
         width: 17%;
-
         text-align: center;
         padding: 3px;
         background-color: rgb(255, 194, 0);
@@ -2042,7 +1884,6 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .bar .navbar li:hover {
-
         cursor: pointer;
         color: rgb(243, 215, 10);
         background-color: rgb(3, 3, 3);
@@ -2064,7 +1905,6 @@ body>div>section.about-us>div.online-shop>p {
         height: 100%;
         z-index: 52;
         overflow-x: hidden;
-
     }
 
     .contact-container .icon {
@@ -2073,8 +1913,6 @@ body>div>section.about-us>div.online-shop>p {
         border-radius: 50%;
         background-color: rgb(255, 194, 0);
         z-index: 53;
-
-
     }
 
     .contact-container .phone,
@@ -2118,33 +1956,16 @@ body>div>section.about-us>div.online-shop>p {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        /* width: 50%; */
         top: 10%;
         left: 40%;
         width: 58%;
-        /* height: 60vh; */
         z-index: 111;
-        /* background-color: pink; */
-        /* overflow: hidden; */
-        /* max-width: 800px; */
-        /* height: 120vh; */
-        /* min-height: 70vh; */
         max-width: 920px;
         margin-bottom: 100px;
-
         display: none;
-        /* background-color: rgba(255, 0, 0, 0.206); */
-
     }
 
-
-
-
-
     /* LOCAL STORE AREA */
-
-
 
     .local-store-desktop .store-info,
     .online-shop-info,
@@ -2168,7 +1989,6 @@ body>div>section.about-us>div.online-shop>p {
     .about-us-desktop .about-us-header p:nth-child(1) {
         animation: jumper-desktop 10s infinite;
         animation-delay: 3s;
-
     }
 
     .local-store-desktop .store-info p:nth-child(2),
@@ -2198,8 +2018,6 @@ body>div>section.about-us>div.online-shop>p {
         width: 100%;
         max-width: 100%;
         height: 600px;
-        /* background-color: rgba(0, 128, 0, 0.219); */
-        padding: 0px;
     }
 
     .local-store-desktop .info-with-photo .house-info,
@@ -2216,10 +2034,7 @@ body>div>section.about-us>div.online-shop>p {
         height: 100%;
         padding: 20px;
         border-radius: 3%;
-
     }
-
-
 
     .local-store-desktop .info-with-photo .house-info p,
     .online-shop-desktop .how-to-order p {
@@ -2227,28 +2042,17 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 2.3rem;
         color: rgb(255, 194, 0);
         text-shadow: 0px 0px 5px black;
-        /* flex-grow: 1;
-        line-height: 200% */
     }
 
     .local-store-desktop .info-with-photo .house-info p:nth-child(even),
     .online-shop-desktop .how-to-order p:nth-child(even) {
         color: rgb(10, 10, 10);
         background-color: rgba(255, 196, 0, 0.567);
-        ;
         border-radius: 5%;
         text-shadow: none;
         font-weight: 900;
         padding: 15px 5px;
-
-
     }
-
-    /* 
-    .local-store-desktop .info-with-photo .house-info p span {
-        color: rgb(255, 194, 0);
-        text-shadow: 0px 0px 5px black;
-    } */
 
     .local-store-desktop .info-with-photo .house-photo {
         background-image: url(./desktop_images/house_store_photo.jpg);
@@ -2260,14 +2064,9 @@ body>div>section.about-us>div.online-shop>p {
         height: 100%;
     }
 
-
-
     /* ONLINE-SHOP AREA */
 
-
-
     .online-shop-desktop .how-to-order {
-
         background-color: rgba(0, 0, 0, 0.245);
         width: 47.5%;
         border-radius: 3%;
@@ -2296,36 +2095,26 @@ body>div>section.about-us>div.online-shop>p {
         cursor: pointer;
     }
 
-
     .description,
     .local-store-desktop .store-info,
     .online-shop-desktop .online-shop-info,
     .about-us-desktop .about-us-header {
-        /* position: relative; */
         display: flex;
         flex-flow: column;
-
         justify-content: space-around;
         align-items: center;
         align-content: center;
-        /* left: 0%;
-        top: 0%; */
         width: 100%;
         height: 220px;
-
         padding: 30px;
         font-family: 'Poppins', sans-serif;
         font-size: 1.8rem;
         color: rgb(255, 194, 0);
         text-shadow: 0px 0px 3px black;
-
         letter-spacing: 2px;
         text-align: center;
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
-
-
-
     }
 
     .local-store-desktop .desktop-map {
@@ -2334,7 +2123,6 @@ body>div>section.about-us>div.online-shop>p {
         overflow: hidden;
         height: 400px;
         width: 100%;
-        background-color: red;
     }
 
     .description h2:nth-child(1) {
@@ -2344,8 +2132,6 @@ body>div>section.about-us>div.online-shop>p {
 
     .description h2 {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.886);
-
-
     }
 
     .description h2:nth-child(2) {
@@ -2354,7 +2140,6 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 3rem;
         animation: jumper-desktop 10s infinite;
         animation-delay: 4s;
-        /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.676); */
     }
 
     .description h2:nth-child(3) {
@@ -2372,38 +2157,25 @@ body>div>section.about-us>div.online-shop>p {
 
     .desc-icons-container {
         display: flex;
-        /* position: absolute; */
         justify-content: space-between;
-        /* top: 111%;
-        left: 50%;
-        transform: translateX(-50%); */
         height: 170px;
         width: 100%;
         margin: 10px 0px;
-
-
     }
 
     .desc-icons-container div {
-        /* position: relative; */
         width: 170px;
         height: 170px;
-
         position: relative;
-        /* width: 22%;
-        padding-bottom: 22%;
-       
-        height: same-as-width; */
+        /* testing same-as-width from stackoverflow */
+        height: same-as-width;
         margin: 10px 0px;
         border-radius: 5%;
         background-color: rgba(0, 0, 0, 0.245);
         background-position: top;
         background-size: 80%;
         background-repeat: no-repeat;
-        /* flex-grow: 1; */
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
-
-
     }
 
     .desc-icons-container div:nth-child(1) {
@@ -2436,16 +2208,11 @@ body>div>section.about-us>div.online-shop>p {
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        /* background-color: rgba(0, 0, 0, 0.245);
-        border-radius: 5%; */
         color: rgb(255, 194, 0);
         font-family: 'Poppins', sans-serif;
         font-size: 1.5rem;
         text-align: center;
         text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
-        /* box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886); */
-
-
     }
 
     .online-shop-desktop {
@@ -2455,31 +2222,21 @@ body>div>section.about-us>div.online-shop>p {
     .main-content .desc-movie {
         position: relative;
         z-index: 2;
-
         cursor: pointer;
         overflow: hidden;
         border-radius: 2%;
         height: 400px;
         max-height: 400px;
         width: 100%;
-        /* background-color: red; */
         box-shadow: none;
         margin-top: 30px;
-        /* margin-bottom: 5%;
-        margin-top: 5%; */
         background-image: url(./dekstop_movies/main_site_honey.mp4);
         background-position: center;
         background-size: cover;
     }
 
     .main-content .desc-movie video {
-        /* display: none; */
-        /* left: 50%; */
-        /* 
-        transform: translateX(-50%) scale(120%);
-        box-shadow: none; */
         position: relative;
-
         height: 400px;
         width: 100%;
         transform: scale(115%)
@@ -2498,31 +2255,20 @@ body>div>section.about-us>div.online-shop>p {
         transition: 1s;
     }
 
-
     .desc-movie .cover-up {
-
         top: 0%;
         right: 0%;
-
-
-
-
-
     }
 
     .desc-movie .cover-down {
-
-
         right: 0%;
         bottom: 0%;
     }
 
     .desc-movie:hover .cover-up,
     .desc-movie:hover .cover-down {
-        /* background-color: rgba(0, 0, 0, 0.075); */
         height: 0%;
     }
-
 
     .main-content .desc-movie h3 {
         position: absolute;
@@ -2530,7 +2276,6 @@ body>div>section.about-us>div.online-shop>p {
         left: 50%;
         font-family: 'Poppins', sans-serif;
         text-align: center;
-
         color: rgb(18, 17, 17);
         text-shadow: 1px 1px 1px black;
         transform: translate(-50%, -50%);
@@ -2538,7 +2283,6 @@ body>div>section.about-us>div.online-shop>p {
         width: 90%;
         font-size: 3rem;
         transition: 1s;
-
     }
 
     .main-content .desc-movie:hover h3 {
@@ -2551,8 +2295,6 @@ body>div>section.about-us>div.online-shop>p {
         border-radius: 5%;
         overflow: hidden;
         cursor: pointer;
-
-
     }
 
     .panel-desktop .slider-desktop-main video {
@@ -2574,7 +2316,6 @@ body>div>section.about-us>div.online-shop>p {
         text-shadow: 0px 0px 5px black;
         line-height: 200%;
         opacity: 1;
-
         transition: 1s;
     }
 
@@ -2582,7 +2323,6 @@ body>div>section.about-us>div.online-shop>p {
         opacity: 1;
         line-height: 250%;
     }
-
 
     .foot-desk {
         position: relative;
@@ -2594,13 +2334,11 @@ body>div>section.about-us>div.online-shop>p {
         bottom: 0%;
         transform: translateY(50%);
         width: 100vw;
-
         z-index: 1;
         margin-top: 10px;
         height: 100px;
         padding: 10px;
         overflow: hidden;
-
     }
 
     .foot-desk h4 {
@@ -2609,8 +2347,6 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 1.5rem;
         text-align: center;
         text-shadow: 0px 0px 1px rgb(17, 17, 17);
-
-
     }
 
     .foot-desk h4 a {
@@ -2624,23 +2360,9 @@ body>div>section.about-us>div.online-shop>p {
         text-align: center;
         margin-top: 5px;
     }
-
-
-
-
 }
 
-/* DESKTOP-HONEY-CONTAINER */
-
-/* <section class="honeys-desktop">
-<div class="multiflorous-spring"></div>
-<div class="multiflorous-summer"></div>
-<div class="acacia"></div>
-<div class="linden-tree"></div>
-</section> */
-
 .honeys-desktop {
-    /* background-color: rgba(255, 0, 0, 0.746); */
     min-height: 100vh;
     height: 140vh;
     justify-content: center;
@@ -2650,8 +2372,6 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .honeys-desktop section {
-    /* display: flex;
-    flex-direction: column; */
     position: relative;
     width: 100%;
     height: 22%;
@@ -2665,25 +2385,18 @@ body>div>section.about-us>div.online-shop>p {
     cursor: pointer;
     box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     transition: 1s;
-
-
-
 }
 
 .honeys-desktop section:hover h2 {
     opacity: 0;
-
 }
 
 .honeys-desktop section:hover div {
     opacity: 1;
-
 }
 
 .honeys-desktop .multiflorous-spring {
     background-image: url(./desktop_honeys_section/2.jpg);
-
-
 }
 
 .honeys-desktop .multiflorous-summer {
@@ -2726,7 +2439,6 @@ body>div>section.about-us>div.online-shop>p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     flex-wrap: wrap;
     position: absolute;
     top: 50%;
@@ -2738,7 +2450,6 @@ body>div>section.about-us>div.online-shop>p {
     transition: 1s;
     padding: 0px 30px
 }
-
 
 .honeys-desktop .multi-spring-icons div,
 .honeys-desktop .multi-summer-icons div,
@@ -2755,9 +2466,6 @@ body>div>section.about-us>div.online-shop>p {
     background-position: top;
     opacity: 0;
     transition: 1s;
-    /* margin: 0% 5%; */
-
-
 }
 
 .honeys-desktop .multi-spring-icons div:hover,
@@ -2779,7 +2487,6 @@ body>div>section.about-us>div.online-shop>p {
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 194, 0);
     text-shadow: 0px 0px 5px black;
-
 }
 
 /* ABOUT-US DESKTOP AREA */
@@ -2815,14 +2522,6 @@ body>div>section.about-us>div.online-shop>p {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-/* .owner-info .name-and-status,
-.sub-owner-info .name-and-status,
-.bees-info .bees-description,
-.honey-info .honey-description {
-    width: 60%;
-    height: 200px;
-} */
 
 .owner-icon,
 .sub-owner-icon,
@@ -2916,12 +2615,6 @@ body>div>section.about-us>div.online-shop>p {
     text-align: center;
 }
 
-/* .owner .name-and-status p,
-.sub-owner .name-and-status p,
-.bees .bees-description p {
-    font-size: 1.8rem;
-} */
-
 .owner .name-and-status h4,
 .sub-owner .name-and-status h4,
 .bees .bees-description h4,
@@ -2959,7 +2652,6 @@ body>div>section.about-us>div.online-shop>p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
 
 .bees .bees-desc .bee-spots p:nth-child(1) {
@@ -2984,7 +2676,6 @@ body>div>section.about-us>div.online-shop>p {
 
 .bees .bees-desc .bee-spots {
     margin-top: 20px;
-    /* width: 100%; */
     text-align: center;
 }
 
@@ -3015,19 +2706,19 @@ body>div>section.about-us>div.online-shop>p {
     overflow: hidden;
 }
 
-.about-us-desktop {
-    display: none;
-
-}
-
+.about-us-desktop,
 .honeys-desktop {
     display: none;
+
 }
+
+/* WHEN PAGE LOADED, DISPLAY MAIN CONTENT */
 
 .main-content {
     display: block;
-
 }
+
+/* larger screens and tv */
 
 @media (min-width: 1199.98px) {
 
@@ -3045,64 +2736,19 @@ body>div>section.about-us>div.online-shop>p {
     }
 }
 
+/* very large screens tv 4k (looking OK but will style it better in future mb) */
+
 @media (min-width: 3839.98px) {
 
-    .bar-imitation {
-        height: 135px;
-    }
-
-    .bar-imitation-2 {
-        height: 135px
-    }
-
-    .panel-desktop {
-        left: 30%;
-        transform: scale(200%);
-    }
-
-    /* .main-content,
+    .main-content,
     .honeys-desktop,
     .local-store-desktop,
     .online-shop-desktop,
     .about-us-desktop {
-        transform: scale(200%);
-    } */
-
-    .main-content {
-        width: 1950px;
-        max-width: none;
-
-
+        top: 5%;
+        left: 46%;
     }
-
-    .slider-desktop {
-        height: 900px;
-        margin-bottom: 20px;
-    }
-
-    .foot-desk {
-        position: relative;
-        margin-top: 300px;
-        transform: scale(200%);
-        /* top: 130%; */
-    }
-
-    .honeys-desktop {
-        width: 1950px;
-        max-width: none;
-        /* left: 55%;
-        top: 80%; */
-        /* min-height: 95vh; */
-
-    }
-
-
 }
-
-
-/* body {
-    max-width: 1440px;
-} */
 
 /* ANIMATION DESKTOP */
 
