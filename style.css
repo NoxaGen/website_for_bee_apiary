@@ -1739,7 +1739,8 @@ body>div>section.about-us>div.online-shop>p {
     .wrapper-desktop {
         height: 100%;
         width: 100%;
-        min-height: 100%;
+        /* min-height: 100%; */
+
         overflow-x: hidden;
         background-color: rgba(98, 98, 86, 0.434);
         position: relative;
@@ -2255,7 +2256,7 @@ body>div>section.about-us>div.online-shop>p {
     .product-quality-desktop .left-panel,
     .product-quality-desktop .right-panel {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         width: 50%;
         height: 100%;
@@ -2263,8 +2264,15 @@ body>div>section.about-us>div.online-shop>p {
 
     .left-panel .product-q-text,
     .right-panel .veterinary-text {
-        margin: 10px;
-        flex-grow: 1;
+        margin: 10px 20px;
+        padding: 5px;
+        width: 50%;
+        color: rgb(255, 194, 0);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        text-align: left;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     }
 
     .left-panel .product-q-icon,
