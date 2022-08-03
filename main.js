@@ -293,6 +293,7 @@ const localStoreD = document.querySelector('.local-store-desktop');
 const onlineShopD = document.querySelector('.online-shop-desktop');
 const aboutUsD = document.querySelector('.about-us-desktop');
 
+//need diffrent behaviour on footer for sectionts
 const footerDesktop = document.querySelector('.foot-desk');
 
 const desktopContents = [mainContentD, honeysD, localStoreD, onlineShopD, aboutUsD];
