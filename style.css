@@ -34,7 +34,7 @@ body {
 .panel-desktop,
 .local-store-desktop,
 .honeys-desktop,
-.slider-desktop-main,
+.promotion-desktop-main,
 .main-content,
 .about-us-desktop {
     display: none;
@@ -1815,21 +1815,25 @@ body>div>section.about-us>div.online-shop>p {
         filter: drop-shadow(3px 3px 4px rgba(32, 32, 32, 0.679));
     }
 
-    .slider-desktop-main {
+    .promotion-desktop-main {
         position: absolute;
         left: 20%;
         top: calc(55% + 450px);
         transform: translateX(-50%);
         width: 450px;
-        height: 450px;
+        height: 300px;
         background-color: rgba(0, 0, 0, 0.185);
         display: block;
     }
 
-    .slider-desktop-main div {
+    .promotion-desktop-main {
+        background-image: url(./desktop_header_new_graphs/promocja.png);
+    }
+
+    /* .slider-desktop-main div {
         width: 100%;
         height: 100%;
-    }
+    } */
 
     .bar {
         position: relative;
@@ -2290,39 +2294,48 @@ body>div>section.about-us>div.online-shop>p {
         text-shadow: 1px 1px 1px rgb(37, 37, 36);
     }
 
-    .panel-desktop .slider-desktop-main {
+    .panel-desktop .promotion-desktop-main {
         position: absolute;
         border-radius: 5%;
         overflow: hidden;
-        cursor: pointer;
     }
 
-    .panel-desktop .slider-desktop-main video {
-        opacity: 0.7;
-    }
-
-    .panel-desktop .slider-desktop-main h2 {
+    .panel-desktop .promotion-desktop-main .title-promotion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width: 90%;
-        opacity: 1;
-        z-index: 12;
+        padding: 15px;
+        left: 32%;
+        width: 65%;
+        height: 33%;
         font-family: 'Poppins', sans-serif;
-        font-size: 3rem;
+        font-size: 2.5rem;
+        font-weight: 900;
         color: rgb(255, 194, 0);
         text-shadow: 0px 0px 5px black;
-        line-height: 200%;
-        opacity: 1;
-        transition: 1s;
+        text-align: center;
     }
 
-    .panel-desktop .slider-desktop-main:hover h2 {
-        opacity: 1;
-        line-height: 250%;
+    .panel-desktop .promotion-desktop-main .title-promotion p:nth-child(2) {
+        color: rgb(10, 10, 10);
+        background-color: rgba(255, 196, 0, 0.567);
+        text-shadow: none;
+        border-radius: 3%;
     }
+
+    .panel-desktop .promotion-desktop-main .desc-promotion {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        top: 45%;
+        text-align: justify;
+        padding: 0px 10px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(255, 194, 0);
+    }
+
+
 
     .foot-desk {
         position: relative;
