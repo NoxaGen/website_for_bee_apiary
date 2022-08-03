@@ -2121,6 +2121,8 @@ body>div>section.about-us>div.online-shop>p {
         -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
     }
 
+
+
     .local-store-desktop .desktop-map {
         margin-top: 30px;
         border-radius: 3%;
@@ -2130,25 +2132,32 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .description h2:nth-child(1) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 3s;
+        /* animation: jumper-desktop 10s infinite;
+        animation-delay: 3s; */
     }
 
     .description h2 {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.886);
+
     }
 
     .description h2:nth-child(2) {
         color: rgba(22, 22, 22, 0.856);
         font-weight: 900;
         font-size: 3rem;
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 4s;
+        background-color: rgba(255, 196, 0, 0.567);
+        text-shadow: none;
+        border-radius: 3%;
+        line-height: 4rem;
+        padding-top: 10px;
+        width: 80%;
+        text-align: center;
+        /* animation: jumper-desktop 10s infinite;
+        animation-delay: 4s; */
     }
 
     .description h2:nth-child(3) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 5s;
+        margin-top: 10px;
     }
 
     .description h2 {
@@ -2180,29 +2189,34 @@ body>div>section.about-us>div.online-shop>p {
         background-size: 80%;
         background-repeat: no-repeat;
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
+        transition: 0.5s;
     }
 
+    /* .desc-icons-container div:hover {
+        background-color: rgba(0, 0, 0, 0.769);
+    } */
+
     .desc-icons-container div:nth-child(1) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 6s;
+        /* animation: jumper-desktop 10s infinite;
+        animation-delay: 6s; */
         background-image: url(./icons_quality_section/1.png);
     }
 
     .desc-icons-container div:nth-child(2) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 7s;
+        /* animation: jumper-desktop 10s infinite;
+        animation-delay: 7s; */
         background-image: url(./icons_quality_section/2.png);
     }
 
     .desc-icons-container div:nth-child(3) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 8s;
+        /* animation: jumper-desktop 10s infinite;
+        animation-delay: 8s; */
         background-image: url(./icons_quality_section/3.png);
     }
 
     .desc-icons-container div:nth-child(4) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 9s;
+        /* animation: jumper-desktop 10s infinite;
+        animation-delay: 9s; */
         background-image: url(./icons_quality_section/4.png);
     }
 
@@ -2223,76 +2237,43 @@ body>div>section.about-us>div.online-shop>p {
         min-height: 100vh;
     }
 
-    .main-content .desc-movie {
+    .main-content .product-quality-desktop {
+        display: flex;
         position: relative;
         z-index: 2;
-        cursor: pointer;
         overflow: hidden;
         border-radius: 2%;
-        height: 400px;
-        max-height: 400px;
+        height: 250px;
+        max-height: 250px;
         width: 100%;
         box-shadow: none;
         margin-top: 30px;
-        background-image: url(./dekstop_movies/main_site_honey.mp4);
-        background-position: center;
-        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.245);
+
     }
 
-    .main-content .desc-movie video {
-        position: relative;
-        height: 400px;
-        width: 100%;
-        transform: scale(115%)
+    .product-quality-desktop .left-panel,
+    .product-quality-desktop .right-panel {
+        display: flex;
+        width: 50%;
+        height: 100%;
     }
 
-    .desc-movie .cover-up,
-    .desc-movie .cover-down {
-        position: absolute;
-        width: 100%;
-        height: 45%;
-        z-index: 4;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(0, 0, 0, 0.452);
-        overflow: hidden;
-        transition: 1s;
+    .left-panel .product-q-text {
+        margin: 10px;
+        flex-grow: 1;
     }
 
-    .desc-movie .cover-up {
-        top: 0%;
-        right: 0%;
+    .left-panel .product-q-icon {
+        margin: 10px;
+        width: 170px;
+        height: 170px;
+        background-image: url(./desktop_header_new_graphs/1.png);
     }
 
-    .desc-movie .cover-down {
-        right: 0%;
-        bottom: 0%;
-    }
 
-    .desc-movie:hover .cover-up,
-    .desc-movie:hover .cover-down {
-        height: 0%;
-    }
 
-    .main-content .desc-movie h3 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        color: rgb(18, 17, 17);
-        text-shadow: 1px 1px 1px black;
-        transform: translate(-50%, -50%);
-        z-index: 11;
-        width: 90%;
-        font-size: 3rem;
-        transition: 1s;
-    }
 
-    .main-content .desc-movie:hover h3 {
-        color: rgb(255, 194, 0);
-        text-shadow: 1px 1px 1px rgb(37, 37, 36);
-    }
 
     .panel-desktop .promotion-desktop-main {
         position: absolute;
@@ -2329,8 +2310,8 @@ body>div>section.about-us>div.online-shop>p {
         font-family: 'Poppins', sans-serif;
         top: 45%;
         text-align: justify;
-        padding: 0px 10px;
-        font-size: 2rem;
+        padding: 5px 10px;
+        font-size: 1.8rem;
         font-weight: 500;
         color: rgb(255, 194, 0);
     }
@@ -2344,12 +2325,12 @@ body>div>section.about-us>div.online-shop>p {
         font-family: 'Poppins', sans-serif;
         background-color: rgb(2, 45, 93);
         /* position: relative; */
-        bottom: 0%;
-        transform: translateY(50%);
+        bottom: 0vh;
+        transform: translateY(calc(50% + 110px));
         width: 100vw;
         z-index: 1;
-        margin-top: 10px;
-        height: 100px;
+        /* margin-top: 10px; */
+        height: 110px;
         padding: 10px;
         overflow: hidden;
     }
