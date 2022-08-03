@@ -293,8 +293,6 @@ const localStoreD = document.querySelector('.local-store-desktop');
 const onlineShopD = document.querySelector('.online-shop-desktop');
 const aboutUsD = document.querySelector('.about-us-desktop');
 
-//need diffrent behaviour on footer for sectionts
-const footerDesktop = document.querySelector('.foot-desk');
 
 const desktopContents = [mainContentD, honeysD, localStoreD, onlineShopD, aboutUsD];
 
@@ -303,19 +301,14 @@ function contentChanger() {
     console.log(this.dataset.deskOption);
     if (this.dataset.deskOption === 'main') {
         mainContentD.style.display = 'block';
-        footerDesktop.style.position = "absolute";
     } else if (this.dataset.deskOption === 'honeys') {
         honeysD.style.display = 'block';
-        footerDesktop.style.position = "relative";
     } else if (this.dataset.deskOption === 'shop') {
         localStoreD.style.display = 'block';
-        footerDesktop.style.position = "relative";
     } else if (this.dataset.deskOption === 'allegro') {
         onlineShopD.style.display = 'block';
-        footerDesktop.style.position = "relative";
     } else if (this.dataset.deskOption === 'about') {
         aboutUsD.style.display = 'flex';
-        footerDesktop.style.position = "relative";
     }
 };
 
