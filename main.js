@@ -315,22 +315,20 @@ navOptionsLi.forEach(li => li.addEventListener('click', contentChanger));
 
 //FOWARDING ON ALLEGRO-AUCTIONS AFTER CLICK
 
+
+function openAllegro() {
+    window.open("https://allegro.pl/uzytkownik/Pasieka_pod_Brz")
+}
+
 //desktop
 
 const auctionBanner = document.querySelector('.auctions-banner');
-auctionBanner.addEventListener('click', function () {
-    window.open("https://allegro.pl/uzytkownik/Pasieka_pod_Brz")
-})
+auctionBanner.addEventListener('click', openAllegro);
 
 //mobile
 
 const allegroIcon = document.querySelector('.about-us .online-shop .picture');
 const clickHereMobile = document.querySelector('div.auction h2');
 
-allegroIcon.addEventListener('click', function () {
-    window.open("https://allegro.pl/uzytkownik/Pasieka_pod_Brz")
-})
-
-clickHereMobile.addEventListener('click', function () {
-    window.open("https://allegro.pl/uzytkownik/Pasieka_pod_Brz")
-})
+allegroIcon.addEventListener('click', openAllegro);
+clickHereMobile.addEventListener('click', openAllegro);
