@@ -1,8 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0px;
     padding: 0px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 
 html {
@@ -46,6 +53,8 @@ body {
     position: relative;
     top: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     margin-top: 5%;
     background-image: url(./desktop_images/main_logo.png);
@@ -60,13 +69,22 @@ header {
     position: fixed;
     top: 5vh;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     min-height: 90vh;
     height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     background-color: rgb(0, 190, 228);
+    -webkit-box-shadow: 0px 0px 5px 10vh rgb(0, 190, 228);
     box-shadow: 0px 0px 5px 10vh rgb(0, 190, 228);
     z-index: 1;
     border-radius: 3%;
@@ -74,10 +92,19 @@ header {
 
 .info {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
     transform: translate(-50%);
     width: 80%;
     height: 35vh;
@@ -91,6 +118,7 @@ header {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     color: rgba(0, 0, 0, 0.858);
+    -o-text-overflow: 1px 1px 1px;
     text-overflow: 1px 1px 1px;
     text-align: center;
     margin-bottom: 2%;
@@ -125,8 +153,11 @@ header {
     position: relative;
     top: 1%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     border: 3px rgb(255, 194, 0) solid;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.766);
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.766);
     border-radius: 50%;
     width: 50px;
@@ -139,15 +170,23 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 2rem;
     line-height: 3.4rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     text-shadow: 0 -10px 0 black, 0 10px 0 black;
+    -webkit-animation-name: arrow_moving_down;
     animation-name: arrow_moving_down;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
@@ -160,10 +199,20 @@ header {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(137, 220, 253);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     position: relative;
     z-index: 3;
@@ -185,7 +234,12 @@ p {
 }
 
 .products-with-benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     position: relative;
@@ -220,6 +274,8 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 3.5rem;
     text-align: center;
@@ -237,11 +293,14 @@ p {
     position: absolute;
     top: 200%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     font-size: 2.1rem;
     width: 80%;
     line-height: 1.8;
     border: solid 3px rgb(248, 242, 242);
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.579);
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.579);
     background-color: rgba(0, 0, 0, 0.515);
     padding: 15px 10px;
@@ -256,6 +315,7 @@ p {
     height: 10vh;
     color: rgb(255, 194, 0);
     border: 8px rgb(255, 194, 0) solid;
+    -webkit-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.766);
     box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.766);
 }
 
@@ -279,13 +339,19 @@ p {
 }
 
 .products-with-benefits .quality .icons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 5%;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     position: absolute;
     top: 5%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: rgba(13, 13, 13, 0.8);
     width: 80%;
@@ -322,6 +388,8 @@ p {
     position: absolute;
     left: 50%;
     bottom: -28%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -356,6 +424,8 @@ p {
     position: relative;
     top: 5%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     text-align: center;
     background-color: rgba(2, 2, 2, 0.8);
@@ -387,18 +457,29 @@ p {
 .products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container,
 .products-with-benefits .honeys .acacia-banner .benefits-icons-container,
 .products-with-benefits .honeys .linden-tree .benefits-icons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     position: absolute;
     top: 120%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 120%;
     height: 65vh;
     background-color: rgba(13, 13, 13, 0.9);
     border-radius: 10%;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-bottom: 3%;
     color: rgb(225, 191, 127);
@@ -428,6 +509,8 @@ p {
     position: absolute;
     left: 50%;
     top: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -592,6 +675,8 @@ p {
     font-family: 'Montserrat', sans-serif;
     top: 15px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     height: 30px;
     width: 100%;
@@ -614,8 +699,12 @@ p {
 .about-us .local-store,
 .about-us .online-shop {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     top: 5%;
     left: 0%;
@@ -680,6 +769,8 @@ p {
 .about-us .authenticity .text,
 .about-us .local-store .text,
 .about-us .online-shop .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: rgba(0, 0, 0, 0.954);
     font-family: 'Montserrat', sans-serif;
@@ -689,10 +780,15 @@ p {
     width: 45vw;
     height: 45vw;
     margin-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.173);
     border-radius: 10%;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.694);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.694);
 }
 
@@ -815,6 +911,8 @@ p {
 .about-us .location h2 {
     top: 0%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     font-size: 1.8rem;
     margin: 10px;
@@ -831,6 +929,8 @@ p {
     position: absolute;
     top: 5%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -839,6 +939,7 @@ p {
     border-radius: 5%;
     padding: 3%;
     margin-bottom: 0%;
+    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.694);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.694);
 
 }
@@ -857,10 +958,12 @@ p {
 }
 
 .about-us .online-shop h2 i:nth-child(1) {
+    -webkit-animation: mini_left_hand 2s linear infinite;
     animation: mini_left_hand 2s linear infinite;
 }
 
 .about-us .online-shop h2 i:nth-child(2) {
+    -webkit-animation: mini_right_hand 2s linear infinite;
     animation: mini_right_hand 2s linear infinite;
 }
 
@@ -885,11 +988,15 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     height: auto;
     max-width: 100%;
     min-width: 100%;
     opacity: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -905,6 +1012,8 @@ p {
     position: absolute;
     z-index: 5;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 15vw;
     height: 15vw;
@@ -945,12 +1054,22 @@ p {
 
 .slider-mobile .dots,
 .slider-desktop .dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 10%;
     width: 70%;
@@ -978,7 +1097,12 @@ p {
 
 footer {
     position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 5%;
     width: 100vw;
@@ -1021,6 +1145,8 @@ footer h4 a {
     height: 100vh;
     background-color: rgb(255, 194, 0);
     z-index: 15;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -1028,6 +1154,8 @@ footer h4 a {
     position: absolute;
     top: 1%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -1037,8 +1165,15 @@ footer h4 a {
 
 .hamburger-menu ul {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-weight: 700;
     top: 10%;
@@ -1057,6 +1192,8 @@ footer h4 a {
 
 .hamburger-menu-active {
     left: 30%;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -1093,32 +1230,103 @@ body>div>section.about-us>div.online-shop>p {
 
 /* ANIMATIONS MOBILE & TABLETS */
 
-@keyframes mini_left_hand {
+@-webkit-keyframes mini_left_hand {
     0% {
+        -webkit-transform: rotate(90deg) translateY(5px);
         transform: rotate(90deg) translateY(5px)
     }
 
     50% {
+        -webkit-transform: rotate(90deg) translateY(15px);
         transform: rotate(90deg) translateY(15px)
     }
 
     100% {
+        -webkit-transform: rotate(90deg) translateY(5px);
         transform: rotate(90deg) translateY(5px)
+    }
+}
+
+@keyframes mini_left_hand {
+    0% {
+        -webkit-transform: rotate(90deg) translateY(5px);
+        transform: rotate(90deg) translateY(5px)
+    }
+
+    50% {
+        -webkit-transform: rotate(90deg) translateY(15px);
+        transform: rotate(90deg) translateY(15px)
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg) translateY(5px);
+        transform: rotate(90deg) translateY(5px)
+    }
+}
+
+@-webkit-keyframes mini_right_hand {
+    0% {
+        -webkit-transform: rotate(270deg) rotateY(180deg) translateY(5px);
+        transform: rotate(270deg) rotateY(180deg) translateY(5px);
+    }
+
+    50% {
+        -webkit-transform: rotate(270deg) rotateY(180deg) translateY(15px);
+        transform: rotate(270deg) rotateY(180deg) translateY(15px);
+    }
+
+    100% {
+        -webkit-transform: rotate(270deg) rotateY(180deg) translateY(5px);
+        transform: rotate(270deg) rotateY(180deg) translateY(5px);
     }
 }
 
 @keyframes mini_right_hand {
     0% {
+        -webkit-transform: rotate(270deg) rotateY(180deg) translateY(5px);
         transform: rotate(270deg) rotateY(180deg) translateY(5px);
     }
 
     50% {
+        -webkit-transform: rotate(270deg) rotateY(180deg) translateY(15px);
         transform: rotate(270deg) rotateY(180deg) translateY(15px);
     }
 
     100% {
+        -webkit-transform: rotate(270deg) rotateY(180deg) translateY(5px);
         transform: rotate(270deg) rotateY(180deg) translateY(5px);
     }
+}
+
+@-webkit-keyframes arrow_moving_down {
+    0% {
+        top: -50%;
+    }
+
+    15% {
+        top: -25%;
+    }
+
+    30% {
+        top: 0%;
+    }
+
+    45% {
+        top: 25%
+    }
+
+    60% {
+        top: 50%
+    }
+
+    75% {
+        top: 75%
+    }
+
+    100% {
+        top: 100%
+    }
+
 }
 
 @keyframes arrow_moving_down {
@@ -1244,10 +1452,20 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .authenticity .text,
     .about-us .local-store .text,
     .about-us .online-shop .text {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-line-pack: distribute;
         align-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         width: 70vh;
         height: 45vh;
@@ -1390,6 +1608,8 @@ body>div>section.about-us>div.online-shop>p {
 
     .hamburger-menu-active {
         left: 55%;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
     }
 
@@ -1509,6 +1729,8 @@ body>div>section.about-us>div.online-shop>p {
         width: 25vh;
         height: 25vh;
         margin: 30px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
     }
 
@@ -1523,6 +1745,8 @@ body>div>section.about-us>div.online-shop>p {
         height: 25vh;
         border-radius: 3%;
         margin: 30px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         padding: 10px;
     }
@@ -1657,6 +1881,8 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         top: 0%;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -1713,6 +1939,8 @@ body>div>section.about-us>div.online-shop>p {
     .about-us .authenticity .text,
     .about-us .local-store .text,
     .about-us .online-shop .text {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         padding: 5px;
     }
@@ -1733,6 +1961,7 @@ body>div>section.about-us>div.online-shop>p {
         background-repeat: no-repeat;
         background-image: url(./desktop_background_images/bee_keeper.jpg);
         -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
     }
 
@@ -1763,6 +1992,8 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         top: 0%;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 100vw;
         z-index: 50;
@@ -1784,6 +2015,8 @@ body>div>section.about-us>div.online-shop>p {
         position: relative;
         top: 0%;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 100vw;
         height: 90px;
@@ -1805,6 +2038,8 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         left: 20%;
         top: 30%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         background-image: url(./images/pasieka_logo_mobile_devices.png);
         width: 450px;
@@ -1820,6 +2055,8 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         left: 20%;
         top: calc(55% + 450px);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 450px;
         height: 300px;
@@ -1860,12 +2097,20 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         width: 100%;
         padding-right: 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-line-pack: center;
         align-content: center;
         justify-items: center;
     }
@@ -1884,7 +2129,10 @@ body>div>section.about-us>div.online-shop>p {
         font-weight: 600;
         color: rgba(0, 0, 0, 0.924);
         border-radius: 5%;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
+        -webkit-box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     }
 
@@ -1900,11 +2148,19 @@ body>div>section.about-us>div.online-shop>p {
 
     .contact-container {
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         top: 50%;
         left: 35%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         width: 70%;
         height: 100%;
@@ -1922,12 +2178,16 @@ body>div>section.about-us>div.online-shop>p {
 
     .contact-container .phone,
     .contact-container .mail {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 15px;
     }
 
     .contact-container .phone .icon,
     .contact-container .mail .icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
     }
@@ -1938,6 +2198,8 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 18px;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
@@ -1958,8 +2220,15 @@ body>div>section.about-us>div.online-shop>p {
     .online-shop-desktop,
     .about-us-desktop {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         top: 10%;
         left: 40%;
@@ -1998,10 +2267,18 @@ body>div>section.about-us>div.online-shop>p {
 
     .local-store-desktop .info-with-photo,
     .online-shop-desktop .info-with-photo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -ms-flex-line-pack: justify;
         align-content: space-between;
         margin-top: 30px;
         width: 100%;
@@ -2011,10 +2288,19 @@ body>div>section.about-us>div.online-shop>p {
 
     .local-store-desktop .info-with-photo .house-info,
     .online-shop-desktop .how-to-order {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         justify-items: center;
         text-align: center;
@@ -2088,10 +2374,19 @@ body>div>section.about-us>div.online-shop>p {
     .local-store-desktop .store-info,
     .online-shop-desktop .online-shop-info,
     .about-us-desktop .about-us-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
         flex-flow: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-line-pack: center;
         align-content: center;
         width: 100%;
         height: 220px;
@@ -2102,6 +2397,7 @@ body>div>section.about-us>div.online-shop>p {
         text-shadow: 0px 0px 3px black;
         letter-spacing: 2px;
         text-align: center;
+        -webkit-box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
     }
@@ -2139,6 +2435,8 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .description h2 {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
     }
 
@@ -2147,7 +2445,11 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .desc-icons-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         height: 170px;
         width: 100%;
@@ -2166,7 +2468,10 @@ body>div>section.about-us>div.online-shop>p {
         background-position: top;
         background-size: 80%;
         background-repeat: no-repeat;
+        -webkit-box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s;
 
     }
@@ -2191,6 +2496,8 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         bottom: 0%;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 100%;
         color: rgb(255, 194, 0);
@@ -2205,6 +2512,8 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .main-content .product-quality-desktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
         z-index: 2;
@@ -2213,6 +2522,7 @@ body>div>section.about-us>div.online-shop>p {
         height: 250px;
         max-height: 250px;
         width: 100%;
+        -webkit-box-shadow: none;
         box-shadow: none;
         margin-top: 30px;
         background-color: rgba(0, 0, 0, 0.245);
@@ -2220,8 +2530,13 @@ body>div>section.about-us>div.online-shop>p {
 
     .product-quality-desktop .left-panel,
     .product-quality-desktop .right-panel {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 50%;
         height: 100%;
@@ -2265,8 +2580,15 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .panel-desktop .promotion-desktop-main .title-promotion {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         position: absolute;
         padding: 15px;
@@ -2303,12 +2625,19 @@ body>div>section.about-us>div.online-shop>p {
 
     .foot-desk {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         font-family: 'Poppins', sans-serif;
         background-color: rgb(2, 45, 93);
         /* position: relative; */
         bottom: 0vh;
+        -webkit-transform: translateY(calc(50% + 110px));
+        -ms-transform: translateY(calc(50% + 110px));
         transform: translateY(calc(50% + 110px));
         width: 100vw;
         z-index: 1;
@@ -2342,8 +2671,13 @@ body>div>section.about-us>div.online-shop>p {
 .honeys-desktop {
     min-height: 100vh;
     height: 140vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     display: none;
 }
@@ -2360,7 +2694,10 @@ body>div>section.about-us>div.online-shop>p {
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    -webkit-box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -2401,10 +2738,14 @@ body>div>section.about-us>div.online-shop>p {
     text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.583);
     letter-spacing: 3px;
     opacity: 1;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -2412,18 +2753,31 @@ body>div>section.about-us>div.online-shop>p {
 .honeys-desktop .multi-summer-icons,
 .honeys-desktop .acacia-icons,
 .honeys-desktop .linden-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     z-index: 113;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     padding: 0px 30px
 }
@@ -2442,6 +2796,8 @@ body>div>section.about-us>div.online-shop>p {
     background-repeat: no-repeat;
     background-position: top;
     opacity: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -2449,6 +2805,8 @@ body>div>section.about-us>div.online-shop>p {
 .honeys-desktop .multi-summer-icons div:hover,
 .honeys-desktop .acacia-icons div:hover,
 .honeys-desktop .linden-icons div:hover {
+    -webkit-transform: scale(105%);
+    -ms-transform: scale(105%);
     transform: scale(105%);
 }
 
@@ -2457,6 +2815,8 @@ body>div>section.about-us>div.online-shop>p {
     position: absolute;
     bottom: 0%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     font-size: 1.2rem;
     text-align: center;
@@ -2469,9 +2829,17 @@ body>div>section.about-us>div.online-shop>p {
 /* ABOUT-US DESKTOP AREA */
 
 .about-us-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 0px;
     padding-left: 0px;
@@ -2481,8 +2849,14 @@ body>div>section.about-us>div.online-shop>p {
 .about-us .bees,
 .about-us .honey,
 .about-us .authenticity-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     margin: 20px;
@@ -2494,9 +2868,17 @@ body>div>section.about-us>div.online-shop>p {
 .bees-info,
 .honey-info,
 .authenticity-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -2520,6 +2902,8 @@ body>div>section.about-us>div.online-shop>p {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     height: 180px;
     width: 180px;
@@ -2556,12 +2940,20 @@ body>div>section.about-us>div.online-shop>p {
 .bees .bees-description,
 .honey .honey-description,
 .authenticity-desktop .authenticity-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.245);
     border-radius: 3%;
     font-family: 'Poppins', sans-serif;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 60%;
     height: 200px;
@@ -2626,8 +3018,14 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .bees .bees-desc .bee-spots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
@@ -2657,9 +3055,18 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .authenticity-desktop .adress-number-id {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 15px;
 }
