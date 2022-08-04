@@ -1989,27 +1989,11 @@ body>div>section.about-us>div.online-shop>p {
         letter-spacing: 2px;
     }
 
-    .local-store-desktop .store-info p:nth-child(1),
-    .online-shop-info p:nth-child(1),
-    .about-us-desktop .about-us-header p:nth-child(1) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 3s;
-    }
-
     .local-store-desktop .store-info p:nth-child(2),
     .online-shop-info p:nth-child(2),
     .about-us-desktop .about-us-header p:nth-child(2) {
         color: rgb(0, 0, 0);
         text-shadow: 0px 0px 0px rgb(0, 0, 0);
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 4s;
-    }
-
-    .local-store-desktop .store-info p:nth-child(3),
-    .online-shop-info p:nth-child(3),
-    .about-us-desktop .about-us-header p:nth-child(3) {
-        animation: jumper-desktop 10s infinite;
-        animation-delay: 5s;
     }
 
     .local-store-desktop .info-with-photo,
@@ -2132,18 +2116,13 @@ body>div>section.about-us>div.online-shop>p {
         width: 100%;
     }
 
-    .description h2:nth-child(1) {
-        /* animation: jumper-desktop 10s infinite;
-        animation-delay: 3s; */
-    }
-
     .description h2 {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.886);
 
     }
 
     .description h2:nth-child(2) {
-        color: rgba(22, 22, 22, 0.856);
+        color: rgb(22, 22, 22);
         font-weight: 900;
         font-size: 3rem;
         background-color: rgba(255, 196, 0, 0.567);
@@ -2153,8 +2132,6 @@ body>div>section.about-us>div.online-shop>p {
         padding-top: 10px;
         width: 80%;
         text-align: center;
-        /* animation: jumper-desktop 10s infinite;
-        animation-delay: 4s; */
     }
 
     .description h2:nth-child(3) {
@@ -2191,33 +2168,22 @@ body>div>section.about-us>div.online-shop>p {
         background-repeat: no-repeat;
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         transition: 0.5s;
+
     }
 
-    /* .desc-icons-container div:hover {
-        background-color: rgba(0, 0, 0, 0.769);
-    } */
-
     .desc-icons-container div:nth-child(1) {
-        /* animation: jumper-desktop 10s infinite;
-        animation-delay: 6s; */
         background-image: url(./icons_quality_section/1.png);
     }
 
     .desc-icons-container div:nth-child(2) {
-        /* animation: jumper-desktop 10s infinite;
-        animation-delay: 7s; */
         background-image: url(./icons_quality_section/2.png);
     }
 
     .desc-icons-container div:nth-child(3) {
-        /* animation: jumper-desktop 10s infinite;
-        animation-delay: 8s; */
         background-image: url(./icons_quality_section/3.png);
     }
 
     .desc-icons-container div:nth-child(4) {
-        /* animation: jumper-desktop 10s infinite;
-        animation-delay: 9s; */
         background-image: url(./icons_quality_section/4.png);
     }
 
@@ -2250,7 +2216,6 @@ body>div>section.about-us>div.online-shop>p {
         box-shadow: none;
         margin-top: 30px;
         background-color: rgba(0, 0, 0, 0.245);
-
     }
 
     .product-quality-desktop .left-panel,
@@ -2260,16 +2225,18 @@ body>div>section.about-us>div.online-shop>p {
         align-items: center;
         width: 50%;
         height: 100%;
+
     }
 
     .left-panel .product-q-text,
     .right-panel .veterinary-text {
+
         margin: 10px 20px;
         padding: 5px;
         width: 50%;
         color: rgb(255, 194, 0);
         font-family: 'Poppins', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: left;
         letter-spacing: 2px;
         text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
@@ -2757,29 +2724,5 @@ body>div>section.about-us>div.online-shop>p {
     .about-us-desktop {
         top: 5%;
         left: 46%;
-    }
-}
-
-/* ANIMATION DESKTOP */
-
-@keyframes jumper-desktop {
-    0% {
-        transform: scale(108%);
-    }
-
-    5% {
-        transform: scale(108%);
-    }
-
-    25% {
-        transform: scale(100%);
-    }
-
-    50% {
-        transform: scale(100%);
-    }
-
-    100% {
-        transform: scale(100%);
     }
 }
