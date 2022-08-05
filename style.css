@@ -16,6 +16,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 10px;
+
 }
 
 body {
@@ -1955,6 +1956,10 @@ body>div>section.about-us>div.online-shop>p {
         display: none;
     }
 
+    /* html {
+        aspect-ratio: 0.5/0.5;
+    } */
+
     body {
         background-position: center;
         background-size: cover;
@@ -1963,12 +1968,15 @@ body>div>section.about-us>div.online-shop>p {
         -webkit-transition: 1s;
         -o-transition: 1s;
         transition: 1s;
+
     }
 
     .wrapper-desktop {
         height: 100%;
         width: 100%;
         /* min-height: 100%; */
+
+
 
         overflow-x: hidden;
         background-color: rgba(98, 98, 86, 0.434);
@@ -2117,7 +2125,7 @@ body>div>section.about-us>div.online-shop>p {
 
     .bar .navbar li {
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 450;
         color: rgb(243, 238, 238);
         text-decoration: none;
@@ -2519,7 +2527,7 @@ body>div>section.about-us>div.online-shop>p {
         z-index: 2;
         overflow: hidden;
         border-radius: 2%;
-        height: 250px;
+        height: 200px;
         max-height: 250px;
         width: 100%;
         -webkit-box-shadow: none;
@@ -2621,10 +2629,10 @@ body>div>section.about-us>div.online-shop>p {
         color: rgb(255, 194, 0);
     }
 
-
+    /* footer can be only absolute on main content! */
 
     .foot-desk {
-        position: relative;
+        position: absolute;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2636,9 +2644,9 @@ body>div>section.about-us>div.online-shop>p {
         background-color: rgb(2, 45, 93);
         /* position: relative; */
         bottom: 0vh;
-        -webkit-transform: translateY(calc(50% + 110px));
+        /* -webkit-transform: translateY(calc(50% + 110px));
         -ms-transform: translateY(calc(50% + 110px));
-        transform: translateY(calc(50% + 110px));
+        transform: translateY(calc(50% + 110px)); */
         width: 100vw;
         z-index: 1;
         /* margin-top: 10px; */
@@ -3100,6 +3108,139 @@ body>div>section.about-us>div.online-shop>p {
 
 .main-content {
     display: block;
+}
+
+
+/* HiDPI and MDPi laptops queries, they need smaller 1st page content */
+
+/* MDPI */
+
+@media (min-width: 1199.98px) and (max-height: 800px) {}
+
+/* HiDPI */
+
+@media (min-width: 1199.98px) and (max-height: 901px) {
+
+    .bar-imitation,
+    .panel-desktop {
+        height: 70px;
+    }
+
+    .bar-imitation-2,
+    .bar {
+        height: 45px;
+    }
+
+    .bar .navbar li {
+        font-size: 1.3rem;
+    }
+
+
+
+
+
+    .logo-desktop {
+        width: 380px;
+        height: 380px;
+    }
+
+    .promotion-desktop-main {
+        top: calc(55% + 380px);
+        width: 400px;
+        height: 250px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    .panel-desktop .promotion-desktop-main .title-promotion {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .panel-desktop .promotion-desktop-main .desc-promotion {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    .description {
+        height: 170px;
+        font-size: 1.5rem;
+
+    }
+
+    .description h2 {
+        font-size: 2rem;
+    }
+
+    div.description>h2:nth-child(2) {
+        font-size: 2rem;
+        line-height: 4rem;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .desc-icons-container {
+        /* margin-bottom: 10px; */
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .desc-icons-container div {
+        height: 140px;
+        width: 140px;
+
+    }
+
+    .desc-icons-container div p {
+        font-size: 1.1rem;
+    }
+
+    .left-panel .product-q-text,
+    .right-panel .veterinary-text {
+        padding: 10px;
+        margin: 0px;
+        font-size: 1.1rem;
+    }
+
+    .main-content .product-quality-desktop {
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .left-panel .product-q-icon,
+    .right-panel .veterinary-icon {
+        height: 140px;
+        width: 140px;
+        background-size: contain;
+    }
+
+    .foot-desk {
+        margin-top: 5px;
+        height: 65px;
+
+    }
+
+    .foot-desk h4 {
+        font-size: 1rem;
+    }
+
+    .foot-desk p {
+        font-size: 0.9rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .foot-desk .p-container {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 /* larger screens and tv */
