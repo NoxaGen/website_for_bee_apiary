@@ -2556,7 +2556,7 @@ body>div>section.about-us>div.online-shop>p {
 
     .left-panel .product-q-text,
     .right-panel .veterinary-text {
-
+        height: 200px;
         margin: 10px 20px;
         padding: 5px;
         width: 50%;
@@ -3146,7 +3146,7 @@ body>div>section.about-us>div.online-shop>p {
     .promotion-desktop-main {
         top: calc(55% + 380px);
         width: 400px;
-        height: 250px;
+        height: 220px;
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -3165,6 +3165,7 @@ body>div>section.about-us>div.online-shop>p {
         display: flex;
         justify-content: space-between;
         align-items: space-between;
+        top: 6%;
     }
 
     .description {
@@ -3185,7 +3186,7 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .desc-icons-container {
-        /* margin-bottom: 10px; */
+        margin-top: 0px;
         align-items: center;
         margin-bottom: 0px;
     }
@@ -3201,7 +3202,7 @@ body>div>section.about-us>div.online-shop>p {
 
     .left-panel .product-q-text,
     .right-panel .veterinary-text {
-        padding: 10px;
+        padding-top: 20px;
         margin: 0px;
         font-size: 1.1rem;
     }
@@ -3209,6 +3210,7 @@ body>div>section.about-us>div.online-shop>p {
     .main-content .product-quality-desktop {
         margin-top: 10px;
         padding: 0px;
+        height: 170px;
     }
 
     .left-panel .product-q-icon,
@@ -3273,6 +3275,10 @@ body>div>section.about-us>div.online-shop>p {
         width: 145px;
         height: 145px;
         background-size: contain;
+    }
+
+    .slider-desktop .dots {
+        bottom: 15%;
     }
 
 
