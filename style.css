@@ -2271,6 +2271,9 @@ body>div>section.about-us>div.online-shop>p {
     .about-us-desktop .about-us-header p:nth-child(2) {
         color: rgb(0, 0, 0);
         text-shadow: 0px 0px 0px rgb(0, 0, 0);
+        background-color: rgba(255, 196, 0, 0.567);
+        padding: 5px 15px;
+        border-radius: 5%;
     }
 
     .local-store-desktop .info-with-photo,
@@ -2693,7 +2696,7 @@ body>div>section.about-us>div.online-shop>p {
 .honeys-desktop section {
     position: relative;
     width: 100%;
-    height: 22%;
+    height: 240px;
     border-radius: 5%;
     background-color: rgba(0, 0, 0, 0.245);
     z-index: 112;
@@ -2701,7 +2704,6 @@ body>div>section.about-us>div.online-shop>p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    cursor: pointer;
     -webkit-box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
     -webkit-transition: 1s;
@@ -3135,18 +3137,6 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 1rem;
     }
 
-    /* .contact-container .icon {
-        width: 25px;
-        height: 25px;
-    }
-
-    .contact-container .phone .icon i,
-    .contact-container .mail .icon i {
-        font-size: 1.5rem;
-    } */
-
-
-
 
     .logo-desktop {
         width: 380px;
@@ -3203,7 +3193,6 @@ body>div>section.about-us>div.online-shop>p {
     .desc-icons-container div {
         height: 140px;
         width: 140px;
-
     }
 
     .desc-icons-container div p {
@@ -3229,11 +3218,26 @@ body>div>section.about-us>div.online-shop>p {
         background-size: contain;
     }
 
+    .honeys-desktop section {
+        height: 200px;
+    }
+
+    .honeys-desktop .multi-spring-icons div,
+    .honeys-desktop .multi-summer-icons div,
+    .honeys-desktop .acacia-icons div,
+    .honeys-desktop .linden-icons div {
+        width: 85px;
+        height: 85px;
+    }
+
+    .honeys-desktop h2 {
+        font-size: 2rem;
+    }
+
     .foot-desk {
         margin-top: 5px;
         height: 80px;
         padding: 3px;
-
     }
 
     .foot-desk h4 {
