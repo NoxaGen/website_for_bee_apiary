@@ -2558,7 +2558,7 @@ body>div>section.about-us>div.online-shop>p {
     .right-panel .veterinary-text {
         height: 200px;
         margin: 10px 20px;
-        padding: 5px;
+        padding: 15px 5px;
         width: 50%;
         color: rgb(255, 194, 0);
         font-family: 'Poppins', sans-serif;
@@ -3165,7 +3165,7 @@ body>div>section.about-us>div.online-shop>p {
         display: flex;
         justify-content: space-between;
         align-items: space-between;
-        top: 6%;
+        top: 8%;
     }
 
     .description {
@@ -3202,7 +3202,7 @@ body>div>section.about-us>div.online-shop>p {
 
     .left-panel .product-q-text,
     .right-panel .veterinary-text {
-        padding-top: 20px;
+        padding-top: 30px;
         margin: 0px;
         font-size: 1.1rem;
     }
