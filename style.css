@@ -3234,6 +3234,48 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 2rem;
     }
 
+    .local-store-desktop .store-info,
+    .online-shop-desktop .online-shop-info,
+    .about-us-desktop .about-us-header {
+        height: 170px;
+        padding: 10px;
+    }
+
+    .local-store-desktop .store-info p,
+    .online-shop-info p,
+    .about-us-desktop .about-us-header p {
+        font-size: 2rem;
+    }
+
+    .local-store-desktop section.info-with-photo div.house-info p,
+    .online-shop-desktop section.info-with-photo div.how-to-order p {
+        font-size: 1.8rem;
+    }
+
+    section.members div.owner div.owner-info div.name-and-status h3,
+    section.members div.sub-owner div.sub-owner-info div.name-and-status h3 {
+        font-size: 2rem;
+    }
+
+    .owner .owner-desc,
+    .sub-owner .sub-owner-desc,
+    .bees .bees-desc,
+    .honey .honey-desc,
+    .authenticity-desktop .authenticity-desc {
+        font-size: 1.6rem;
+    }
+
+    .owner-icon .icon-container,
+    .sub-owner-icon .icon-container,
+    .bees-icon .icon-container,
+    .honey-icon .icon-container,
+    .authenticity-icon .icon-container {
+        width: 145px;
+        height: 145px;
+        background-size: contain;
+    }
+
+
     .foot-desk {
         margin-top: 5px;
         height: 80px;
