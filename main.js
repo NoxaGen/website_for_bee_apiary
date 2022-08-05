@@ -189,11 +189,11 @@ function backgroundDesktopAuto() {
         imgCounter = 0;
     }
     document.body.style.backgroundImage = imagesInnerHTML[imgCounter];
-    document.body.style.transition = "all 1s";
+    document.body.style.transition = "all 2s";
     imgCounter++;
 }
 
-setInterval(backgroundDesktopAuto, 5000);
+setInterval(backgroundDesktopAuto, 8500);
 
 // SLIDER DESKTOP (ALMOST THE SAME WORKING LIKE IN MOBILE)
 
