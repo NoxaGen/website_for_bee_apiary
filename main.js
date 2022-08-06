@@ -306,7 +306,7 @@ function contentChanger() {
     } else if (this.dataset.deskOption === 'honeys') {
         honeysD.style.display = 'block';
         footerDesktop.style.position = 'relative';
-        footerDesktop.style.marginTop = '0px';
+        footerDesktop.style.marginTop = '150px';
     } else if (this.dataset.deskOption === 'shop') {
         localStoreD.style.display = 'block';
         footerDesktop.style.position = 'relative';
@@ -332,9 +332,10 @@ function openAllegro() {
 }
 
 //desktop
-
+const promotionBanner = document.querySelector('.promotion-desktop-main');
 const auctionBanner = document.querySelector('.auctions-banner');
 auctionBanner.addEventListener('click', openAllegro);
+promotionBanner.addEventListener('click', openAllegro);
 
 //mobile
 
