@@ -298,11 +298,10 @@ const desktopContents = [mainContentD, honeysD, localStoreD, onlineShopD, aboutU
 
 function contentChanger() {
     desktopContents.forEach(liElement => liElement.style.display = 'none');
-    console.log(this.dataset.deskOption);
+    // console.log(this.dataset.deskOption);
     if (this.dataset.deskOption === 'main') {
         mainContentD.style.display = 'block';
         footerDesktop.style.position = 'absolute';
-
     } else if (this.dataset.deskOption === 'honeys') {
         honeysD.style.display = 'block';
         footerDesktop.style.position = 'relative';
@@ -334,8 +333,24 @@ function openAllegro() {
 //desktop
 const promotionBanner = document.querySelector('.promotion-desktop-main');
 const auctionBanner = document.querySelector('.auctions-banner');
+const multiflorous = document.querySelector('.multiflorous-summer');
+const acacia = document.querySelector('.acacia');
+const linden = document.querySelector('.linden-tree-desktop');
+
 auctionBanner.addEventListener('click', openAllegro);
 promotionBanner.addEventListener('click', openAllegro);
+
+multiflorous.addEventListener('click', function () {
+    window.open("https://allegro.pl/oferta/miod-wielokwiatowy-100-naturalny-nektarowy-1-2kg-12455869305");
+});
+
+acacia.addEventListener('click', function () {
+    window.open("https://allegro.pl/oferta/miod-akacjowy-100-naturalny-nektarowy-1-2kg-12456008078");
+});
+
+linden.addEventListener('click', function () {
+    window.open("https://allegro.pl/oferta/miod-lipowy-100-naturalny-nektarowy-1-2kg-12456056162");
+});
 
 //mobile
 
