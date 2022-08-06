@@ -2378,12 +2378,17 @@ body>div>section.about-us>div.online-shop>p {
         width: 47.5%;
         border-radius: 3%;
         overflow: hidden;
-        background-color: rgb(0, 0, 0, 0.245);
+        background-color: rgb(0, 0, 0, 0.600);
         background-image: url(./desktop_images/allegro-order.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
+        transition: 1s;
+    }
+
+    .online-shop-desktop .auctions-banner:hover {
+        background-color: rgb(0, 0, 0, 0.200);
     }
 
     .description,
@@ -2527,6 +2532,10 @@ body>div>section.about-us>div.online-shop>p {
         min-height: 100vh;
     }
 
+    body>div.wrapper-desktop>section.main-content>div.description {
+        background-color: rgb(0, 0, 0, 0.600);
+    }
+
     .main-content .product-quality-desktop {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2593,6 +2602,12 @@ body>div>section.about-us>div.online-shop>p {
         position: absolute;
         border-radius: 5%;
         overflow: hidden;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .panel-desktop .promotion-desktop-main:hover {
+        background-color: rgba(0, 0, 0, 0.245);
     }
 
     .panel-desktop .promotion-desktop-main .title-promotion {
@@ -2629,12 +2644,22 @@ body>div>section.about-us>div.online-shop>p {
     .panel-desktop .promotion-desktop-main .desc-promotion {
         position: absolute;
         font-family: 'Poppins', sans-serif;
-        top: 45%;
-        text-align: justify;
+        top: 40%;
+        text-align: center;
         padding: 5px 10px;
         font-size: 1.8rem;
         font-weight: 500;
         color: rgb(255, 194, 0);
+    }
+
+    .panel-desktop .promotion-desktop-main .desc-promotion span {
+        padding: 0px 10px;
+        font-size: 2.2rem;
+        color: rgb(10, 10, 10);
+        background-color: rgba(255, 196, 0, 0.567);
+        text-shadow: none;
+        font-weight: 900;
+        border-radius: 3%;
     }
 
     /* footer can be only absolute on main content! */
@@ -2685,8 +2710,8 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 .honeys-desktop {
-    min-height: 100vh;
-    height: 140vh;
+
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3216,6 +3241,11 @@ body>div>section.about-us>div.online-shop>p {
         margin-top: 10px;
         padding: 0px;
         height: 170px;
+    }
+
+    .panel-desktop .promotion-desktop-main .desc-promotion span {
+        padding: 0px 5px;
+        font-size: 2rem;
     }
 
     .left-panel .product-q-icon,
