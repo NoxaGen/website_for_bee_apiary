@@ -522,7 +522,7 @@ p {
 
 /* SPRING ICONS */
 
-.products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(1),
+/* .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(1),
 .honeys-desktop .multiflorous-spring .multi-spring-icons div:nth-child(1) {
     background-image: url(./multiflorous_spring_icons/blood_sad.png);
 }
@@ -555,7 +555,7 @@ p {
 .products-with-benefits .honeys .multiflorous-spring-banner .benefits-icons-container div:nth-child(7),
 .honeys-desktop .multiflorous-spring .multi-spring-icons div:nth-child(7) {
     background-image: url(./multiflorous_spring_icons/muscle.png);
-}
+} */
 
 /* SUMMER ICONS */
 
@@ -587,6 +587,11 @@ p {
 .products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(6),
 .honeys-desktop .multiflorous-summer .multi-summer-icons div:nth-child(6) {
     background-image: url(./multi_summer_icons/tired_hard.png);
+}
+
+.products-with-benefits .honeys .multiflorous-summer-banner .benefits-icons-container div:nth-child(6),
+.honeys-desktop .multiflorous-summer .multi-summer-icons div:nth-child(7) {
+    background-image: url(./multiflorous_spring_icons/muscle.png);
 }
 
 /* ACACIA ICONS */
