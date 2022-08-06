@@ -2751,21 +2751,25 @@ body>div>section.about-us>div.online-shop>p {
 
 .honeys-desktop .multiflorous-spring {
     background-image: url(./desktop_honeys_section/2.jpg);
+    cursor: pointer;
 }
 
 .honeys-desktop .multiflorous-summer {
     margin-top: 30px;
     background-image: url(./desktop_honeys_section/1.jpg);
+    cursor: pointer;
 }
 
 .honeys-desktop .acacia {
     margin-top: 30px;
     background-image: url(./desktop_honeys_section/3.jpg);
+    cursor: pointer;
 }
 
 .honeys-desktop .linden-tree-desktop {
     margin-top: 30px;
     background-image: url(./desktop_honeys_section/4.jpg);
+    cursor: pointer;
 }
 
 .honeys-desktop h2 {
