@@ -955,6 +955,12 @@ p {
 
 .about-us .online-shop .auction h2 {
     top: 0%;
+
+}
+
+.about-us .online-shop .auction h2 a {
+    text-decoration-line: none;
+    color: rgb(5, 5, 5);
 }
 
 .about-us .online-shop h2 i {
@@ -967,7 +973,7 @@ p {
     animation: mini_left_hand 2s linear infinite;
 }
 
-.about-us .online-shop h2 i:nth-child(2) {
+.about-us .online-shop h2 i:nth-child(3) {
     -webkit-animation: mini_right_hand 2s linear infinite;
     animation: mini_right_hand 2s linear infinite;
 }
