@@ -953,17 +953,17 @@ p {
     margin: 30px 0px;
 }
 
-.about-us .online-shop .auction h2 {
+.about-us .online-shop .auction p {
     top: 0%;
 
 }
 
-.about-us .online-shop .auction h2 a {
+.about-us .online-shop .auction p a {
     text-decoration-line: none;
     color: rgb(5, 5, 5);
 }
 
-.about-us .online-shop h2 i {
+.about-us .online-shop p i {
     font-size: 2.1rem;
     color: rgba(250, 247, 247, 0.945);
 }
@@ -1934,7 +1934,7 @@ body>div>section.about-us>div.online-shop>p {
         font-size: 6rem;
     }
 
-    .about-us .online-shop .auction h2 i {
+    .about-us .online-shop .auction p i {
         font-size: 4rem;
     }
 }
@@ -3018,15 +3018,10 @@ body>div>section.about-us>div.online-shop>p {
     margin-top: 20px;
 }
 
-.owner .name-and-status h3,
 .owner .name-and-status p,
-.sub-owner .name-and-status h3,
 .sub-owner .name-and-status p,
-.bees .bees-description h3,
 .bees .bees-description p,
-.honey .honey-description h3,
 .honey .honey-description p,
-.authenticity-desktop .authenticity-description h3,
 .authenticity-desktop .authenticity-description p {
     font-size: 2.3rem;
     color: rgb(255, 194, 0);
@@ -3035,11 +3030,11 @@ body>div>section.about-us>div.online-shop>p {
     text-align: center;
 }
 
-.owner .name-and-status h4,
-.sub-owner .name-and-status h4,
-.bees .bees-description h4,
-.honey .honey-description h4,
-.authenticity-desktop .authenticity-description h4 {
+.owner .name-and-status p:nth-child(2),
+.sub-owner .name-and-status p:nth-child(2),
+.bees .bees-description p:nth-child(2),
+.honey .honey-description p:nth-child(2),
+.authenticity-desktop .authenticity-description p:nth-child(2) {
     font-size: 2rem;
     color: rgb(10, 10, 10);
     background-color: rgba(255, 196, 0, 0.567);
