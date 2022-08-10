@@ -352,10 +352,7 @@ linden.addEventListener('click', function () {
     window.open("https://allegro.pl/oferta/miod-lipowy-100-naturalny-nektarowy-1-2kg-12456056162");
 });
 
-//mobile
+// mobile
 
 const allegroIcon = document.querySelector('.about-us .online-shop .picture');
-const clickHereMobile = document.querySelector('div.auction h2');
-
 allegroIcon.addEventListener('click', openAllegro);
-clickHereMobile.addEventListener('click', openAllegro);
