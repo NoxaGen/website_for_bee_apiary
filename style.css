@@ -1973,9 +1973,10 @@ body>div>section.about-us>div.online-shop>p {
         display: none;
     }
 
-    /* html {
-        aspect-ratio: 0.5/0.5;
-    } */
+    .bar .navbar li:first-child a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
 
     body {
         background-position: center;
@@ -1985,16 +1986,11 @@ body>div>section.about-us>div.online-shop>p {
         -webkit-transition: 1s;
         -o-transition: 1s;
         transition: 1s;
-
     }
 
     .wrapper-desktop {
         height: 100%;
         width: 100%;
-        /* min-height: 100%; */
-
-
-
         overflow-x: hidden;
         background-color: rgba(98, 98, 86, 0.434);
         position: relative;
@@ -2005,8 +2001,6 @@ body>div>section.about-us>div.online-shop>p {
         display: block;
         background-color: #54d5f8;
         width: 100vw;
-
-
     }
 
     body {
