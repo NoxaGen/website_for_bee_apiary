@@ -955,6 +955,9 @@ p {
 
 .about-us .online-shop .auction p {
     top: 0%;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 900;
 
 }
 
@@ -966,14 +969,18 @@ p {
 .about-us .online-shop p i {
     font-size: 2.1rem;
     color: rgba(250, 247, 247, 0.945);
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(32, 32, 32, 0.456));
+    filter: drop-shadow(1px 1px 1px rgba(32, 32, 32, 0.456));
 }
 
-.about-us .online-shop h2 i:nth-child(1) {
+
+.about-us .online-shop p i:nth-child(1) {
     -webkit-animation: mini_left_hand 2s linear infinite;
     animation: mini_left_hand 2s linear infinite;
+
 }
 
-.about-us .online-shop h2 i:nth-child(3) {
+.about-us .online-shop p i:nth-child(3) {
     -webkit-animation: mini_right_hand 2s linear infinite;
     animation: mini_right_hand 2s linear infinite;
 }
