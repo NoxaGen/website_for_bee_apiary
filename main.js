@@ -337,6 +337,7 @@ const multiflorous = document.querySelector('.multiflorous-summer');
 const acacia = document.querySelector('.acacia');
 const linden = document.querySelector('.linden-tree-desktop');
 const fbBtn = document.querySelector('.fb-icon')
+const fbBtnM = document.querySelector('.fb-mobile');
 
 auctionBanner.addEventListener('click', openAllegro);
 promotionBanner.addEventListener('click', openAllegro);
@@ -354,6 +355,10 @@ linden.addEventListener('click', function () {
 });
 
 fbBtn.addEventListener('click', function () {
+    window.open("https://www.facebook.com/pasiekapodbrzozami1");
+});
+
+fbBtnM.addEventListener('click', function () {
     window.open("https://www.facebook.com/pasiekapodbrzozami1");
 });
 
