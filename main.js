@@ -337,7 +337,7 @@ const multiflorous = document.querySelector('.multiflorous-summer');
 const acacia = document.querySelector('.acacia');
 const linden = document.querySelector('.linden-tree-desktop');
 const fbBtn = document.querySelector('.fb-icon')
-const fbBtnM = document.querySelector('.fb-mobile');
+
 
 auctionBanner.addEventListener('click', openAllegro);
 promotionBanner.addEventListener('click', openAllegro);
@@ -358,12 +358,15 @@ fbBtn.addEventListener('click', function () {
     window.open("https://www.facebook.com/pasiekapodbrzozami1");
 });
 
-fbBtnM.addEventListener('click', function () {
-    window.open("https://www.facebook.com/pasiekapodbrzozami1");
-});
-
-
 // mobile
 
 const allegroIcon = document.querySelector('.about-us .online-shop .picture');
+const fbBtnM = document.querySelector('.fb-mobile');
+const allegroBtnM = document.querySelector('.allegro-mobile');
+
 allegroIcon.addEventListener('click', openAllegro);
+allegroBtnM.addEventListener('click', openAllegro);
+
+fbBtnM.addEventListener('click', function () {
+    window.open("https://www.facebook.com/pasiekapodbrzozami1");
+});
