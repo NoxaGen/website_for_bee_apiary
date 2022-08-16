@@ -2219,7 +2219,7 @@ body>div>section.about-us>div.online-shop>p {
         height: 50px;
         background-position: center;
         background-size: cover;
-        margin-right: 30px;
+        margin-right: 10px;
         border: 0px;
         padding: 0px;
         border-radius: 0px;
@@ -2700,6 +2700,10 @@ body>div>section.about-us>div.online-shop>p {
         text-shadow: none;
         font-weight: 900;
         border-radius: 3%;
+    }
+
+    .fb-page {
+        margin-top: 50px;
     }
 
     /* footer can be only absolute on main content! */
