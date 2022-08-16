@@ -336,6 +336,7 @@ const auctionBanner = document.querySelector('.auctions-banner');
 const multiflorous = document.querySelector('.multiflorous-summer');
 const acacia = document.querySelector('.acacia');
 const linden = document.querySelector('.linden-tree-desktop');
+const fbBtn = document.querySelector('.fb-icon')
 
 auctionBanner.addEventListener('click', openAllegro);
 promotionBanner.addEventListener('click', openAllegro);
@@ -351,6 +352,11 @@ acacia.addEventListener('click', function () {
 linden.addEventListener('click', function () {
     window.open("https://allegro.pl/oferta/miod-lipowy-100-naturalny-nektarowy-1-2kg-12456056162");
 });
+
+fbBtn.addEventListener('click', function () {
+    window.open("https://www.facebook.com/pasiekapodbrzozami1");
+});
+
 
 // mobile
 
