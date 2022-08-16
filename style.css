@@ -1231,6 +1231,21 @@ footer h4 a {
     font-size: 4rem;
 }
 
+.fb-mobile {
+    position: fixed;
+    top: 18px;
+    left: 15px;
+    /* transform: translateY(-50%); */
+    background: none;
+    background-image: url(./images/fb-logo-button.png);
+    border: none;
+    background-position: center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    z-index: 11;
+}
+
 /* MOVIE MOBILE  */
 
 /* .movie-mobile {
@@ -1661,6 +1676,13 @@ body>div>section.about-us>div.online-shop>p {
         background-size: contain;
         background-image: url(./images_tablet/main_logo_medium_devices.png);
         background-position: center;
+    }
+
+    .fb-mobile {
+        top: 35px;
+        left: 35px;
+        height: 60px;
+        width: 60px;
     }
 
     .info h1 {
