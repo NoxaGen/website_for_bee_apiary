@@ -2211,6 +2211,31 @@ body>div>section.about-us>div.online-shop>p {
         position: relative;
     }
 
+
+    .contact-container .fb-icon {
+        background: none;
+        background-image: url(./images/fb-logo-button.png);
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-size: cover;
+        margin-right: 30px;
+        border: 0px;
+        padding: 0px;
+        border-radius: 0px;
+        box-shadow: none;
+        border-radius: 25%;
+        cursor: pointer;
+
+    }
+
+    .contact-container .fb-icon:hover {
+        box-shadow: 0px 0px 3px 3px rgb(215, 161, 12);
+        border-radius: 25%;
+
+
+    }
+
     .contact-container .phone .icon i,
     .contact-container .mail .icon i {
         position: absolute;
