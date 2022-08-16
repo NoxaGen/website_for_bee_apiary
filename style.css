@@ -1986,6 +1986,26 @@ body>div>section.about-us>div.online-shop>p {
     }
 }
 
+@media (min-width: 1024px) and (min-height: 1364px) and (orientation: portrait) {
+    .fb-mobile {
+        width: 78px;
+        height: 78px;
+    }
+
+    .info p {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    body>div.wrapper-mobile-tablet>header>section>div {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+/* BIG TABLETS PORTRAIT */
+
 /* // Large devices (avarage desktops, 992px and up)  */
 /* and (max-height: 1022px) */
 
