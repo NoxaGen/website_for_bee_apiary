@@ -1231,7 +1231,8 @@ footer h4 a {
     font-size: 4rem;
 }
 
-.fb-mobile {
+.fb-mobile,
+.allegro-mobile {
     position: fixed;
     top: 18px;
     left: 15px;
@@ -1244,6 +1245,12 @@ footer h4 a {
     width: 45px;
     height: 45px;
     z-index: 11;
+}
+
+.allegro-mobile {
+    top: 70px;
+    left: 15px;
+    background-image: url(./images/allegro-button.png);
 }
 
 /* MOVIE MOBILE  */
@@ -1391,6 +1398,20 @@ body>div>section.about-us>div.online-shop>p {
         top: 100%
     }
 
+}
+
+/* VERY SMALL PORTRAIT MOBILE-DEVICES (like iphone 5/SE) */
+@media (max-width: 320px) and (orientation: portrait) {
+
+    .fb-mobile,
+    .allegro-mobile {
+        width: 35px;
+        height: 35px;
+    }
+
+    .allegro-mobile {
+        top: 55px;
+    }
 }
 
 /* HORIZONTAL MOBILE */
@@ -1678,11 +1699,16 @@ body>div>section.about-us>div.online-shop>p {
         background-position: center;
     }
 
-    .fb-mobile {
+    .fb-mobile,
+    .allegro-mobile {
         top: 35px;
         left: 35px;
         height: 60px;
         width: 60px;
+    }
+
+    .allegro-mobile {
+        top: 100px;
     }
 
     .info h1 {
@@ -1987,9 +2013,23 @@ body>div>section.about-us>div.online-shop>p {
 }
 
 @media (min-width: 1024px) and (min-height: 1364px) and (orientation: portrait) {
-    .fb-mobile {
+
+    .fb-mobile,
+    .allegro-mobile {
         width: 78px;
         height: 78px;
+    }
+
+    .fb-mobile {
+        background-image: url(./images_tablet/fb-iPad-pro.png);
+    }
+
+    .allegro-mobile {
+        background-image: url(./images_tablet/allegro-iPad-Pro.png);
+    }
+
+    .allegro-mobile {
+        top: 125px;
     }
 
     .info p {
