@@ -53,7 +53,7 @@ There is one more disadvantage that arose due to the lack of subpages, all conte
 Summary:
 _____________
 
-This project taught me a lot. First of all, it's showed me what it means to use knowledge in practice. If I had to do another page or project - I would definitely not repeat my mistakes, I will use better solutions and improve the entire code, and I will certainly make it faster. I consider the project closed, currently I am waiting to be indexed by google and I will get acquainted with the analytics. Thank you if you survived here, it was a science and adventure for me, and for sure in the future, in addition to my full-time work as a Frontend Web Developer, I will be creating such websites as a hobby.
+This project taught me a lot. First of all, it's showed me what it means to use knowledge in practice. If I had to do another page or project - I would definitely not repeat my mistakes, I will use better solutions and improve the entire code, and I will certainly make it faster. I consider the project is closed, currently I am waiting to be indexed by google and I will get acquainted with the analytics. Thank you if you you read all the way here, it was an educative adventure for me, and for sure in the future, in addition to my full-time work as a Frontend Web Developer, I will be creating such websites as a hobby.
 
 Yours,
 Wiktor 'NoxaGen' Augustyniak
