@@ -19,7 +19,7 @@ CSS3,
 JavaScript,
 Autoprefixer,
 and Canva(for graphics with license). 
-The website has been optimized in terms of SEO.
+Website is optimized in terms of SEO.
 ![Projekt bez tytułu](https://user-images.githubusercontent.com/87094041/185352710-04a52261-b9eb-4f46-ac9f-ad0e555927bf.png)
 
 
