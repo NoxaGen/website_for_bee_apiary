@@ -2243,6 +2243,12 @@ body>div>section.about-us>div.online-shop>p {
         background-color: rgb(3, 3, 3);
     }
 
+    .bar .navbar li:hover a {
+        cursor: pointer;
+        color: rgb(243, 215, 10);
+        /* background-color: rgb(3, 3, 3); */
+    }
+
     header {
         display: none;
     }
@@ -2503,7 +2509,7 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .online-shop-desktop .auctions-banner:hover {
-        background-color: rgb(0, 0, 0, 0.200);
+        box-shadow: 0px 0px 15px 15px rgb(215, 161, 12);
     }
 
     .description,
@@ -2725,7 +2731,7 @@ body>div>section.about-us>div.online-shop>p {
     }
 
     .panel-desktop .promotion-desktop-main:hover {
-        background-color: rgba(0, 0, 0, 0.245);
+        box-shadow: 0px 0px 10px 10px rgb(215, 161, 12);
     }
 
     .panel-desktop .promotion-desktop-main .title-promotion {
