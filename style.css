@@ -2535,10 +2535,7 @@ body>div>section.about-us>div.online-shop>p {
         text-align: center;
         -webkit-box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
         box-shadow: 1px 1px 1px rgba(53, 52, 52, 0.886);
-        -webkit-filter: drop-shadow(1px 1px 2px rgba(50, 49, 49, 0.517));
     }
-
-
 
     .local-store-desktop .desktop-map {
         margin-top: 30px;
@@ -2550,7 +2547,6 @@ body>div>section.about-us>div.online-shop>p {
 
     .description h2 {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.886);
-
     }
 
     .description h2:nth-child(2) {
@@ -3263,7 +3259,6 @@ body>div>section.about-us>div.online-shop>p {
 
 /* HiDPI and MDPi laptops queries, they need smaller 1st page content */
 
-
 @media (min-width: 1199.98px) and (max-height: 901px) {
 
     .bar-imitation,
@@ -3298,7 +3293,6 @@ body>div>section.about-us>div.online-shop>p {
         background-size: contain;
         background-repeat: no-repeat;
     }
-
 
     .panel-desktop .promotion-desktop-main .title-promotion {
         font-size: 2rem;
