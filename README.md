@@ -48,7 +48,7 @@ Website view on a smartphone device:
 
 ![phones_cut](https://user-images.githubusercontent.com/87094041/185403279-297c232f-a280-42a6-bfda-c7421933a9b0.png)
 
-There is one more disadvantage that arose due to the lack of subpages, all content, as mentioned above, changes dynamically and for the construction of two views (for mobile and for desktop) I used two dynamically changing wrappers, always one of them has the value - display: none. It is basically invisible to the user, but the lack of subpages means that the entire content on the mobile device must be loaded immediately, even though the photos are in .jpg format and have an optimized size so that the browser does not have any additional work in rendering, then loading the entire content may take 2-3 seconds longer to load the full page on mobile devices. Another valuable lesson on the topics of building HTML structure and optimizing the performance of a website.
+There is one more disadvantage that arose due to the lack of subpages, all content, as mentioned above, changes dynamically and for the construction of two views (for mobile and for desktop) I used two dynamically changing wrappers, always one of them has the value - display: none. It is basically invisible to the user, but the lack of subpages means that the entire content on the mobile device must be loaded immediately, even though the photos are in .jpg format and have an optimized size so that the browser does not have any additional work in rendering, then loading the entire content may take 2-3 seconds longer to load the full page on mobile devices. Another valuable lesson oabout HTML structure and optimizing the performance of a website.
 
 Summary:
 _____________
