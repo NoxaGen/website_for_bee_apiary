@@ -34,7 +34,7 @@ SASS - Now I can see how SASS preprocessors can improve work efficiency and I wi
 If I had been doing this project from scratch, what would I have changed in it? What would I improve?
 ____________
 
-There is one thing that annoys me - the point is that I did the entire project without any subpages. I thought to myself "I will make a website without subpages, all the content will change dynamically, it will be great!". Well, in the end, after spending a few days learning the basics of SEO, I discovered why certain HTML tags are so important, what optimization is all about, and why internal and external links raise SEO points. However, I left this project as it is to commemorate my first website and draw conclusions. Despite the lack of subpages, thanks to the knowledge I have acquired about SEO, I was able to increase the SEO-score from 46% to 84% using free SEO tools. I think this lesson taught me a lot about the very structure of HTML.
+There is one thing that annoys me - the point is that I did the entire project without any subpages. I thought to myself "I will make a website without subpages, all the content will change dynamically, it will be great!". Well, in the end, after spending a few days learning the basics of SEO, I discovered why certain HTML tags are so important, what optimization is all about, and why internal and external links raise SEO points. However, I left this project as it is to commemorate my first website and draw conclusions. Despite the lack of subpages, thanks to the knowledge I have acquired about SEO, I was able to increase the SEO-score from 46% to 84% using free SEO tools. I think this lesson taught me a lot about the very structure of HTML. I would also improve the creation of appropriate names for images, "cleaner" cataloging of content. In one course I learned about an interesting technique of image positioning, to use <div> with background-image instead of <img> tags. The idea turned out not to be very good when I started exploring what SEO is all about. And of course my beloved JavaScript, I need to learn to write better code!
 
 <a href="https://freetools.seobility.net/en/seocheck/pasieka-pod-brzozami.pl"><img src="https://freetools.seobility.net/widget/widget.png?url=pasieka-pod-brzozami.pl" alt="Seobility Score für pasieka-pod-brzozami.pl"></a>
 
@@ -49,3 +49,11 @@ Website view on a smartphone device:
 ![phones_cut](https://user-images.githubusercontent.com/87094041/185403279-297c232f-a280-42a6-bfda-c7421933a9b0.png)
 
 There is one more disadvantage that arose due to the lack of subpages, all content, as mentioned above, changes dynamically and for the construction of two views (for mobile and for desktop) I used two dynamically changing wrappers, always one of them has the value - display: none. It is basically invisible to the user, but the lack of subpages means that the entire content on the mobile device must be loaded immediately, even though the photos are in .jpg format and have an optimized size so that the browser does not have any additional work in rendering, then loading the entire content may take 2-3 seconds longer to load the full page on mobile devices. Another valuable lesson on the topics of building HTML structure and optimizing the performance of a website.
+
+Summary:
+_____________
+
+This project taught me a lot. First of all, he showed me what it means to use knowledge in practice. If I had to do another page or project - I would definitely not make my mistakes, I will use better solutions and improve the entire code, and I will certainly make it faster. I consider the project closed, currently I am waiting to be indexed by google and I will get acquainted with the analytics. Thank you if you survived here, it was a science and adventure for me, and for sure in the future, in addition to my full-time work as a Frontend Web Developer, I will be creating such websites as a hobby.
+
+Yours,
+Wiktor 'NoxaGen' Augustyniak
