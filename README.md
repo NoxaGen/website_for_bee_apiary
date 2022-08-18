@@ -22,7 +22,7 @@ and Canva(for graphics with license).
 The website has been optimized in terms of SEO.
 ![Projekt bez tytułu](https://user-images.githubusercontent.com/87094041/185352710-04a52261-b9eb-4f46-ac9f-ad0e555927bf.png)
 
-<a href="https://freetools.seobility.net/en/seocheck/pasieka-pod-brzozami.pl"><img src="https://freetools.seobility.net/widget/widget.png?url=pasieka-pod-brzozami.pl" alt="Seobility Score für pasieka-pod-brzozami.pl"></a>
+
 
 
 
